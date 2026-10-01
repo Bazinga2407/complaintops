@@ -1,0 +1,80 @@
+[
+  {
+    "anchor_id": 16137661,
+    "known_relevant_id": 15813269,
+    "expected_policy_heading": "Triage",
+    "reason": "Both narratives describe collection for an account the consumer does not recognize.",
+    "judged_candidates": [
+      {"complaint_id": 8157863, "relevant": true, "reason": "Disputes an unknown debt and requests validation and ceased contact."},
+      {"complaint_id": 8088837, "relevant": true, "reason": "Disputes a Central Portfolio Control debt the consumer does not recognize."},
+      {"complaint_id": 8199261, "relevant": true, "reason": "Reports an unknown collection and insufficient verification."},
+      {"complaint_id": 15842830, "relevant": true, "reason": "Disputes collection of an unvalidated debt the consumer says is not owed."},
+      {"complaint_id": 8168234, "relevant": true, "reason": "Disputes an unknown debt and asks the same collector to stop contact."}
+    ]
+  },
+  {
+    "anchor_id": 16126502,
+    "known_relevant_id": 16137661,
+    "expected_policy_heading": "Triage",
+    "reason": "Both narratives dispute ownership of a debt reported in collections.",
+    "judged_candidates": [
+      {"complaint_id": 11400264, "relevant": true, "reason": "Disputes debt ownership and inaccurate Experian reporting."},
+      {"complaint_id": 11662037, "relevant": true, "reason": "Reports identity theft documentation that did not lead to removal."},
+      {"complaint_id": 15847076, "relevant": true, "reason": "Disputes fraudulent accounts that do not belong to the consumer."},
+      {"complaint_id": 15821635, "relevant": true, "reason": "Disputes fraudulent accounts remaining on a credit history."},
+      {"complaint_id": 15845335, "relevant": true, "reason": "Disputes unauthorized accounts reported under the consumer's profile."}
+    ]
+  },
+  {
+    "anchor_id": 15790979,
+    "known_relevant_id": 8280698,
+    "expected_policy_heading": "Escalation",
+    "reason": "Both narratives describe credit-report accounts attributed to identity theft.",
+    "judged_candidates": [
+      {"complaint_id": 15787775, "relevant": true, "reason": "Requests removal of identity-theft accounts still harming a credit report."},
+      {"complaint_id": 15786318, "relevant": true, "reason": "Requests an FCRA identity-theft block for fraudulent report information."},
+      {"complaint_id": 15787470, "relevant": true, "reason": "Requests deletion of fraudulent accounts after a data breach."},
+      {"complaint_id": 15788452, "relevant": true, "reason": "Reports failure to block accounts after an identity-theft report."},
+      {"complaint_id": 15790441, "relevant": true, "reason": "Requests blocking of identity-theft information under the same FCRA process."}
+    ]
+  },
+  {
+    "anchor_id": 15790258,
+    "known_relevant_id": 8279988,
+    "expected_policy_heading": "Escalation",
+    "reason": "Both narratives concern credit-report inquiries associated with identity theft.",
+    "judged_candidates": [
+      {"complaint_id": 8127500, "relevant": false, "reason": "Concerns inaccurate accounts and collections, not an unauthorized inquiry."},
+      {"complaint_id": 15787309, "relevant": true, "reason": "Reports identity theft and unauthorized use of the consumer's credit report."},
+      {"complaint_id": 8110540, "relevant": true, "reason": "Reports identity theft supported by police documentation and unauthorized inquiries."},
+      {"complaint_id": 15787192, "relevant": true, "reason": "Reports identity theft and improper credit-report access."},
+      {"complaint_id": 15787305, "relevant": true, "reason": "Reports identity theft and improper credit-report access."}
+    ]
+  },
+  {
+    "anchor_id": 15787319,
+    "known_relevant_id": 8213267,
+    "expected_policy_heading": "Escalation",
+    "reason": "Both narratives describe a mobile-wallet provider withholding funds.",
+    "judged_candidates": [
+      {"complaint_id": 8213267, "relevant": true, "reason": "Cash App refuses to release direct-deposit funds to a bank account."},
+      {"complaint_id": 15785865, "relevant": true, "reason": "Cash App froze the account when the consumer tried to withdraw funds."},
+      {"complaint_id": 8332280, "relevant": false, "reason": "Primarily concerns account takeover and an unauthorized cash-out."},
+      {"complaint_id": 8284094, "relevant": false, "reason": "Concerns a scam purchase and denied refund, not frozen wallet funds."},
+      {"complaint_id": 8588077, "relevant": false, "reason": "Concerns an unauthorized withdrawal and denied dispute."}
+    ]
+  },
+  {
+    "anchor_id": 8114908,
+    "known_relevant_id": 8174717,
+    "expected_policy_heading": "Triage",
+    "reason": "Both narratives describe a digital-wallet provider holding the consumer's funds.",
+    "judged_candidates": [
+      {"complaint_id": 8176757, "relevant": true, "reason": "Venmo disables an account after verification and prevents bank access."},
+      {"complaint_id": 8259778, "relevant": true, "reason": "Venmo freezes an account and ties up unrelated funds."},
+      {"complaint_id": 8435498, "relevant": true, "reason": "Venmo freezes an account and holds the consumer's balance."},
+      {"complaint_id": 8407623, "relevant": true, "reason": "Venmo suspends an account while holding transferred funds."},
+      {"complaint_id": 8219199, "relevant": true, "reason": "Venmo verification problems prevent access to wallet funds."}
+    ]
+  }
+]

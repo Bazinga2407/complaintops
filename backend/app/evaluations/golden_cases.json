@@ -1,0 +1,50 @@
+[
+  {
+    "product": "Debt collection",
+    "narrative": "A collector keeps calling about an account I do not recognize.",
+    "expected_team": "Collections Resolution",
+    "expected_priority": "standard"
+  },
+  {
+    "product": "Credit reporting",
+    "narrative": "An account opened through active identity theft remains on my credit report.",
+    "expected_team": "Credit Reporting",
+    "expected_priority": "priority"
+  },
+  {
+    "product": "Money transfer, virtual currency, or money service",
+    "narrative": "I cannot access essential funds for rent after a transfer was frozen.",
+    "expected_team": "Payments",
+    "expected_priority": "priority"
+  },
+  {
+    "product": "Money transfer, virtual currency, or money service",
+    "narrative": "My payment transfer was delayed for two days, but the funds have arrived.",
+    "expected_team": "Payments",
+    "expected_priority": "standard"
+  },
+  {
+    "product": "Mortgage",
+    "narrative": "The servicer sent a notice of imminent foreclosure while my payment dispute is open.",
+    "expected_team": "General Resolution",
+    "expected_priority": "priority"
+  },
+  {
+    "product": "Credit card",
+    "narrative": "A merchant has not issued the refund promised for a cancelled order.",
+    "expected_team": "General Resolution",
+    "expected_priority": "standard"
+  },
+  {
+    "product": "Credit reporting",
+    "narrative": "I cannot access the online portal to view my credit report, but there is no time-sensitive financial loss.",
+    "expected_team": "Credit Reporting",
+    "expected_priority": "standard"
+  },
+  {
+    "product": "Debt collection",
+    "narrative": "The collector threatened legal action this week over a disputed balance.",
+    "expected_team": "Collections Resolution",
+    "expected_priority": "priority"
+  }
+]

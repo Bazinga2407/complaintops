@@ -1,0 +1,17 @@
+services:
+  app:
+    build: .
+    env_file: .env
+    environment:
+      APP_ENV: staging
+      AUTH_MODE: local
+      DATABASE_URL: postgresql+psycopg://complaintops:complaintops@database:5432/complaintops
+      PUBLIC_ORIGIN: http://localhost:8002
+      OPERATOR_USERNAME: ${OPERATOR_USERNAME:?set OPERATOR_USERNAME in .env}
+      OPERATOR_PASSWORD_HASH: ${OPERATOR_PASSWORD_HASH:?set OPERATOR_PASSWORD_HASH in .env}
+      SESSION_SECRET: ${SESSION_SECRET:?set SESSION_SECRET in .env}
+    ports:
+      - "127.0.0.1:8002:8000"
+    depends_on:
+      database:
+        condition: service_healthy

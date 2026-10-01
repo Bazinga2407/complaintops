@@ -1,0 +1,313 @@
+{
+  "retrieval": {
+    "sample_size": 6,
+    "judged_precision_at_5": 0.8666666666666667,
+    "judgment_coverage_at_5": 1.0,
+    "known_relevant_hit_at_10": 0.16666666666666666,
+    "known_relevant_mrr_at_10": 0.16666666666666666,
+    "policy_top_1_accuracy": 0.6666666666666666,
+    "policy_hit_at_3": 1.0,
+    "policy_mrr_at_3": 0.8333333333333334,
+    "limitations": "6 anchors and 30 manually judged top-five candidates from this CFPB snapshot. The sample is small and not representative of every product or complaint type. The anchor uses an existing complaint embedding, not a fresh agent-generated query. The known-pair score is retained only as a regression signal; its relevance labels are incomplete because one preselected complaint is not a complete relevance set.",
+    "examples": [
+      {
+        "anchor_id": 16137661,
+        "known_relevant_id": 15813269,
+        "known_relevant_rank": null,
+        "retrieved_top_5": [
+          {
+            "complaint_id": 8157863,
+            "relevant": true,
+            "judgment_reason": "Disputes an unknown debt and requests validation and ceased contact."
+          },
+          {
+            "complaint_id": 8088837,
+            "relevant": true,
+            "judgment_reason": "Disputes a Central Portfolio Control debt the consumer does not recognize."
+          },
+          {
+            "complaint_id": 8199261,
+            "relevant": true,
+            "judgment_reason": "Reports an unknown collection and insufficient verification."
+          },
+          {
+            "complaint_id": 15842830,
+            "relevant": true,
+            "judgment_reason": "Disputes collection of an unvalidated debt the consumer says is not owed."
+          },
+          {
+            "complaint_id": 8168234,
+            "relevant": true,
+            "judgment_reason": "Disputes an unknown debt and asks the same collector to stop contact."
+          }
+        ],
+        "expected_policy_heading": "Triage",
+        "top_policy_heading": "Triage",
+        "top_3_policy_headings": [
+          "Triage",
+          "Escalation",
+          "Overview"
+        ],
+        "expected_policy_rank": 1,
+        "policy_top_1_correct": true
+      },
+      {
+        "anchor_id": 16126502,
+        "known_relevant_id": 16137661,
+        "known_relevant_rank": null,
+        "retrieved_top_5": [
+          {
+            "complaint_id": 11400264,
+            "relevant": true,
+            "judgment_reason": "Disputes debt ownership and inaccurate Experian reporting."
+          },
+          {
+            "complaint_id": 11662037,
+            "relevant": true,
+            "judgment_reason": "Reports identity theft documentation that did not lead to removal."
+          },
+          {
+            "complaint_id": 15847076,
+            "relevant": true,
+            "judgment_reason": "Disputes fraudulent accounts that do not belong to the consumer."
+          },
+          {
+            "complaint_id": 15821635,
+            "relevant": true,
+            "judgment_reason": "Disputes fraudulent accounts remaining on a credit history."
+          },
+          {
+            "complaint_id": 15845335,
+            "relevant": true,
+            "judgment_reason": "Disputes unauthorized accounts reported under the consumer's profile."
+          }
+        ],
+        "expected_policy_heading": "Triage",
+        "top_policy_heading": "Triage",
+        "top_3_policy_headings": [
+          "Triage",
+          "Escalation",
+          "Overview"
+        ],
+        "expected_policy_rank": 1,
+        "policy_top_1_correct": true
+      },
+      {
+        "anchor_id": 15790979,
+        "known_relevant_id": 8280698,
+        "known_relevant_rank": null,
+        "retrieved_top_5": [
+          {
+            "complaint_id": 15787775,
+            "relevant": true,
+            "judgment_reason": "Requests removal of identity-theft accounts still harming a credit report."
+          },
+          {
+            "complaint_id": 15786318,
+            "relevant": true,
+            "judgment_reason": "Requests an FCRA identity-theft block for fraudulent report information."
+          },
+          {
+            "complaint_id": 15787470,
+            "relevant": true,
+            "judgment_reason": "Requests deletion of fraudulent accounts after a data breach."
+          },
+          {
+            "complaint_id": 15788452,
+            "relevant": true,
+            "judgment_reason": "Reports failure to block accounts after an identity-theft report."
+          },
+          {
+            "complaint_id": 15790441,
+            "relevant": true,
+            "judgment_reason": "Requests blocking of identity-theft information under the same FCRA process."
+          }
+        ],
+        "expected_policy_heading": "Escalation",
+        "top_policy_heading": "Escalation",
+        "top_3_policy_headings": [
+          "Escalation",
+          "Triage",
+          "Overview"
+        ],
+        "expected_policy_rank": 1,
+        "policy_top_1_correct": true
+      },
+      {
+        "anchor_id": 15790258,
+        "known_relevant_id": 8279988,
+        "known_relevant_rank": null,
+        "retrieved_top_5": [
+          {
+            "complaint_id": 8127500,
+            "relevant": false,
+            "judgment_reason": "Concerns inaccurate accounts and collections, not an unauthorized inquiry."
+          },
+          {
+            "complaint_id": 15787309,
+            "relevant": true,
+            "judgment_reason": "Reports identity theft and unauthorized use of the consumer's credit report."
+          },
+          {
+            "complaint_id": 8110540,
+            "relevant": true,
+            "judgment_reason": "Reports identity theft supported by police documentation and unauthorized inquiries."
+          },
+          {
+            "complaint_id": 15787192,
+            "relevant": true,
+            "judgment_reason": "Reports identity theft and improper credit-report access."
+          },
+          {
+            "complaint_id": 15787305,
+            "relevant": true,
+            "judgment_reason": "Reports identity theft and improper credit-report access."
+          }
+        ],
+        "expected_policy_heading": "Escalation",
+        "top_policy_heading": "Escalation",
+        "top_3_policy_headings": [
+          "Escalation",
+          "Triage",
+          "Human approval"
+        ],
+        "expected_policy_rank": 1,
+        "policy_top_1_correct": true
+      },
+      {
+        "anchor_id": 15787319,
+        "known_relevant_id": 8213267,
+        "known_relevant_rank": 1,
+        "retrieved_top_5": [
+          {
+            "complaint_id": 8213267,
+            "relevant": true,
+            "judgment_reason": "Cash App refuses to release direct-deposit funds to a bank account."
+          },
+          {
+            "complaint_id": 15785865,
+            "relevant": true,
+            "judgment_reason": "Cash App froze the account when the consumer tried to withdraw funds."
+          },
+          {
+            "complaint_id": 8332280,
+            "relevant": false,
+            "judgment_reason": "Primarily concerns account takeover and an unauthorized cash-out."
+          },
+          {
+            "complaint_id": 8284094,
+            "relevant": false,
+            "judgment_reason": "Concerns a scam purchase and denied refund, not frozen wallet funds."
+          },
+          {
+            "complaint_id": 8588077,
+            "relevant": false,
+            "judgment_reason": "Concerns an unauthorized withdrawal and denied dispute."
+          }
+        ],
+        "expected_policy_heading": "Escalation",
+        "top_policy_heading": "Triage",
+        "top_3_policy_headings": [
+          "Triage",
+          "Escalation",
+          "Overview"
+        ],
+        "expected_policy_rank": 2,
+        "policy_top_1_correct": false
+      },
+      {
+        "anchor_id": 8114908,
+        "known_relevant_id": 8174717,
+        "known_relevant_rank": null,
+        "retrieved_top_5": [
+          {
+            "complaint_id": 8176757,
+            "relevant": true,
+            "judgment_reason": "Venmo disables an account after verification and prevents bank access."
+          },
+          {
+            "complaint_id": 8259778,
+            "relevant": true,
+            "judgment_reason": "Venmo freezes an account and ties up unrelated funds."
+          },
+          {
+            "complaint_id": 8435498,
+            "relevant": true,
+            "judgment_reason": "Venmo freezes an account and holds the consumer's balance."
+          },
+          {
+            "complaint_id": 8407623,
+            "relevant": true,
+            "judgment_reason": "Venmo suspends an account while holding transferred funds."
+          },
+          {
+            "complaint_id": 8219199,
+            "relevant": true,
+            "judgment_reason": "Venmo verification problems prevent access to wallet funds."
+          }
+        ],
+        "expected_policy_heading": "Triage",
+        "top_policy_heading": "Escalation",
+        "top_3_policy_headings": [
+          "Escalation",
+          "Triage",
+          "Overview"
+        ],
+        "expected_policy_rank": 2,
+        "policy_top_1_correct": false
+      }
+    ]
+  },
+  "live_agent": {
+    "sample_size": 2,
+    "team_accuracy": 1.0,
+    "priority_accuracy": 1.0,
+    "dual_collection_citation_rate": 1.0,
+    "total_estimated_api_cost_usd": 0.00213762,
+    "limitations": "The labels are synthetic operations scenarios. Team and priority accuracy do not establish legal correctness, complaint resolution quality, or historical-evidence relevance.",
+    "examples": [
+      {
+        "product": "Debt collection",
+        "expected_team": "Collections Resolution",
+        "predicted_team": "Collections Resolution",
+        "team_correct": true,
+        "expected_priority": "standard",
+        "predicted_priority": "standard",
+        "priority_correct": true,
+        "dual_collection_citations": true,
+        "estimated_cost_usd": 0.00103852,
+        "citation_ids": [
+          "policies/complaint-handling-policy.md#Triage",
+          "policies/complaint-handling-policy.md#Escalation",
+          "policies/complaint-handling-policy.md#Human approval",
+          "11751959",
+          "8112043",
+          "8120347",
+          "8149580",
+          "8260291"
+        ]
+      },
+      {
+        "product": "Credit reporting",
+        "expected_team": "Credit Reporting",
+        "predicted_team": "Credit Reporting team",
+        "team_correct": true,
+        "expected_priority": "priority",
+        "predicted_priority": "priority",
+        "priority_correct": true,
+        "dual_collection_citations": true,
+        "estimated_cost_usd": 0.0010991,
+        "citation_ids": [
+          "policies/complaint-handling-policy.md#Escalation",
+          "policies/complaint-handling-policy.md#Triage",
+          "policies/complaint-handling-policy.md#Human approval",
+          "8168339",
+          "8468629",
+          "8265225",
+          "8272145",
+          "8257605"
+        ]
+      }
+    ]
+  }
+}

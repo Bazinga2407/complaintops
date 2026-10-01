@@ -1,0 +1,15 @@
+[
+  {
+    "complaint_id": "10000001",
+    "date_received": "2026-08-20",
+    "product": "Debt collection",
+    "sub_product": "Credit card debt",
+    "issue": "Attempts to collect debt not owed",
+    "sub_issue": "Debt is not yours",
+    "complaint_what_happened": "A collector contacted me about an account I do not recognize.",
+    "company": "Sample Financial Company",
+    "state": "IL",
+    "timely": "Yes",
+    "consumer_disputed": "No"
+  }
+]
