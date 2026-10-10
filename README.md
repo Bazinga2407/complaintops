@@ -78,15 +78,18 @@ Prerequisites: Python 3.11+, Node.js 20+, and Docker with the Compose plugin.
 5. In `frontend`, run `npm install` and `npm run dev`.
 6. Open `http://localhost:5173`; API documentation is at `http://localhost:8000/docs`.
 
-Import a small recent CFPB slice containing public narratives:
+Import a small historical narrative corpus from the CFPB's official July 2026 archive:
 
 ```powershell
 cd backend
-.venv\Scripts\python -m app.services.ingestion --days 7 --page-size 100 --narratives-only
+.venv\Scripts\python -m app.services.archive_ingestion --max-records 500
 ```
 
-The importer uses upserts, so rerunning the same date window updates existing rows rather than creating duplicates.
-It uses the paginated search API rather than the retired JSON export mode, partitions large windows, and retries transient CFPB connection failures.
+The archive importer downloads the bounded official ZIP, streams its CSV, keeps only records with
+published narratives, and uses complaint-ID upserts, so rerunning it does not create duplicates.
+The CFPB stopped publishing narratives in the live Consumer Complaint Database on August 14,
+2026. The live API importer remains available for structured metadata refreshes, but the RAG
+narrative corpus now comes from the Bureau's FOIA archive.
 
 Inspect the local database and pgvector status:
 
@@ -137,7 +140,12 @@ AGENT_PROVIDER=openai
 
 ## Data-use note
 
-CFPB narratives are published only when consumers opt in and after the Bureau takes steps to remove personal information. ComplaintOps stores only fields exposed by the public dataset. The database is not statistically representative of every consumer's experience, so the product presents recommendations and evidence—not automated legal conclusions.
+The historical CFPB narratives used here were published only when consumers opted in and after
+the Bureau took steps to remove personal information. In August 2026, the CFPB ceased publishing
+new narratives in the live database and moved previously published narratives to its FOIA archive.
+ComplaintOps stores only fields exposed by those official public sources. The database is not
+statistically representative of every consumer's experience, so the product presents
+recommendations and evidence—not automated legal conclusions.
 
 ## Roadmap
 

@@ -108,24 +108,24 @@ initialize or repair it manually in a one-off shell, run:
 python -m app.services.db_init
 ```
 
-Use a fresh public CFPB import for the hosted demo; do not copy the local database because it
-contains manually entered operational cases. A small initial corpus can be ingested with
-`python -m app.services.ingestion --days 30 --narratives-only`, then embedded with
+Use the official CFPB narrative archive for the hosted demo; do not copy the local database
+because it contains manually entered operational cases. The CFPB stopped publishing narratives
+in its live database on August 14, 2026, so the live API now supplies structured metadata but not
+the historical text needed for complaint RAG. A small initial corpus can be ingested with
+`python -m app.services.archive_ingestion --max-records 500`, then embedded with
 `python -m app.services.embeddings --max-cost-usd 0.20`. Embeddings incur OpenAI charges and
 the importer may fetch many records; run these deliberately and inspect the resulting counts.
 
-For ongoing updates, create an optional Render Cron Job from the same Git repository and Dockerfile.
-Cron jobs are paid Render resources, so the Blueprint intentionally does not create one. Set its
-schedule to `0 6 * * *` (06:00 UTC), its Docker command to
-`python -m app.services.refresh --execute --days 7 --max-cost-usd 0.05`, and provide only
-`DATABASE_URL` and `OPENAI_API_KEY` as secret environment variables.
+For ongoing structured-metadata updates, create an optional Render Cron Job from the same Git
+repository and Dockerfile. Cron jobs are paid Render resources, so the Blueprint intentionally
+does not create one. The current refresh command can continue upserting live API records, but it
+will not expand the narrative RAG corpus unless the CFPB publishes a newer narrative archive.
 
-Alternatively, run the same refresh command manually whenever you want to update the demo corpus.
-Without `--execute`, the command is a dry run. It imports an overlapping seven-day window and
-then embeds missing rows with the configured estimated cost cap. The importer upserts by CFPB ID,
-so overlap does not duplicate records. Periodically run a wider historical catch-up because CFPB
-narratives may appear after a delay. The scheduler itself is not included in local Compose; it
-belongs to the selected host.
+Run the live importer manually when you want current structured complaint metadata. Archive and
+live importers both upsert by CFPB ID, so overlap does not duplicate records. When the CFPB posts
+a newer official narrative archive, point `archive_ingestion --archive-url` at that ZIP and rerun
+the embedding pipeline. The scheduler itself is not included in local Compose; it belongs to the
+selected host.
 
 ## Limits of this release
 
