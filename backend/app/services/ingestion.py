@@ -125,7 +125,13 @@ def ingest_window(
         states=states,
         narratives_only=narratives_only,
     ):
-        batch.append(normalize_complaint(source))
+        normalized = normalize_complaint(source)
+        # The CFPB stopped publishing narratives in the live database in August 2026.
+        # Keep this local guard because the upstream has_narrative filter can now return
+        # metadata-only rows. Historical narratives are imported from the official archive.
+        if narratives_only and not normalized["narrative"]:
+            continue
+        batch.append(normalized)
         if len(batch) >= page_size:
             processed += upsert_complaints(db, batch)
             batch = []
