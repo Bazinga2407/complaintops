@@ -15,7 +15,9 @@ services:
       - key: AUTH_MODE
         value: oidc
       - key: AGENT_PROVIDER
-        value: mock
+        value: openai
+      - key: OPENAI_API_KEY
+        sync: false
       - key: DATABASE_URL
         sync: false
       - key: OIDC_ISSUER
