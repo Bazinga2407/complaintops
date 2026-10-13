@@ -132,7 +132,10 @@ class RetrievalEvaluation(BaseModel):
     sample_size: int
     judged_precision_at_5: float | None
     judgment_coverage_at_5: float | None
+    graded_ndcg_at_5: float | None
+    graded_judgment_coverage_at_5: float | None
     known_relevant_hit_at_10: float | None
+    known_relevant_mrr_at_10: float | None
     policy_top_1_accuracy: float | None
     policy_hit_at_3: float | None
     policy_mrr_at_3: float | None

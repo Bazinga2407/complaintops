@@ -28,6 +28,13 @@ def database_status() -> dict[str, str | int | float | None]:
                 text("SELECT count(*) FROM policy_documents WHERE is_active")
             ),
             "policy_embedding_count": connection.scalar(
+                text(
+                    "SELECT count(*) FROM policy_chunks AS chunk "
+                    "JOIN policy_documents AS document ON document.id = chunk.document_id "
+                    "WHERE document.is_active AND chunk.embedding IS NOT NULL"
+                )
+            ),
+            "stored_policy_embedding_count": connection.scalar(
                 text("SELECT count(*) FROM policy_chunks WHERE embedding IS NOT NULL")
             ),
             "active_case_count": connection.scalar(text("SELECT count(*) FROM cases")),

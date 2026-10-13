@@ -2,6 +2,7 @@
 
 import argparse
 import json
+import math
 import re
 import uuid
 from importlib.resources import files
@@ -16,8 +17,10 @@ from app.db.models import Case, Complaint, ComplaintEmbedding, PolicyChunk, Poli
 from app.db.session import SessionLocal
 
 
-def load_judgments() -> list[dict]:
-    source = files("app.evaluations").joinpath("retrieval_judgments.json")
+def load_judgments(source: Path | None = None) -> list[dict]:
+    if source is None:
+        packaged = files("app.evaluations").joinpath("retrieval_judgments.json")
+        return json.loads(packaged.read_text(encoding="utf-8"))
     return json.loads(source.read_text(encoding="utf-8"))
 
 
@@ -26,34 +29,89 @@ def load_live_cases() -> list[dict]:
     return json.loads(source.read_text(encoding="utf-8"))
 
 
+def _relevance_grade(candidate: dict) -> int | None:
+    grade = candidate.get("relevance_grade")
+    if grade is None and candidate.get("relevant") is not None:
+        grade = 3 if candidate["relevant"] else 0
+    if grade is None:
+        return None
+    if isinstance(grade, bool) or not isinstance(grade, int) or not 0 <= grade <= 3:
+        raise ValueError("relevance_grade must be an integer from 0 through 3")
+    return grade
+
+
+def normalized_dcg_at_k(candidates: list[dict], k: int = 5) -> float | None:
+    """Score graded relevance and ranking quality from zero to one."""
+    grades = [_relevance_grade(candidate) for candidate in candidates[:k]]
+    if len(grades) != k or any(grade is None for grade in grades):
+        return None
+    numeric_grades = [int(grade) for grade in grades if grade is not None]
+
+    def dcg(values: list[int]) -> float:
+        return sum((2**grade - 1) / math.log2(rank + 2) for rank, grade in enumerate(values))
+
+    ideal = dcg(sorted(numeric_grades, reverse=True))
+    if ideal == 0:
+        return 0.0
+    return dcg(numeric_grades) / ideal
+
+
 def score_retrieval(rows: list[dict]) -> dict:
     count = len(rows)
-    hits = [row["known_relevant_rank"] for row in rows if row["known_relevant_rank"]]
+    known_pair_rows = [
+        row
+        for row in rows
+        if row.get("known_relevant_evaluated", "known_relevant_rank" in row)
+    ]
+    hits = [row["known_relevant_rank"] for row in known_pair_rows if row["known_relevant_rank"]]
     judged_slots = [
         candidate
         for row in rows
         for candidate in row.get("retrieved_top_5", [])
-        if candidate.get("relevant") is not None
+        if _relevance_grade(candidate) is not None
     ]
     expected_judgment_count = count * 5
     judgment_coverage = (
         len(judged_slots) / expected_judgment_count if expected_judgment_count else None
     )
     judged_precision = (
-        sum(bool(candidate["relevant"]) for candidate in judged_slots) / expected_judgment_count
+        sum((_relevance_grade(candidate) or 0) > 0 for candidate in judged_slots)
+        / expected_judgment_count
         if expected_judgment_count and len(judged_slots) == expected_judgment_count
         else None
     )
-    policy_ranks = [row.get("expected_policy_rank") for row in rows]
-    policy_ranking_evaluated = all("expected_policy_rank" in row for row in rows)
+    ndcg_scores = [
+        normalized_dcg_at_k(row.get("retrieved_top_5", []), 5) for row in rows
+    ]
+    graded_coverage = (
+        sum(score is not None for score in ndcg_scores) / count if count else None
+    )
+    graded_ndcg = (
+        sum(score for score in ndcg_scores if score is not None) / count
+        if count and all(score is not None for score in ndcg_scores)
+        else None
+    )
+    policy_rows = [row for row in rows if row.get("policy_ranking_evaluated", True)]
+    policy_ranks = [row.get("expected_policy_rank") for row in policy_rows]
+    policy_ranking_evaluated = bool(policy_rows) and len(policy_rows) == count
     return {
         "sample_size": count,
         "judged_precision_at_5": judged_precision,
         "judgment_coverage_at_5": judgment_coverage,
-        "known_relevant_hit_at_10": len(hits) / count if count else None,
-        "known_relevant_mrr_at_10": sum(1 / rank for rank in hits) / count if count else None,
+        "graded_ndcg_at_5": graded_ndcg,
+        "graded_judgment_coverage_at_5": graded_coverage,
+        "known_relevant_hit_at_10": (
+            len(hits) / len(known_pair_rows) if known_pair_rows else None
+        ),
+        "known_relevant_mrr_at_10": (
+            sum(1 / rank for rank in hits) / len(known_pair_rows)
+            if known_pair_rows
+            else None
+        ),
         "policy_top_1_accuracy": (
-            sum(row["policy_top_1_correct"] for row in rows) / count if count else None
+            sum(row["policy_top_1_correct"] for row in policy_rows) / count
+            if policy_ranking_evaluated
+            else None
         ),
         "policy_hit_at_3": (
             sum(rank is not None and rank <= 3 for rank in policy_ranks) / count
@@ -66,7 +124,7 @@ def score_retrieval(rows: list[dict]) -> dict:
             else None
         ),
         "limitations": (
-            f"{count} anchors and {len(judged_slots)} manually judged top-five candidates from "
+            f"{count} anchors and {len(judged_slots)} judged top-five candidates from "
             "this CFPB snapshot. The sample is small and not representative of every product or "
             "complaint type. The anchor uses an existing complaint embedding, not a fresh "
             "agent-generated query. The known-pair score is retained only as a regression signal; "
@@ -77,13 +135,18 @@ def score_retrieval(rows: list[dict]) -> dict:
     }
 
 
-def evaluate_retrieval(db: Session) -> dict:
+def evaluate_retrieval(db: Session, judgments: list[dict] | None = None) -> dict:
     rows = []
-    for judgment in load_judgments():
+    for judgment in (judgments if judgments is not None else load_judgments()):
         anchor = db.get(ComplaintEmbedding, judgment["anchor_id"])
         complaint = db.get(Complaint, judgment["anchor_id"])
-        relevant = db.get(ComplaintEmbedding, judgment["known_relevant_id"])
-        if anchor is None or complaint is None or relevant is None:
+        known_relevant_id = judgment.get("known_relevant_id")
+        relevant = (
+            db.get(ComplaintEmbedding, known_relevant_id) if known_relevant_id is not None else None
+        )
+        if anchor is None or complaint is None or (
+            known_relevant_id is not None and relevant is None
+        ):
             raise RuntimeError("A judged CFPB complaint is missing an embedding")
         distance = ComplaintEmbedding.embedding.cosine_distance(anchor.embedding)
         matches = db.scalars(
@@ -98,8 +161,8 @@ def evaluate_retrieval(db: Session) -> dict:
             .limit(10)
         ).all()
         known_relevant_rank = (
-            matches.index(judgment["known_relevant_id"]) + 1
-            if judgment["known_relevant_id"] in matches
+            matches.index(known_relevant_id) + 1
+            if known_relevant_id is not None and known_relevant_id in matches
             else None
         )
         judged_by_id = {
@@ -109,6 +172,7 @@ def evaluate_retrieval(db: Session) -> dict:
             {
                 "complaint_id": complaint_id,
                 "relevant": judged_by_id.get(complaint_id, {}).get("relevant"),
+                "relevance_grade": judged_by_id.get(complaint_id, {}).get("relevance_grade"),
                 "judgment_reason": judged_by_id.get(complaint_id, {}).get("reason"),
             }
             for complaint_id in matches[:5]
@@ -126,25 +190,39 @@ def evaluate_retrieval(db: Session) -> dict:
                 .limit(3)
             ).all()
         )
-        top_policy_heading = policy_headings[0] if policy_headings else None
-        expected_policy_rank = (
-            policy_headings.index(judgment["expected_policy_heading"]) + 1
-            if judgment["expected_policy_heading"] in policy_headings
-            else None
+        expected_policy_headings = judgment.get("expected_policy_headings") or (
+            [judgment["expected_policy_heading"]]
+            if judgment.get("expected_policy_heading")
+            else []
         )
-        rows.append(
-            {
-                "anchor_id": complaint.id,
-                "known_relevant_id": judgment["known_relevant_id"],
-                "known_relevant_rank": known_relevant_rank,
-                "retrieved_top_5": retrieved_top_5,
-                "expected_policy_heading": judgment["expected_policy_heading"],
-                "top_policy_heading": top_policy_heading,
-                "top_3_policy_headings": policy_headings,
-                "expected_policy_rank": expected_policy_rank,
-                "policy_top_1_correct": top_policy_heading == judgment["expected_policy_heading"],
-            }
-        )
+        expected_policy_ranks = [
+            policy_headings.index(heading) + 1
+            for heading in expected_policy_headings
+            if heading in policy_headings
+        ]
+        row = {
+            "anchor_id": complaint.id,
+            "known_relevant_rank": known_relevant_rank,
+            "known_relevant_evaluated": known_relevant_id is not None,
+            "retrieved_top_5": retrieved_top_5,
+            "policy_ranking_evaluated": bool(expected_policy_headings),
+        }
+        if known_relevant_id is not None:
+            row["known_relevant_id"] = known_relevant_id
+        if expected_policy_headings:
+            row.update(
+                {
+                    "expected_policy_headings": expected_policy_headings,
+                    "top_policy_heading": policy_headings[0] if policy_headings else None,
+                    "top_3_policy_headings": policy_headings,
+                    "expected_policy_rank": min(expected_policy_ranks)
+                    if expected_policy_ranks
+                    else None,
+                    "policy_top_1_correct": bool(policy_headings)
+                    and policy_headings[0] in expected_policy_headings,
+                }
+            )
+        rows.append(row)
     return score_retrieval(rows)
 
 
@@ -231,10 +309,15 @@ def main() -> None:
     parser.add_argument("--live", action="store_true", help="Opt in to paid OpenAI agent calls")
     parser.add_argument("--max-cases", type=int, default=2)
     parser.add_argument("--max-cost-usd", type=float, default=0.05)
+    parser.add_argument(
+        "--judgments",
+        type=Path,
+        help="Optional expanded judgment JSON; defaults to the packaged regression set",
+    )
     parser.add_argument("--output", type=Path, help="Optional JSON report path")
     args = parser.parse_args()
     with SessionLocal() as db:
-        report = {"retrieval": evaluate_retrieval(db)}
+        report = {"retrieval": evaluate_retrieval(db, load_judgments(args.judgments))}
         if args.live:
             report["live_agent"] = evaluate_live(db, args.max_cases, args.max_cost_usd)
     serialized = json.dumps(report, indent=2)

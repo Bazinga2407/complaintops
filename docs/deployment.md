@@ -111,10 +111,18 @@ python -m app.services.db_init
 Use the official CFPB narrative archive for the hosted demo; do not copy the local database
 because it contains manually entered operational cases. The CFPB stopped publishing narratives
 in its live database on August 14, 2026, so the live API now supplies structured metadata but not
-the historical text needed for complaint RAG. A small initial corpus can be ingested with
-`python -m app.services.archive_ingestion --max-records 500`, then embedded with
-`python -m app.services.embeddings --max-cost-usd 0.20`. Embeddings incur OpenAI charges and
-the importer may fetch many records; run these deliberately and inspect the resulting counts.
+the historical text needed for complaint RAG. The production-adjacent target can be ingested with:
+
+```powershell
+python -m app.services.archive_ingestion `
+  --archive-set balanced-history --max-records 10000 --sampling balanced
+python -m app.services.embeddings --limit 10000 --max-cost-usd 1.00
+```
+
+Balanced sampling is
+deterministic and broadens product, issue, year, and narrative-length coverage. Embeddings incur
+OpenAI charges and the importer may fetch many records; run these deliberately and inspect the
+resulting counts.
 
 For ongoing structured-metadata updates, create an optional Render Cron Job from the same Git
 repository and Dockerfile. Cron jobs are paid Render resources, so the Blueprint intentionally

@@ -18,7 +18,8 @@ The current foundation includes:
 - persisted agent analyses and approve/edit/reject review actions
 - Pending, Approved, and Rejected operations queues, with edited recommendations and review history
 - evaluation APIs and repeatable benchmarks for review outcomes, retrieval quality, latency, and cost
-- a labeled, read-only retrieval benchmark with 30 judged results and an opt-in live-agent runner
+- a labeled, read-only retrieval benchmark with binary and graded relevance metrics, plus an
+  opt-in live-agent runner
 - invite-only OpenID Connect sign-in, database-backed users, three roles, CSRF protection, and rate limits
 - a local hashed-password mode retained for private development previews
 - a Docker image serving the UI and API from one origin
@@ -26,9 +27,9 @@ The current foundation includes:
 - a live OpenAI Responses API agent with two controlled retrieval tools
 - resumable complaint and policy embedding pipelines with cost caps
 - grounded citations, structured output validation, and per-analysis cost tracking
-- sample operating policy and automated tests
-- a validated local corpus of 10,183 CFPB complaints with published narratives
-- complete pgvector embeddings for all 10,183 complaints and four active policy chunks
+- a versioned 25-chunk demonstration operating policy and automated tests
+- deterministic balanced archive sampling across product, issue, year, and narrative length
+- a benchmark-candidate exporter for building larger human-reviewed evaluation sets
 
 The AI integration remains optional. Set `AGENT_PROVIDER=mock` for zero-cost local work or `AGENT_PROVIDER=openai` for the live tool-using agent. Both providers return the same validated recommendation contract.
 
@@ -78,15 +79,20 @@ Prerequisites: Python 3.11+, Node.js 20+, and Docker with the Compose plugin.
 5. In `frontend`, run `npm install` and `npm run dev`.
 6. Open `http://localhost:5173`; API documentation is at `http://localhost:8000/docs`.
 
-Import a small historical narrative corpus from the CFPB's official July 2026 archive:
+Import a balanced 10,000-narrative corpus from the CFPB's official narrative archives:
 
 ```powershell
 cd backend
-.venv\Scripts\python -m app.services.archive_ingestion --max-records 500
+.venv\Scripts\python -m app.services.archive_ingestion `
+  --archive-set balanced-history --max-records 10000 --sampling balanced
 ```
 
 The archive importer downloads the bounded official ZIP, streams its CSV, keeps only records with
 published narratives, and uses complaint-ID upserts, so rerunning it does not create duplicates.
+The balanced-history set samples six official CFPB archive periods spanning 2011–2026.
+Balanced mode makes two streaming passes per ZIP and deterministically samples across product,
+issue, received year, and narrative-length strata. This gives the RAG corpus broader coverage than
+taking the first rows from one monthly archive. Use the same seed to reproduce the selection.
 The CFPB stopped publishing narratives in the live Consumer Complaint Database on August 14,
 2026. The live API importer remains available for structured metadata refreshes, but the RAG
 narrative corpus now comes from the Bureau's FOIA archive.
@@ -101,7 +107,7 @@ Embed any complaints and policies that do not yet have vectors. The operation is
 stops before its configured cost cap:
 
 ```powershell
-.venv\Scripts\python -m app.services.embeddings --max-cost-usd 0.20
+.venv\Scripts\python -m app.services.embeddings --limit 10000 --max-cost-usd 1.00
 ```
 
 ## Development without Docker
@@ -150,12 +156,15 @@ recommendations and evidence—not automated legal conclusions.
 ## Roadmap
 
 1. Foundation, dual-source case intake, and CFPB ingestion — complete
-2. Database runtime and a 10,000-narrative CFPB backfill — complete (10,183 loaded)
-3. Complaint and policy embedding pipelines — complete
+2. Database runtime and a balanced 10,000-narrative CFPB backfill — pipeline complete; hosted
+   expansion is an explicit operator-run data job
+3. Complaint and versioned 25-chunk policy embedding pipelines — complete
 4. Live tool-using agent with citations and deterministic guardrails — complete
 5. Edit workflow and review history UI — complete
-6. Observed metrics, eight-case mock routing baseline, 30-result retrieval check, and two-case live-agent benchmark — complete; a larger stratified relevance set remains optional
-7. Login, API protections, and Render + Neon deployment package — complete; account setup and actual deployment remain
+6. Observed metrics, eight-case mock routing baseline, 30-result regression check, graded nDCG,
+   and benchmark-candidate export — complete; the larger human-reviewed set follows the hosted
+   corpus expansion
+7. Login, API protections, and Render + Neon deployment — complete
 8. Authenticated create → redact → analyze → approve → persistence smoke workflow — complete
 
 ## Review states and evaluation

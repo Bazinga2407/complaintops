@@ -6,8 +6,12 @@ from datetime import date
 import pytest
 
 from app.services.archive_ingestion import (
+    BALANCED_HISTORY_ARCHIVE_URLS,
+    allocate_archive_limits,
+    allocate_balanced_quotas,
     iter_archive_narratives,
     normalize_archive_complaint,
+    sample_balanced_narratives,
 )
 
 FIELDNAMES = [
@@ -41,12 +45,19 @@ def _archive_bytes(rows: list[dict[str, str]], fieldnames: list[str] = FIELDNAME
     return archive_buffer.getvalue()
 
 
-def _row(complaint_id: str, narrative: str) -> dict[str, str]:
+def _row(
+    complaint_id: str,
+    narrative: str,
+    *,
+    product: str = "Debt collection",
+    issue: str = "Attempts to collect debt not owed",
+    received: str = "2026-07-15",
+) -> dict[str, str]:
     return {
-        "Date received": "2026-07-15",
-        "Product": "Debt collection",
+        "Date received": received,
+        "Product": product,
         "Sub-product": "Credit card debt",
-        "Issue": "Attempts to collect debt not owed",
+        "Issue": issue,
         "Sub-issue": "Debt is not yours",
         "Consumer complaint narrative": narrative,
         "Company public response": "",
@@ -92,3 +103,44 @@ def test_archive_iterator_rejects_missing_required_columns() -> None:
 
     with pytest.raises(ValueError, match="missing columns"):
         list(iter_archive_narratives(archive))
+
+
+def test_balanced_quotas_redistribute_capacity_from_small_strata() -> None:
+    quotas = allocate_balanced_quotas({"large-a": 10, "large-b": 10, "small": 1}, 9)
+
+    assert sum(quotas.values()) == 9
+    assert quotas["small"] == 1
+    assert abs(quotas["large-a"] - quotas["large-b"]) <= 1
+
+
+def test_archive_limits_preserve_the_requested_total() -> None:
+    limits = allocate_archive_limits(10_000, len(BALANCED_HISTORY_ARCHIVE_URLS))
+
+    assert sum(limits) == 10_000
+    assert max(limits) - min(limits) <= 1
+
+
+def test_balanced_sample_is_reproducible_and_covers_distinct_strata() -> None:
+    archive = _archive_bytes(
+        [
+            _row(str(index), f"Debt narrative {index}") for index in range(1, 7)
+        ]
+        + [
+            _row(
+                str(index),
+                f"Mortgage narrative {index}",
+                product="Mortgage",
+                issue="Trouble during payment process",
+                received="2024-05-01",
+            )
+            for index in range(7, 13)
+        ]
+    )
+
+    first = sample_balanced_narratives(archive, max_records=6, seed="stable-seed")
+    second = sample_balanced_narratives(archive, max_records=6, seed="stable-seed")
+
+    assert [row["id"] for row in first] == [row["id"] for row in second]
+    assert len(first) == 6
+    assert {row["product"] for row in first} == {"Debt collection", "Mortgage"}
+    assert sum(row["product"] == "Debt collection" for row in first) == 3

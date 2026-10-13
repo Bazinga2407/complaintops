@@ -6,7 +6,9 @@ ComplaintOps starts with three runnable processes: the web frontend, FastAPI bac
 
 ## Stage-by-stage flow
 
-1. **Ingest history:** The worker requests public CFPB complaints for a bounded date window and converts them into the historical evidence model.
+1. **Ingest history:** The worker imports published narratives from the official CFPB archive.
+   Balanced mode deterministically samples product, issue, year, and narrative-length strata before
+   converting them into the historical evidence model. The live API remains a metadata refresh.
 2. **Create active case:** An employee can enter a complaint received through another channel or promote a selected CFPB complaint into the demonstration queue. Active work lives in `cases`, not in the historical corpus.
 3. **Authenticate and authorize:** In production, an OpenID Connect provider verifies identity. ComplaintOps activates only pre-invited emails and loads the user's current operator, reviewer, or admin role from PostgreSQL on every request.
 4. **Protect data:** Common SSNs, email addresses, phone numbers, and account-number patterns are redacted before a manually entered narrative is stored.
@@ -16,7 +18,11 @@ ComplaintOps starts with three runnable processes: the web frontend, FastAPI bac
 8. **Apply guardrails:** Deterministic code requires both evidence collections, grounds citation IDs in retrieved rows, bounds tool results, and enforces human review.
 9. **Agent:** A tool-capable language model calls the controlled searches and rule functions, then returns a structured recommendation with citations.
 10. **Human review:** A reviewer or administrator approves, edits, or rejects the recommendation. Every action is linked to the authenticated user. Pending, Approved, and Rejected refer to recommendation review, not complaint resolution.
-11. **Evaluate:** The report measures observed review outcomes, dual-collection citation coverage, latency, and estimated cost. Eight hand-labeled synthetic cases measure deterministic mock routing. A separate six-pair CFPB judgment set now checks retrieval with stored embeddings, and the synthetic set can be run through the live agent only by explicit opt-in. Larger relevance labels and human-scored recommendation quality remain future work.
+11. **Evaluate:** The report measures observed review outcomes, dual-collection citation coverage,
+    latency, and estimated cost. Eight hand-labeled synthetic cases measure deterministic mock
+    routing. The retrieval benchmark measures precision, hit rate, reciprocal rank, and graded
+    nDCG. A deterministic exporter creates diverse candidate packs for larger human-reviewed sets.
+    Synthetic cases can be run through the live agent only by explicit opt-in.
 
 ## Two RAG collections
 

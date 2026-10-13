@@ -1,3 +1,5 @@
+from pathlib import Path
+
 from app.services.embeddings import (
     MAX_INPUT_TOKENS,
     PreparedText,
@@ -14,6 +16,16 @@ def test_policy_markdown_is_split_into_retrievable_sections() -> None:
 
     assert [section.heading for section in sections] == ["Overview", "Triage", "Review"]
     assert sections[1].content == "Route the case."
+
+
+def test_demonstration_policy_has_meaningful_retrieval_coverage() -> None:
+    policy_path = Path(__file__).resolve().parents[2] / "policies" / "complaint-handling-policy.md"
+    sections = chunk_policy_markdown(policy_path.read_text(encoding="utf-8"))
+
+    assert len(sections) >= 20
+    assert {"Triage", "Escalation", "Human approval", "Policy governance"}.issubset(
+        {section.heading for section in sections}
+    )
 
 
 def test_prepare_text_truncates_oversized_inputs() -> None:
