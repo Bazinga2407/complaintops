@@ -1,0 +1,1635 @@
+{
+  "metadata": {
+    "schema_version": 1,
+    "created_at": "2026-10-13",
+    "review_status": "provisional_model_assisted_requires_human_review",
+    "source_corpus": "Official CFPB public narratives in the production 2026-10-13 snapshot",
+    "rubric": {
+      "0": "Different underlying consumer problem or operational resolution path",
+      "1": "Same product or workflow context, but only partially relevant",
+      "2": "Closely related problem with shared facts but a different subtype or outcome",
+      "3": "Same core consumer problem and operational resolution path"
+    },
+    "anchor_count": 30,
+    "candidate_judgment_count": 150
+  },
+  "judgments": [
+    {
+      "anchor_id": 24164046,
+      "product": "Credit card",
+      "issue": "Advertising and marketing, including promotional offers",
+      "anchor_excerpt": "This was the promotion showed to me when I applied for the Capitol One XXXX XXXX card : XX/XX/year>, applied and was approved. XXXX a bonus of XXXX miles once you spend {$1000.00} on purchases within 3 months from account opening, equal to {$400.00} in XXXX XXXX % - 28.49 % variable APR ; this product does not have an introductory APR period, 4 % fee on amounts transferred at a promotional APR that Capital One may offer you $ XXXX annual fee and no foreign transaction fees -Earn unlimited XXXX miles on every purchase, every day Miles won't expire for the life of the account and there's no limit to how many you can earn -Earn XXXX miles on hotels, vacation rentals and rental cars booked through Capital One XXXX Use your miles to get reimbursed for any XXXX purchase-or redeem by booking a tr",
+      "expected_policy_headings": [
+        "Triage",
+        "Issue classification",
+        "Consumer communication"
+      ],
+      "retrieved_policy_headings": [
+        "Triage",
+        "Credit reporting disputes",
+        "Identity theft and account takeover",
+        "Consumer communication",
+        "Purpose and scope"
+      ],
+      "judged_candidates": [
+        {
+          "complaint_id": 24120298,
+          "issue": "Advertising and marketing, including promotional offers",
+          "excerpt": "I signed up for the Capital One Venture One credit card in XXXX on the grounds that I would receive a XXXX mile sign on bonus after I spent {$500.00} in the first three months on that card. This was advertised before I applied for the card, and I believe that when I downloaded the app, there was a popup also saying something similar. I spent that money, had a good credit score, and have not opened another Capital One or XXXX family card within the last XXXX months. It is well past when I should have received my bonus now, and I have gotten nothing. I called their customer service numbers multiple times, and they told me that I was not able to get the bonus but could provide no other information.",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        },
+        {
+          "complaint_id": 23804875,
+          "issue": "Advertising and marketing, including promotional offers",
+          "excerpt": "On XXXX I received an email from Capital One offering me a promotional cash bonus if I opened a new XXXX credit card. I would receive {$300.00} for the first {$500.00} spent. On XXXX, I followed the link in the email and received a preapproval then an approval for the XXXX card. At no point was it noted that rewards would not be applied. After spending and paying off over {$500.00} on the XXXX card, I noted that no rewards were applied. I contacted Capital One on XXXX and found out that my card did not have the promotional rewards set up. They could not determine why. They opened a case number, XXXX, with me. On XXXX, after 14 days with no contact about the case, I called back. They only told me the same info. My card did not have the rewards set up and they could not change the settings a",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        },
+        {
+          "complaint_id": 23881960,
+          "issue": "Advertising and marketing, including promotional offers",
+          "excerpt": "On Thursday XX/XX/XXXX I contacted Capital One to find out about my dispute for the {$200.00} bonus they will offering when I open my saver account. They did not have my complaint on file and I could not find out why I was denied. The representative said there's XXXX denials XXXX is for the bonus and XXXX is for the actual credit card. I received the credit card with a {$4000.00} limit but was refused the {$200.00} promotion. When I asked why I was refused the {$200.00} promotion she could not give me an answer. I need to find out why I was denied the promotion because this seems like a scam to me. I spent the {$500.00} recommended within the time frame of XXXX months and I was supposed to receive the {$200.00} bonus if I did that after opening my saver card.",
+          "relevance_grade": 2,
+          "reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+        },
+        {
+          "complaint_id": 23758974,
+          "issue": "Other features, terms, or problems",
+          "excerpt": "On XX/XX/year> I activated a Capital One Offers promotion for XXXX miles per dollar at XXXX on my Capital One XXXX XXXX account. I clicked the XXXX offer tile inside my Capital One account, was redirected to XXXX in that same session, and completed 2 purchases. One was at XXXX on XX/XX/year> for XXXX and another was for XXXX, XX/XX/year> for XXXX. Capital One paid the offer on part of my order ( XXXX miles on {$240.00} ) but denied {$1100.00} of qualifying spend as \" ineligible, '' withholding roughly XXXX miles. I never returned, canceled, or disputed any part of this purchase. I followed Capital One 's stated qualifying procedure exactly and have dated screenshots of the offer terms, the redirected shopping trip, and my order confirmations. On the purchase date, both Capital One and XXXX",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        },
+        {
+          "complaint_id": 23952673,
+          "issue": "Advertising and marketing, including promotional offers",
+          "excerpt": "On XX/XX/2026 I responded to an offer for a Capital One Quicksilver credit card. The promotion was to spend {$500.00} within XXXX months and receive a {$300.00} bonus. When I received my first statement, over {$500.00}, I called and asked about the credit. They then said I did not qualify. I was upset by this and they said they would look into it and call me back this week. I called them today, XXXX XXXX, after missing a call from them yesterday, and was told they will not be giving me the {$300.00}. I asked why not and was not given any reason but that the case was closed. I indicated that I just would appreciate a reason why they were not paying. The rep repeated that the answer was no and they would not be offering a reason. A glaring \" bait and switch '' by an industry that I trust wit",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        }
+      ]
+    },
+    {
+      "anchor_id": 3376003,
+      "product": "Checking or savings account",
+      "issue": "Problem with a credit reporting company's investigation into an existing problem",
+      "anchor_excerpt": "This is compliant is being file against TD bank N.A.. the dispute case ID # XXXX bank name is TD BANK NA. ABA XXXX ACOUNT XXXX. this report is being put out by early warning service XXXX XXXX XXXX AZ XXXX this inaccuracy that being file against me. I have contact the TD, bank recover division there is no neg information are my account they could not find any. I have ask this bank about me and my bank account. i talk a recover office at td bank to day and he stated that the account is in good standing with TD bank go back 20 year ago. a research was conduct. that official could not find any neg information about this account there is no money old to the bank for overdraw status. he also stated that he could not see anything neg about my credit card or personal check and with no abuse TD, ba",
+      "expected_policy_headings": [
+        "Credit reporting disputes"
+      ],
+      "retrieved_policy_headings": [
+        "Credit reporting disputes",
+        "Consumer communication",
+        "Collection and legal-action threats",
+        "Triage",
+        "Payment and transfer disputes"
+      ],
+      "judged_candidates": [
+        {
+          "complaint_id": 3526764,
+          "issue": "Problem with a lender or other company charging your account",
+          "excerpt": "In XX/XX/2020, received notice of 3 o draft fees, then account locked. When branch XXXX nh.. manager informed locked my account chip on chip avtivity, account XXXX overdraft not counting XXXX of fees. We went Thur unatorized trans found purchases in cal, ny, nc, few trans purchase card in california, legit purchase made in XXXX nh few hours later ... impossible in cal and nh few hours. Filed police report gave tp bank. For one month to bank kept saying did not police report, branch emailed twice, filed new report Thur bank XXXX assured police in he XXXX sure refunded the bank close account found fraud .... finally hours on phone XXXX XXXX number one honest to bank employee bank saying left me phone message saying fraud activity they thought on account, I never received notice, until got 3 ",
+          "relevance_grade": 0,
+          "reason": "Different underlying consumer problem or operational resolution path."
+        },
+        {
+          "complaint_id": 23780702,
+          "issue": "Managing an account",
+          "excerpt": "TD Bank denied my disputes for fraudulent charges from XXXX XXXX XXXX even though I provided clear evidence that these were not legitimate transactions. A XX/XX/XXXX letter from XXXX XXXX Supervisor of Elections XXXX XXXX states that an unauthorized party accessed files containing my personal identification information, including my name, address, state ID, drivers license, and Social Security number. I faxed this government letter to TD Bank as part of my disputes. I also provided TD Bank with confirmation from the XXXX XXXX XXXX XXXX that I filed a police report regarding this fraud on or around XX/XX/XXXX. The Sheriffs Office told me the police report process could take up to 20 days. Despite having this evidence, TD Bank closed my disputes on XX/XX/XXXX only about three days after I su",
+          "relevance_grade": 1,
+          "reason": "Same product or workflow context, but only partially relevant to the core problem."
+        },
+        {
+          "complaint_id": 3004756,
+          "issue": "Problem caused by your funds being low",
+          "excerpt": "TD Bank which claims themselves as Americas most convenient bank is in fact a XXXX company. The company falsely represents itself and has caused me and my company severe damage which can not be repaired. Their use of overdraft charges and lying has caused me great harm. The Company even  went as far as defaming me to a police officer making false accusations. I tried as hard as i could to get my overdraft monies back, but they wont pay, and i ended up taking them to court this morning.",
+          "relevance_grade": 0,
+          "reason": "Different underlying consumer problem or operational resolution path."
+        },
+        {
+          "complaint_id": 23744345,
+          "issue": "Managing an account",
+          "excerpt": "I have two XXXX XXXX transactions that were sent to my account and have been under review for approximately two months. Despite this lengthy review period, the funds are still unavailable to me. I have contacted TD Bank three separate times regarding this issue. Unfortunately, each time I have reached out, I have not been provided with any meaningful information or updates. I have simply been told that the transactions are still under review, with no explanation for the delay or any indication of when the review will be completed. These funds are needed to pay my bills, and the ongoing delay is causing significant financial hardship, including interest charges accumulating on my credit cards. I am requesting that this matter be reviewed as soon as possible. A two-month review period withou",
+          "relevance_grade": 0,
+          "reason": "Different underlying consumer problem or operational resolution path."
+        },
+        {
+          "complaint_id": 3678728,
+          "issue": "Incorrect information on your report",
+          "excerpt": "Td babk is saying Im having account abuse which is incorrect they are hurting me to get credit and grow my livelihood and banking",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        }
+      ]
+    },
+    {
+      "anchor_id": 2438543,
+      "product": "Payday loan",
+      "issue": "Received a loan I didn't apply for",
+      "anchor_excerpt": "This debt is not mine ( Midwest Recovery Systems ) and my identity has been stolen by this company operating under the name of  XXXX   XXXX   XXXX   XXXX   XXXX  at least twice now. The first time I paid them because their phone calls were abusive and threatening ; this was in   XXXX  . In the past years I have had numerous abusive, vulgar and threatening phone calls from this same company. I  have filed 3 Police Reports regarding the phone calls and my most recent stolen identity with this company. I have  also contacted the Attorney General,  XXXX   XXXX  regarding the numerous times this company has threatened me and EXTORTED money from me. In researching this company I found out that Midwest Recovery Systems works with  XXXX   XXXX   XXXX  and  XXXX   XXXX   XXXX  is outlawed in many s",
+      "expected_policy_headings": [
+        "Identity theft and account takeover",
+        "Collection and legal-action threats"
+      ],
+      "retrieved_policy_headings": [
+        "Collection and legal-action threats",
+        "Credit reporting disputes",
+        "Identity theft and account takeover",
+        "Escalation",
+        "Payment and transfer disputes"
+      ],
+      "judged_candidates": [
+        {
+          "complaint_id": 2220210,
+          "issue": "Payment to acct not credited",
+          "excerpt": "Received calls that I had a payday loan. Any loan I ever had was paid in full Asked for written proof of the debt to be mailed to me. They would not. They claimed they had emailed us and sent us letters. Both untrue. We have had same email address for 15 years and same residence for 37 years. Feel the whole thing is a fraud.",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        },
+        {
+          "complaint_id": 1587611,
+          "issue": "Received a loan I didn't apply for",
+          "excerpt": "There is a loan on my credit report for XXXX XXXX and a duplicate for Ad Astra for the same debt. I did not apply for this loan. I have requested documentation to prove that this loan was applied for by me and the debt collection agency gave me a checking account and said the money had been deposited into this account. I have not used the checking account for more than 5 years prior to the date of when the debt collector said I applied for the loan. I attempted to speak with the debt collector and I have on a recorded phone file where the debt collector threatened to have me arrested at my place of employment. The debt collector also told me that they would call my HR department and garnish my wages. On another day, the debt collector called and stated he was a police officer. I made a pol",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        },
+        {
+          "complaint_id": 2301449,
+          "issue": "Can't contact lender",
+          "excerpt": "I have been receiving harassing phone call reguarding filing a law suite against me for a PAYDAY LOAN. EVERY YEAR AROUND THIS TIME I START TO GET PHONE CALL THAT EVENTUALLY STOP. THIS YEAR THE PHONE CALL HAVE STARTED AGAIN AND HAS ESCULATED TO CALLING MY JOB WHICH I ASKED THEM TO NOT CALL MY JOB AND REMOVE MY NUMBER FROM THEIR REGISTER. I received a phone call at home from Compliant management solutions ref # XXXX at XXXX they caught me off guard and I gave them my debit card number to pay {$50.00} and they want to set up payment for XXXX/mo for 6 months. I went to the bank XXXX/XXXX/XXXX and cancelled that bank card because I realized that they were trying to scam me and I never took out a payday loan but once in XXXX for {$300.00} that I paid {$550.00} on XXXX XXXX XXXX to the attention ",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        },
+        {
+          "complaint_id": 2197620,
+          "issue": "Received a loan I didn't apply for",
+          "excerpt": "Yesterday, I checked my credit score with Experian and noticed a company, XXXX XXXX XXXX, had been added. I confirmed that it had been added to all XXXX reporting agencies. I am assuming this has to do with payday loans I have had in the past. I can confirm that every XXXX of those loans were paid back in full. \nMy credit score has taken a tumble because of this and I need this company to remove their inquiry from my report as soon as possible.",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        },
+        {
+          "complaint_id": 2316376,
+          "issue": "Can't contact lender",
+          "excerpt": "I was contacted by a collection agency on a pay day loan. A man named XXXX said I owed on a pay day loan and he was a mediator hired to resolve the debt before charges were filed against me for check fraud. I asked for verification to be sent to me he said all he could do was email me his information. He would email and I needed to call back by XXXX the next day. I explained I needed more information. I received an email with no information on the company I owed the debt to only that it was from XX/XX/2010. I researched the number on line and found numerous complaint so I did not call back. The next day my husband started receiving phone calls threatening criminal charges against me for check fruad. He told XXXX he knew nothing about the debt and he would give me the message. I then receiv",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        }
+      ]
+    },
+    {
+      "anchor_id": 1521946,
+      "product": "Consumer Loan",
+      "issue": "Payment to acct not credited",
+      "anchor_excerpt": "Long story, short ; I originally took out loan from XXXX XXXX XXXX. Secured by auto title. Original loan for around $ XXXX. Made ALL payments on-time. With around $ XXXX left on loan balance received a letter from Green Tree Servicing that they now owned loan. Agreed to continue payments as long as they sent proof they actually had loan. Could not contact anyone from XXXX XXXX XXXX to verify. Made a few more payments but never received any proof of loan by Green Tree. Stop payments. They started harassment campaign. I sent Cease & Desist notification. The reported my loan as \" charged off '' and farmed off loan to XXXX XXXX XXXX and they immediately sent proof of loan and paid {$950.00} to resolve matter and they reported as paid in full to all credit reporting service. And sent me back ca",
+      "expected_policy_headings": [
+        "Payment and transfer disputes",
+        "Evidence checklist"
+      ],
+      "retrieved_policy_headings": [
+        "Collection and legal-action threats",
+        "Credit reporting disputes",
+        "Triage",
+        "Foreclosure and housing risk",
+        "Payment and transfer disputes"
+      ],
+      "judged_candidates": [
+        {
+          "complaint_id": 1873124,
+          "issue": "Payment to acct not credited",
+          "excerpt": "I dealt with the general manager regarding a loan of {$800.00} and my car as collateral. My account was past due and I had been unable to make payments. He gave me to choices to resolve the issue : either pay payments on the debt or let them pick up the car. I was only going to let them take the car if it fulfilled my debt obligation to them and the account was closed. XXXX XXXX assured me that was going to happen. What he did not tell me, was that the account had already been charged off and there was no collection agency ... the account was already closed. He deceived me into giving up the car instead of making payments. After all, how could he accept payments on a closed. 2 months ago a girl called me from Instaloans informing me they sold the car and I still had a balance. I said that ",
+          "relevance_grade": 2,
+          "reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+        },
+        {
+          "complaint_id": 1378654,
+          "issue": "Can't stop charges to bank account",
+          "excerpt": "I took out a loan from Check Smart/Buckeye Title in XXXX Arizona, well over a year ago if not maybe two.The loan was for {$500.00}. Every month I have went to pay my loan payment in person with cash.I always paid the minume or more. When i made my last payment XXXX XXXX, I noticed the reciet said that I still owed {$690.00}. I refused to make a payment on XXXX XXXX, because i feel this loan is paid in full and then some. Probably paid at least XXXX if not maybe XXXX times over. This morning i received a message from XXXX bank that my account is over drawn! Check Smart got into my bank account and drained it to now it 's over drawn! I have contacted XXXX to get this stopped. The bank is working on it, but i have NO money until this get 's resolved. This loan would NEVER get paid off with th",
+          "relevance_grade": 1,
+          "reason": "Same product or workflow context, but only partially relevant to the core problem."
+        },
+        {
+          "complaint_id": 1964664,
+          "issue": "Lender sold the property",
+          "excerpt": "The original loan was for a motorcycle in which, I co-signed for my daughter 's then college boyfriend who we felt needed some help. The bank has now changed several names and different ownership. National City Bank is no longer and back in the XXXX 's not much done electronically, I had a payment booklet and the loan was paid off. At the time I never received a former letter or the title to motorcycle since the bank became defunct. Therefore this new company XXXX XXXX XXXX XXXX XXXX, XXXX XXXX XXXX, XXXX XXXX, IL XXXX, XXXX bought these defunct pay loans for pennies on the dollar trying to collect on bad/ written off or closed loans. I was contacted in XXXX 2015 stating I owed thousands of dollars from this company. Needless to say I was strong armed into thinking I did and I agreed to mu",
+          "relevance_grade": 1,
+          "reason": "Same product or workflow context, but only partially relevant to the core problem."
+        },
+        {
+          "complaint_id": 1520770,
+          "issue": "Can't contact lender",
+          "excerpt": "I financed a XXXX from a dealer in XXXX, XXXX in XXXX, I was making payments to them every XXXX weeks, in XXXX I went in to make a payment and they told me that they had given the loan to another company and that the company would be in touch with me. I received a call from a company called XXXX XXXX in XXXX XXXX, CA, they said they were the new finance company, and I should start making payments to them, which I did. After making payments, I asked about the title and they said they would send it to me, but, I never got it. I moved back to XXXX State in XXXX, I was still making payments, then one day I went to make my payment and I was locked out of my account, I contacted them and they said they had changed and to use XXXX at XXXX. I was making payments that way, but something did n't fee",
+          "relevance_grade": 2,
+          "reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+        },
+        {
+          "complaint_id": 2445134,
+          "issue": "Lender repossessed or sold the vehicle",
+          "excerpt": "I took out a title loan on  XXXX / XXXX /  XXXX   with a company cal led Time Finance  located in  XXXX , NC. I ran into some financial hardships after completing  XXXX   XXXX   XXXX  , and was unable to find employment. As expected the company repossessed my vehicle. I have learned recently that they sold the vehicle at auction. When the loan was taken out they assigned a value to my vehicle that was more than the loan itself. With the repossession, I did n't fight it knowing that there was a balance owed that I was unsure would be paid. I assumed that the loan company could more than recoup its losses with the sale of the vehicle. I was not contacted to be notified of the sale, nor was there correspondence of the vehicle being repossessed. I just came out to find it gone. Later the agenc",
+          "relevance_grade": 2,
+          "reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+        }
+      ]
+    },
+    {
+      "anchor_id": 24157536,
+      "product": "Payday loan, title loan, personal loan, or advance loan",
+      "issue": "Vehicle was repossessed or sold the vehicle",
+      "anchor_excerpt": "I bought a XXXX XXXX XXXX from XXXX XXXX XXXX on XX/XX/XXXX I paid XXXX for the car. On XX/XX/XXXX I woke up to my car being gone. Once I found out my car was towed by title max I advised them I have a signed bill of sale and would like to know if I could pay off what ever balance XXXX owed them. I was advised only XXXX could get that info.. I respect that however my work equipment and my wallet is in the car!! I asked can I ve told where the car is so I can get my belongings because those are mine or really the state because im a state employee i was told no. However they told me they would auction the car in ten days if XXXX doesn't get the vehicle. I have a signed bill of sale my personal belongings are in there im entitled to get my belongings.",
+      "expected_policy_headings": [
+        "Escalation",
+        "Evidence checklist"
+      ],
+      "retrieved_policy_headings": [
+        "Collection and legal-action threats",
+        "Foreclosure and housing risk",
+        "Escalation",
+        "Credit reporting disputes",
+        "Triage"
+      ],
+      "judged_candidates": [
+        {
+          "complaint_id": 23806162,
+          "issue": "Problem with the payoff process at the end of the loan",
+          "excerpt": "From XX/XX/year> - present I have contacted the local Title Max and their corporate office to sign the letter and send the documents to my insurance company that they need to issue the payout. They have consistently given me information that is false. They claim to have emailed the documents but refused to verify the email to where they were sent. They claimed to have sent to the wrong email address and have yet to correct it. I am so disillusioned with this company and my balance continues to rise as this is going on. It is preventing me from receiving my payout from the insurance company to get another vehicle. ( The car was totaled. ) They have it in their power to handle this quickly and they continue to not care. It is criminal. My family is hurting because of this.",
+          "relevance_grade": 2,
+          "reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+        },
+        {
+          "complaint_id": 23912111,
+          "issue": "Loan payment wasn't credited to your account",
+          "excerpt": "On XX/XX/XXXX I have called my local TitleMax office to obtain the amount needed for a renewal on my account before I go into the store. I was informed at that time of the amount and that the TitleMax headquarters has added an additional amount of {$210.00} to my account for a bank reversal they claim happened in XX/XX/XXXX. I was informed by the store manager that I have to pay both amounts or my car will be repossessed and she can not just take my current loan amount to renew. I have renewed on line and that account is current. I was told by the store manager since she didnt have any information on that reversal to contact headquarters. I was on the phone for hours and finally was able to file a complaint with TitleMax resolution department ticket # XXXX and asked for proof of the debt I",
+          "relevance_grade": 2,
+          "reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+        },
+        {
+          "complaint_id": 24014558,
+          "issue": "Was approved for a loan, but didn't receive money",
+          "excerpt": "I applied for a loan at TitleMax. The loan officer stole my debit card number and paid her personal bills and the payments started before I even left the office. She used my card for a total of {$2300.00}. I was also informed that this was not the first time it has happened. I don't know if they meant just with that employee or throughout the company. It caused me emotional distress, instead of being able to pay what I needed I fell behind and still continue to struggle due to late fees. I did file police report, complaint with company, disputed transactions with bank and it was a struggle to get my money. I don't know the outcome of this loan officer. I did pursue to file charges but have not received any word from police department.",
+          "relevance_grade": 0,
+          "reason": "Different underlying consumer problem or operational resolution path."
+        },
+        {
+          "complaint_id": 24022075,
+          "issue": "Struggling to pay your loan",
+          "excerpt": "I borrowed {$4000.00} over a year ago and have paid back more than that and still owe over {$5000.00}. I cant get out of a hole and its ridiculous. Im going to lose my car to Titlemax because they keep making my debt so big I cant pay it. I dont know what to do.",
+          "relevance_grade": 2,
+          "reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+        },
+        {
+          "complaint_id": 24163288,
+          "issue": "Was approved for a loan, but didn't receive the money",
+          "excerpt": "XXXX XXXX loan number XXXX date XX/XX/year>XXXX One Main Financial approved a direct pay off to loan prior lien holder XXXX XXXX to secure my vehicle as collateral.XXXX failed to deliver there funds to merchant causing repossession of my car. I could have gone another route to avoid this but they financed a loan using my car as calateral. I be leave my front wheel alignment is damaged from the repo tow truck dragging it opposite of the locked wheel.If I didn't suffer from a breach contract my car would not have a repossession and storage fees. I will like to cancel my calateral part of the loan. I do not have the car do to XXXX neglect to contact XXXX XXXX and inform them to of direct payment.",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        }
+      ]
+    },
+    {
+      "anchor_id": 24169924,
+      "product": "Payday loan, title loan, personal loan, or advance loan",
+      "issue": "Received a loan you didn't apply for",
+      "anchor_excerpt": "To Whom It XXXX Concern, I am filing a formal complaint against Check Into Cash for engaging in unlawful, deceptive, and abusive financial practices under the California Consumer Financial Protection Law ( CCFPL ). The company executed a deliberate \" bait-and-switch '' scheme, opened an unauthorized financial product in my name without my consent, XXXX withheld mandatory legal disclosures. Details of the XXXX : On XX/XX/XXXX, I went online XXXX do a simple payday loan through Check into Cash XXXX filled out online application. Within minutes of me starting the application online I received a call from check into cash, XXXX store for me XXXX go XXXX their store XXXX complete the process. I went XXXX the Check Into Cash physical store location in XXXX, Ca with the explicit intention of obtai",
+      "expected_policy_headings": [
+        "Identity theft and account takeover",
+        "Escalation"
+      ],
+      "retrieved_policy_headings": [
+        "Credit reporting disputes",
+        "Identity theft and account takeover",
+        "Escalation",
+        "Collection and legal-action threats",
+        "Purpose and scope"
+      ],
+      "judged_candidates": [
+        {
+          "complaint_id": 23771684,
+          "issue": "Problem with additional add-on products or services",
+          "excerpt": "I signed up for job recruiting services at XXXX XX/XX/year>. They charged {$2900.00}, which I financed through the service they recommended, XXXX This obigated me to provide my debit card for monthly withdrawls of {$130.00} for XXXX years. Within a few weeks, it became apparent that XXXX did not plan to provide the services they promised. These included XXXX-weekly meetings, career and resume coaching, and job search coaching. They advertized a guarantee, which their representative reiterated on the phone call, that if they did not find an acceptable job, or I did not land a job found by XXXX in the span of XXXX months, then the fee would be refunded minus {$500.00}. After a couple of weeks of signing up, they stopped communication for XXXX weeks. XX/XX/XXXX I spoke to someone perporting t",
+          "relevance_grade": 1,
+          "reason": "Same product or workflow context, but only partially relevant to the core problem."
+        },
+        {
+          "complaint_id": 24204230,
+          "issue": "Charged fees or interest you didn't expect",
+          "excerpt": "I am filing this federal consumer complaint against my XXXX XXXX provider regarding predatory loan structuring, deceptive trade practices, and the intentional omission of mandatory Truth in Lending Act ( TILA ) financial disclosures.Originally, a XXXX setup was financed on my property through XXXX under the partner installer XXXX XXXX. A subsequent XXXX company, XXXX, targeted me under the claim that they had assumed the previous client base and discovered that XXXX XXXX severely misengineered my original system, causing a drastic power underperformance. XXXX used this structural failure to pressure me into an overlapping, second XXXX contract and loan through Dividend to correct the defective engineering. Both XXXX and the financing companies have explicitly and repeatedly refused to prov",
+          "relevance_grade": 1,
+          "reason": "Same product or workflow context, but only partially relevant to the core problem."
+        },
+        {
+          "complaint_id": 23999246,
+          "issue": "Getting the loan",
+          "excerpt": "GoodLeap, LLC partnered with retail vendor XXXX XXXX XXXX to finance a residential solar system under predatory and fraudulent circumstances. The sales representative targeted my home just XXXX months after I moved in during late summer XXXX, deliberately lacking the XXXX historical utility baseline required to properly size a solar system. To secure a massive long-term consumer credit contract, the agent manufactured fraudulent savings metrics in a personal notebook to leave no paper trail, explicitly promising that the system would entirely eliminate my electricity bill and leave me with only the basic utility hookup fee. Additionally, the agent committed active tax credit misrepresentation, falsely guaranteeing that the XXXX % federal XXXX XXXXt would arrive as a liquid cash-back refund",
+          "relevance_grade": 2,
+          "reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+        },
+        {
+          "complaint_id": 23801094,
+          "issue": "Received a loan you didn't apply for",
+          "excerpt": "I am submitting this complaint because Camino Financial Inc. continues to maintain and report a loan that I never applied for, never authorized, and never signed. This account is specifically identified in my FTC Identity Theft Report ( FTC Report No. XXXX ) as the result of identity theft. I previously disputed this matter and provided my FTC Identity Theft Report ; however, Camino Financial has failed to provide any competent documentary evidence establishing that I opened or authorized this loan. The company has not produced the original signed loan agreement, the original loan application, any co-signer agreement, identity verification documents, complete account statements, or the complete payment history. If Camino Financial maintains that this loan belongs to me, it must provide the",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        },
+        {
+          "complaint_id": 23954484,
+          "issue": "Problem with the payoff process at the end of the loan",
+          "excerpt": "I took out an installment loan of {$200.00} from this online lender on XX/XX/year>, disbursed to my bank account. The loan carried a disclosed APR of XXXX percent. I made scheduled payments of {$53.00} that cleared my bank on XX/XX/year> and XX/XX/year>, matching the payment schedule in the loan agreement. On XX/XX/year> I called to pay the loan off in full. The representative asked me to provide my full bank account information and my debit card PIN so he could process the payoff on his end. I declined, as no legitimate lender needs a customer 's debit card PIN to process a payment. On XX/XX/year> I paid the disclosed payoff amount of {$210.00} by debit card. My bank confirms this transaction posted on XX/XX/year> and was never reversed or returned. Including the XXXX scheduled payments, ",
+          "relevance_grade": 0,
+          "reason": "Different underlying consumer problem or operational resolution path."
+        }
+      ]
+    },
+    {
+      "anchor_id": 23958778,
+      "product": "Payday loan, title loan, personal loan, or advance loan",
+      "issue": "Improper use of your report",
+      "anchor_excerpt": "Somebody I don't know is repeating using my social security number to take out multiple loans in my name and withdrawing the money. I called all these companies below and they did nothing to remove this from my credit report. Here are all the credit bureaus that's on my credit report I called XXXX Capital one XXXX XXXX Capital one XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX THEY REQUESTED AN INQUIRY ON XX/XX/XXXX XXXX CREDIT BUREAU THEY USED XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX CREDIT BUREAU XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX CAPITAL ONE XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XX",
+      "expected_policy_headings": [
+        "Identity theft and account takeover",
+        "Credit reporting disputes"
+      ],
+      "retrieved_policy_headings": [
+        "Triage",
+        "Credit reporting disputes",
+        "Privacy and redaction",
+        "Escalation",
+        "Identity theft and account takeover"
+      ],
+      "judged_candidates": [
+        {
+          "complaint_id": 23944227,
+          "issue": "Incorrect information on your report",
+          "excerpt": "I am filing this complaint against XXXX Personal Loans for refusing to remove an inaccurate late payment from my credit report that resulted from their own administrative error. Prior to my final loan payment due date, I proactively contacted XXXX by phone and requested a two-day extension on my final payment of {$1100.00}. A XXXX representative verbally agreed to this extension. However, after the two-day period elapsed, XXXX failed to properly reinstate my account. I was never notified of this failure. XXXX had my phone number on file and did not contact me. I did not receive any notification whatsoever until approximately XXXX months later when I received an email stating that my payment had been missed. At no point during those XXXX months did XXXX attempt to contact me to resolve the ",
+          "relevance_grade": 1,
+          "reason": "Same product or workflow context, but only partially relevant to the core problem."
+        },
+        {
+          "complaint_id": 24710794,
+          "issue": "Getting a credit card",
+          "excerpt": "Business and corporate database XXXX XXXX # and business location XXXX # below XXXXXXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX Federal Trade Commission XXXXXXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXX",
+          "relevance_grade": 0,
+          "reason": "Different underlying consumer problem or operational resolution path."
+        },
+        {
+          "complaint_id": 24435648,
+          "issue": "Attempts to collect debt not owed",
+          "excerpt": "XXXXTo Whom It May Concern,I am writing to formally dispute numerous fraudulent accounts, collection accounts, hard inquiries, addresses, telephone numbers, and other identifying information currently appearing on my XXXX credit report.I am a victim of identity theft. I did not authorize these accounts or inquiries, did not receive any benefit from these accounts, and I dispute any claim that I am financially responsible for them. I also submitted an identity theft report to identity theft .gov XXXXMy FTC report reference number is : XXXXPursuant to the Fair Credit Reporting Act, including 15 U.S.C. 1681i and 1681c-2, I request that XXXX immediately conduct an investigation and permanently block or delete all fraudulent information from my consumer report.Because these accounts resulted fr",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        },
+        {
+          "complaint_id": 23807920,
+          "issue": "Problem with a lender or other company charging your account",
+          "excerpt": "I am submitting this complaint regarding Golden 1 Credit Union 's handling of my debit card fraud claim. Between XX/XX/year> to XX/XX/year>, unauthorized debit card transactions totaling {$5500.00} occurred on my checking account ( {$1500.00} in point-of-sale purchases and {$4000.00} in ATM cash withdrawals. ) I discovered the unauthorized transactions on XX/XX/year> and reported them to Golden 1 immediately. Golden 1 opened XXXX cases. XXXX for the Point-of-Sale transactions and another for the ATM Withdrawals. I have consistently maintained that I did not authorize these transactions and that my debit card remained in my possession throughout the relevant time period. Golden XXXX issued provisional credit during its investigation but not immediately ; and it is my understanding that the ",
+          "relevance_grade": 1,
+          "reason": "Same product or workflow context, but only partially relevant to the core problem."
+        },
+        {
+          "complaint_id": 23989278,
+          "issue": "Fraud or scam",
+          "excerpt": "I was at my office working, a call came in with caller ID from Chase XXXX at XXXX on office phone but I was busy and ignored it. Then another call came in with caller ID from Chase XXXX at XXXX so I answered it. A female representative told me she was from Chase fraud prevention dept. saying she was calling about suspicious activity on our Chase business account and mentioned a couple of charges I was not familiar with. I logged onto our Chase account and did not see any unfamiliar charges. Further she said the charge or charges need to be removed, and said she will help us. Then she told me someone from Chase Fraud Prevention will contact me. Then we hung up. Less then a minute after hanging up, a call came in from XXXX without the \" Chase '' name, so I thought for sure it's Chase, and th",
+          "relevance_grade": 1,
+          "reason": "Same product or workflow context, but only partially relevant to the core problem."
+        }
+      ]
+    },
+    {
+      "anchor_id": 24130634,
+      "product": "Credit reporting or other personal consumer reports",
+      "issue": "Problem with a company's investigation into an existing issue",
+      "anchor_excerpt": "My account was banned on XX/XX/2026 I havent used Cash App since XXXX they wont give me a reason why I submitted a appeal and it got denied but I didnt do anything I rarely use Cash App since im broke all the time so I dont know what suspicious activity is being talked about",
+      "expected_policy_headings": [
+        "Payment and transfer disputes",
+        "Consumer communication"
+      ],
+      "retrieved_policy_headings": [
+        "Credit reporting disputes",
+        "Triage",
+        "Payment and transfer disputes",
+        "Identity theft and account takeover",
+        "Collection and legal-action threats"
+      ],
+      "judged_candidates": [
+        {
+          "complaint_id": 24175840,
+          "issue": "Closing an account",
+          "excerpt": "My Cash App account was closed due XXXX core allegations against Cash App. I was advised by Cash App that my account is deactivated for violating terms of service on XX/XX/year> in which I did not. I filed for an appeal XXXX was denied on XX/XX/year> with no legitimate reason. I believe this decision was made because of the lawsuit that paid out millions of dollars that I did not have any acknowledgment of the reason why. It use my Cash App faithfully XXXX honestly, I never had an issue. Thank you.",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        },
+        {
+          "complaint_id": 24166971,
+          "issue": "Other transaction problem",
+          "excerpt": "Well back in XXXX Cash App used to deduct a lot of money from my banck account in authorized transactions never was given back the bank investigated but never had a answers, my Cash App had a lot of hackers with my personal information never used to recover my account because of it, use to report one time my account got hacked and scammed people and Cash App blamed it on me cause it had my info, recovered my account and still have it till this day but sometime Cash App is awful to used because of the situation I had it was always under warning that I was a scammer and customers used to never like that",
+          "relevance_grade": 2,
+          "reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+        },
+        {
+          "complaint_id": 23981735,
+          "issue": "Problem with a lender or other company charging your account",
+          "excerpt": "Between XX/XX/XXXX and XX/XX/XXXX, fraudulent charges were attempted on every bank card connected to my XXXX XXXX, including my Cash App Card. On XX/XX/XXXX, a total of {$150.00} was withdrawn from my Cash App Card by a merchant listed as \" XXXX Tech Suppor. '' I did not authorize, approve, or make this transaction. So I filed a dispute through Cash App, that was denied and I tried to Appeal that denial and that was denied as well. I havent gotten my money back on that end. This same merchant also attempted to charge the other bank cards linked to my XXXX XXXX during the same time period. None of these transactions were made or authorized by me. I have attached supporting documentation, including proof of the unauthorized Cash App transaction and evidence of the attempted or unauthorized t",
+          "relevance_grade": 2,
+          "reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+        },
+        {
+          "complaint_id": 24174905,
+          "issue": "Managing an account",
+          "excerpt": "my cash app account was comprised and a payment of XXXX dollars was sent to someone and I didn't approve of the transaction. on XX/XX/year>. cash app denied my dispute. after I made them aware that this was not a legal transaction I made",
+          "relevance_grade": 2,
+          "reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+        },
+        {
+          "complaint_id": 23791563,
+          "issue": "Closing an account",
+          "excerpt": "On XX/XX/XXXX, I received a notification stating that my Cash App account was closed due to alleged \" fraudulent activity. '' I immediately contacted customer support to dispute this claim and requested specific reasons and documentation regarding the alleged fraud. Instead of providing this information, Cash App sent a follow-up email asking about my account usage. I clarified that the account was used strictly for standard personal expenses, including paying bills, buying groceries, and receiving funds from family and friends. Cash App subsequently stated they reviewed the account, maintained their classification of the activity as fraudulent, and confirmed the account would remain permanently closed. I once again requested the evidence or proof supporting this decision. As of XX/XX/year",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        }
+      ]
+    },
+    {
+      "anchor_id": 1567144,
+      "product": "Credit card",
+      "issue": "Forbearance / Workout plans",
+      "anchor_excerpt": "I lost my job back on XXXX XXXX, 2015 and then on XXXX XXXX my wife and I had a baby. Knowing that we are in serious financial trouble I called one of my credit card holders, Wells Fargo, who holds my XXXX XXXX Credit Card ( Account : XXXX ) and tried to set up some type of plan to continue paying on my account, but with a lesser payment amount. I spoke to the CSR who was willing to try to help me, she kept going back and forth between her supervisor and I and eventually came back and said there is nothing she could do. I asked to speak to her supervisor and she transferred me. I then spoke with XXXX of collections and explained my financial hardship to him and he said there was nothing he could do. I just find it very upsetting that we are trying to do the right thing and make payment arr",
+      "expected_policy_headings": [
+        "Escalation",
+        "Recommended actions"
+      ],
+      "retrieved_policy_headings": [
+        "Foreclosure and housing risk",
+        "Escalation",
+        "Collection and legal-action threats",
+        "Access to essential funds",
+        "Triage"
+      ],
+      "judged_candidates": [
+        {
+          "complaint_id": 2115309,
+          "issue": "Customer service / Customer relations",
+          "excerpt": "I lost my job and was trying to find a way to work with my bank considering my line of credit. I told them I had trouble paying the minimum payment. They told me they could n't help me if my account was current, and that in order to get help, I need to owe a payment. So I did that, and then they told me I could n't qualify to get a loan or to get help because I had a delinquency. Now I am stuck, and I still can not afford the payment. I have complained to customer service, and even went into a branch where the representative was given the run around by their own customer service. I was then told in so many words that I ca n't get help until I get out of a \" dead end job ''. As if I have n't tried! Then this same institution gave me an overdraft fee the same week that their exec got a ton o",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        },
+        {
+          "complaint_id": 24392825,
+          "issue": "Problem when making payments",
+          "excerpt": "I am filing a formal consumer complaint against Wells Fargo regarding their institutional failure to provide reasonable consumer hardship assistance programs for students, as well as structural policies that place unfair burdens on vulnerable consumers. On Friday, XX/XX/year>, I proactively contacted Wells Fargo credit card customer service to report a temporary financial transition. I transparently informed the representative that I am returning to higher education as a full-time student and currently have an immediate personal income of {$0.00}. I explained that I have a pending state unemployment claim, but because it has not yet been processed or approved, my future income remains unconfirmed. I asked if Wells Fargo offered any student hardship programs, short-term forbearance options,",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        },
+        {
+          "complaint_id": 23900395,
+          "issue": "Struggling to pay your bill",
+          "excerpt": "I am requesting assistance regarding a recent credit limit reduction by Wells Fargo on my Wells Fargo XXXX XXXX credit card. Without warning, Wells Fargo reduced my credit limit by {$10000.00}. As a result, my credit utilization increased dramatically, causing my credit score to drop by approximately XXXX points. I have made multiple attempts to resolve this directly with Wells Fargo by calling customer service. Each call has involved long wait times, and I have been told there are no options available and that my account is not eligible for assistance. I have been unable to obtain a meaningful review of the decision or any alternative solutions. My promotional 0 % APR expires on XX/XX/year>. The reduction in my credit score has significantly limited my ability to refinance or transfer the",
+          "relevance_grade": 1,
+          "reason": "Same product or workflow context, but only partially relevant to the core problem."
+        },
+        {
+          "complaint_id": 24226818,
+          "issue": "Trouble using your card",
+          "excerpt": "I have been an XXXX XXXX customer in good standing of Wells Fargo since XXXX. I have had my credit card account with them since XXXX. I even had an auto loan with them that I paid off in XXXX. I have remained a Wells Fargo customer while relocating to 3 different states : XXXX, XXXX and now XXXX XXXX In XX/XX/XXXX, Wells Fargo decreased my credit limit from {$7500.00} to {$4900.00}. At that time I had not asked for a credit reevaluation. In fact, I was paying off a 0 % balance transfer with Wells Fargo. My monthly minimum payment to them was {$47.00} per month I paid them {$100.00} each month. I have since paid it off. This credit limit change negatively impacted my XXXX score by 19 %. While this was going on XXXX, XXXXXXXX XXXX XXXX XXXX and XXXX ( other credit cards that I hold ) were ei",
+          "relevance_grade": 0,
+          "reason": "Different underlying consumer problem or operational resolution path."
+        },
+        {
+          "complaint_id": 2360969,
+          "issue": "Payoff process",
+          "excerpt": "Account ( -XXXX ) was paid in full on XX/XX/2017. This account was a 0 % interest until XX/XX/<YYYY> On XX/XX/2017 account was closed and balance was transferred to another account ( XXXX ). Because if this I am being charged {$2800.00} in interest that was deferred and a {$27.00} late fee for non payment on this new account ( XXXX ). \nI was never informed that they were going to transfer this balance to another account. \nTried to contact by phone and after 30 minutes on hold I gave up for now.",
+          "relevance_grade": 1,
+          "reason": "Same product or workflow context, but only partially relevant to the core problem."
+        }
+      ]
+    },
+    {
+      "anchor_id": 23780683,
+      "product": "Vehicle loan or lease",
+      "issue": "Unable to get your credit report or credit score",
+      "anchor_excerpt": "I purchased a vehicle from XXXX XXXX XXXX XXXX XXXX for my XXXX XXXX XX/XX/year>. {$33000.00} credit was extended to my XXXX XXXX XXXX XXXX with myself as the personal guarantor ( because my company was less than XXXX years old ) at a much higher interest rate than a personal auto loan rate. I have made on time payments ( via XXXX XXXX ) since then. My last payment will be this XXXX. The dealer and XXXX XXXX told me I would be creating credit history for my company so that one day my company can buy equipment on it's own. It's been 6 years ( and a higher 'business ' interest rate ). Today, I tried to buy a new car at a dealer for my company and that dealer told me that my company, using my company 's XXXX has NO credit history at all. I feel taken advantage of by both the dealer 's finance",
+      "expected_policy_headings": [
+        "Credit reporting disputes"
+      ],
+      "retrieved_policy_headings": [
+        "Credit reporting disputes",
+        "Triage",
+        "Collection and legal-action threats",
+        "Consumer communication",
+        "Identity theft and account takeover"
+      ],
+      "judged_candidates": [
+        {
+          "complaint_id": 2557184,
+          "issue": "Unable to get your credit report or credit score",
+          "excerpt": "It would appear that my son and I are victims of a predatory loan.\r\nI co-signed a car loan 2 yrs ago for my son. The car was purchased through a local dealership ( XXXX XXXX ) and according to them, my son needed a co-signer due to an insufficient XXXX XXXX. Nothing unusual there. However, when the loan was processed through Chrysler Capital, even though it was a co-signed loan, my name is the only one on the account. I believe this was done purposely for two reasons : it allowed them to NOT report the payments in my son 's credit report which would have increased his XXXX XXXX ; and by preventing this increase, facilitated \" locking '' him ( indentured ) into the higher interest for the duration of the loan. I also believe these companies are working together to create this type of situat",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        },
+        {
+          "complaint_id": 24161439,
+          "issue": "Improper use of your report",
+          "excerpt": "The reporting company furnished my information without my consent. Subsequently, I have been contacted by 3rd parties claiming to represent the creditor. I entered in an agreement with 1 of the 3rd parties later to find, there was no affiliate connection. My information was furnished and that information hurt my financial standing.",
+          "relevance_grade": 2,
+          "reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+        },
+        {
+          "complaint_id": 23924730,
+          "issue": "Getting a loan or lease",
+          "excerpt": "I applied for car loan from XXXX, XXXX XXXX and XXXX denied without giving reason. Recently, I dispute and XXXX XXXX give option that it will offer through the third party with high rate interest and short term. I tried with Santander with the information of XXXX source discretely support me and let me know. The answer is attached in file. I think that the error is coming from XXXX XXXX, I accepted and waited for them to fix for me for. a long time but I can not do it anymore. Because the mistake was made by itself, not me. 15 years ago, when I started opening checking account, I was an international student legal status and issued a XXXX - homeland social security numbers, I came to XXXX XXXX and they offer me a fake social security numbers for opening checking account, I suggested that w",
+          "relevance_grade": 2,
+          "reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+        },
+        {
+          "complaint_id": 23949467,
+          "issue": "Getting a loan or lease",
+          "excerpt": "Santander Consumer USA is reporting an auto loan on my XXXX XXXX XXXX credit reports that does not belong to me. XXXX has already removed and blocked this account after completing their investigation, confirming that the account was fraudulent. Despite this, XXXX XXXX XXXX continue to update and report the same account, even though I have never had any account, loan, or contract with Santander Consumer USA.",
+          "relevance_grade": 2,
+          "reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+        },
+        {
+          "complaint_id": 24166004,
+          "issue": "Managing the loan or lease",
+          "excerpt": "I purchased this XXXX XXXX XXXX XXXX XXXX XXXX from the dealership XXXX XXXX XX/XX/year> which is no longer in the business. They also sold me additional in-house. Dealership warranty that they can no longer honor more importantly, they sold me the vehicle under fraud and misrepresentation of the vehicle 's condition, resulting in the vehicle being a total loss with the new dealership that purchased them.",
+          "relevance_grade": 0,
+          "reason": "Different underlying consumer problem or operational resolution path."
+        }
+      ]
+    },
+    {
+      "anchor_id": 1658227,
+      "product": "Mortgage",
+      "issue": "Application, originator, mortgage broker",
+      "anchor_excerpt": "I am currently involved in a construction loan with First Guaranty Mortgage Corporation. This is an FHA construction to permanent loan that was approved at the beginning of 2015. I initially had a good faith estimate done and agreed to the terms. During the process the company changed my amounts and interest rate from what was quoted me stating that my paperwork I signed was out of date. They proceeded to increase my rate along with requiring more of a down payment. During this time I started building the home grading and such to keep my progress moving forward so I incurred costs that were built into my loan for reimbursement. I submitted these to FGMC as the actual line items on my loan from the budget we created. I was told that these will be prepaid payments and not reimbursable. These",
+      "expected_policy_headings": [
+        "Evidence checklist",
+        "Consumer communication"
+      ],
+      "retrieved_policy_headings": [
+        "Foreclosure and housing risk",
+        "Escalation",
+        "Credit reporting disputes",
+        "Triage",
+        "Consumer communication"
+      ],
+      "judged_candidates": [
+        {
+          "complaint_id": 24176938,
+          "issue": "Trouble during payment process",
+          "excerpt": "In early XX/XX/year> I noticed that my mortgage payment through Freedom Mortgage had increased by almost {$600.00} a month. I currently pay my mortgage every XXXX weeks on time for over a year and a half. I asked for my taxes and insurance. When I called the mortgage company they told me that my insurance had doubled I immediately called and canceled the policy and secured a new policy at the old rate. I was told in a new XXXX girl statement would be issued and the payment would drop back down. This never happened. I was also contacted by a sales rep saying that I should do the FHA streamline which would lower my interest rate from over XXXX to XXXX %. I agreed and started the process unfortunately during the process it was stated that I had an escrow shortage which did not sense since I w",
+          "relevance_grade": 1,
+          "reason": "Same product or workflow context, but only partially relevant to the core problem."
+        },
+        {
+          "complaint_id": 2278633,
+          "issue": "Application, originator, mortgage broker",
+          "excerpt": "My mortgage company never disclosed to me how much equity was in home. I refinanced for a lower interest rate to XXXX in XX/XX/XXXX. I was never told the amount that I could receive for refinancing no paper. So now I went to refinance for a cash out in XX/XX/XXXX to consolidate all my debt into XXXX and was told that have gaps in my employment. Not to mention I called to verify if all of my documents was received and then I got the bad news. \nI am currently with the same mortgage company presently and they sent me a letter stating that I withdrew my application which was false. My current mortgage balance is XXXX and my current market value is XXXX plus. My mortgage company valued my house at XXXX in XX/XX/XXXX. Now it is valued at XXXX my loan application with them in XX/XX/XXXX. So I nev",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        },
+        {
+          "complaint_id": 1655610,
+          "issue": "Application, originator, mortgage broker",
+          "excerpt": "We feel that due to the lack of integrity of our loan officers and their team we were forced to pay {$1800.00} in extra costs associated with securing our mortgage from Pacific American Mortgage DBA XXXX Home Loans. We were told that they were familiar with HUD FHA XXXX Streamlined Loans. When in fact they were not. They were not honest with us on more than XXXX occasion. Due to this dishonesty our closing was extended twice which forced us to change plans twice, i.e. extend our obligations. Specifically, we were forced to find an alternate location for belongings to include our XXXX XXXX pull trailer and XXXX XXXX XXXX ( rented storage at XXXX ), pay rent for one and a half extra months at XXXX XXXX at XXXX Apartments with all utilities and insurance, also due to being forced to reside in",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        },
+        {
+          "complaint_id": 1924643,
+          "issue": "Application, originator, mortgage broker",
+          "excerpt": "My husband and I looked at American financial for a fha home loan. During the initial process the numbers they quoted us was not what they presented to get us to sign but they had greatly padded the loan and all number were much higher. We went with another lender and informed American financial. The second problem came when they drug their feet on transfer of the fha case number to our new lender and after all this they emailed us a bill for {$500.00} for the appraisal when we paid for our appraisal with our current lender. We never signed a letter of intent with American financial and yet they billed us anyway. We did not sign anybody the documents they tried to get us to sign. when we complained to them and told them we were not paying them any money they told both my husband and I diff",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        },
+        {
+          "complaint_id": 24729432,
+          "issue": "Closing on a mortgage",
+          "excerpt": "I have been working with XXXX XXXX on purchasing a home. We wanted to close quick, so XX/XX/XXXX is the closing days. I have received XXXX initial loan estimates, all with closing costs covered. Yesterday XX/XX/year> I received a phonecall telling me they had misread my contract and that there was no covering of closing fees, leaving me with a XXXX closing fee and if I step away, all of the insurance and stuff I have already covered out of pocket. When I reached out to them to cover some of the fees, I was told in no short matter \" we made a mistake, we quoted you wrong, you still have to pay it. '' They then told us, as we are paying XXXX for the house that suddenly the appraisal is probably going to be XXXX. Seems a bit convenient to me.",
+          "relevance_grade": 2,
+          "reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+        }
+      ]
+    },
+    {
+      "anchor_id": 1835981,
+      "product": "Credit card",
+      "issue": "Closing/Cancelling account",
+      "anchor_excerpt": "During the time my daughter was in college, I opened a credit card in my name with my daughter as a card member. After my daughter finished college several years ago ( she is now XXXX years old ) I allowed my daughter to continue to use the card with the understanding that she was responsible for the charges incurred on it. However, she accumulated a debt balance of more than {$10000.00}. At that point, my husband and I decided to pay the card off and cancel the card. I called the credit card company ( AT & T Universal Card ) and requested that they cancel the card. I also decided to write them a letter requesting that they cancel the card. I did not receive any further communication from them. Last year, 2015, I learned that my daughter was still using the card and I was the primary card ",
+      "expected_policy_headings": [
+        "Standard review",
+        "Identity theft and account takeover"
+      ],
+      "retrieved_policy_headings": [
+        "Credit reporting disputes",
+        "Collection and legal-action threats",
+        "Identity theft and account takeover",
+        "Triage",
+        "Payment and transfer disputes"
+      ],
+      "judged_candidates": [
+        {
+          "complaint_id": 24365350,
+          "issue": "Problem with a purchase shown on your statement",
+          "excerpt": "On XX/XX/year>, I received a suspended letter from Citibank which told me suspicious actions in my card. I called and they told me the problem was solved. I did not receive any bank statement since then. I called the bank and found out I needed to pay about {$3200.00}. I called the operator who is very nice. She helped me to dispute all online purchases. I paid {$170.00}. They issued me a new card. In XXXX, I still did not receive any bank statement, I called and there were over {$3000.00} charged in my account again.I disputed again and they issued me a new card. When I activated the new card, over {$6500.00} charges already on my card.I could not trust them any more, so I asked them to close my account and not send me any card. A few days later, the send me a PIN number for a new card. I",
+          "relevance_grade": 1,
+          "reason": "Same product or workflow context, but only partially relevant to the core problem."
+        },
+        {
+          "complaint_id": 23897042,
+          "issue": "Problem with a purchase shown on your statement",
+          "excerpt": "On XX/XX/year>, I woke up to a text message sent about a XXXX charge for over {$100.00}. I immediately responded XXXX for XXXX and called Citibank. They would only let me discuss XXXX account and had to wait for a letter with a reference code to discuss the second account. I reported fraud, disputed all charges from XX/XX/XXXX to present for I do not actively use these cards and requested this account to be locked. I called on XX/XX/XXXX, XX/XX/XXXX ( with the reference code ), XX/XX/XXXX requesting both cards to be locked and not allow any further charges. After weeks going by and Citibank allowing these charges to continue, I called again on XX/XX/XXXX and demanded that both accounts be closed and dispute all charges from XX/XX/XXXX to present. I spoke to the fraud dept. on XX/XX/XXXX, a",
+          "relevance_grade": 1,
+          "reason": "Same product or workflow context, but only partially relevant to the core problem."
+        },
+        {
+          "complaint_id": 24737413,
+          "issue": "Closing your account",
+          "excerpt": "XXXX took-up Citibank 's credit card responsibility. I was notified of the change in XXXX of XXXX and requested the {$50.00} remaining in my XXXX 's account.be sent to me XXXX XXXXXXXX XXXX transferred the money to Citibank without my authorization.in spite of my request to have the money sent to me. I contacted Citibank and requested that they not issue a credit card to me and to close my account once they sent the money to me. Citibank refused to send the money to me and instead sent me a credit card, I contacted them and told them to not activate the card. I only wanted to receive my {$50.00} sent to them by XXXXXXXX XXXX The card was never activated by me. Instead, I received a bill from Citibank stating that my card fee was was in arrears and I needed to send them an additional {$49.0",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        },
+        {
+          "complaint_id": 23802567,
+          "issue": "Closing your account",
+          "excerpt": "My credit card account is currently locked due to identity verification issues. I strictly followed the bank 's instructions and personally visited a local Citibank branch with my physical government-issued IDs, but the branch staff refused to help me, stating they do not have the system authority to override the credit card division 's lock. I am permanently relocating outside the XXXX XXXX very soon. Consequently, I will no longer have a XXXX residential address or a XXXX phone number, making it absolutely impossible for me to resolve this issue through their standard automated phone system. When I spoke with customer service, I officially requested to close the account to prevent any future financial complications. However, the representatives refused to close the account, claiming that",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        },
+        {
+          "complaint_id": 23816155,
+          "issue": "Closing your account",
+          "excerpt": "This all started back in XXXX when they restricted my account. My account has been in this state ever since and no one, and I mean NO ONE will help me resolve this issue. I paid off this card and had a {$0.00} balance until one of the merchants that I used issued me a refund of {$200.00}. Now I have a balance of - {$200.00} and would like a refund check sent to me in that amount to my address on file OR reverse the refund so that it goes back to the merchant so that I can deal with them directly instead of Citibank. Citibank has NO right to those funds and should not be holding my money hostage. I've contacted them numerous times with no help whatsoever. All I am asking is for them to issued me a refund check and CLOSE my account or REVERSE the refund so that it goes back to the merchant. ",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        }
+      ]
+    },
+    {
+      "anchor_id": 2582629,
+      "product": "Credit reporting, credit repair services, or other personal consumer reports",
+      "issue": "Excessive fees",
+      "anchor_excerpt": "In my understanding how the bill came up to XXXX and something dollars so there 's no way that it should be that amount",
+      "expected_policy_headings": [
+        "Payment and transfer disputes",
+        "Evidence checklist"
+      ],
+      "retrieved_policy_headings": [
+        "Credit reporting disputes",
+        "Collection and legal-action threats",
+        "Triage",
+        "Escalation",
+        "Payment and transfer disputes"
+      ],
+      "judged_candidates": [
+        {
+          "complaint_id": 2840590,
+          "issue": "Excessive fees",
+          "excerpt": "We have tried to contact Experian numerous times to cancel. They claim that you can cancel at any time and when you call in the wait time is 2-4 hours. In the meantime, we keep getting charged XXXX for both me and my wife! Help us please!",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        },
+        {
+          "complaint_id": 2566164,
+          "issue": "Excessive fees",
+          "excerpt": "Hi my name is XXXX XXXX XXXX, # I Got my CLARITY Services Inc, Credit Report for Year Back # there was So much = fraud & Theft, breach Contracts, for a lot of Accounts, I have Loss Financialy at the bottom I will show Amounts and Send Bank Docs by Thursday # The Clarity Services Inc, have Not Done a Good Job, theres so many almost all of report is wrong, fake bank accounts and fake phone numbers, Fake Emails, etc Names Wrong my ID SSN Wrong, this costed me $ $ Financialy Ok $ , I will Send All Paper Docs to you By Email Ok # Plus Bank Statements ok By # TRACKING # will be on Top Right Corner By #",
+          "relevance_grade": 0,
+          "reason": "Different underlying consumer problem or operational resolution path."
+        },
+        {
+          "complaint_id": 2888939,
+          "issue": "Excessive fees",
+          "excerpt": "I have cancelled my membership with Experian in XX/XX/XXXX. They suggested me to switch to basic membership for free and I accepted. Today, XX/XX/XXXX, I learnt that Experian has charged me for XXXX  dollars each month since XX/XX/XXXX. This is the fee that anybody should pay for keeping premium membership. I called them on XXXX. I firstly chose option of \" Cancel '' on automatic service and got an answer of \" you have basic membership for free '', which is correct but contradicted to their monthly charge. Afterwards I called them again using the same number and after 2 hours somebody answered. She told me they have had some technical problems and she is able to return only the last charge as a courtesy while I have been charged for 10 months totally about 270 dollars! She connected me to ",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        },
+        {
+          "complaint_id": 2665614,
+          "issue": "Fraud or scam",
+          "excerpt": "Acct Service {$65.00} Opened XX/XX/XXXXXXXX XXXX  {$3700.00} OpenedXX/XX/XXXX XXXX XXXX XXXX {$1800.00} Opened XX/XX/XXXX XXXX XXXX {$1200.00} OpenedXX/XX/XXXX XXXX XXXX {$250.00} Opened XX/XX/XXXX U.S. Bankruptcy Court Reported on XX/XX/XXXX",
+          "relevance_grade": 0,
+          "reason": "Different underlying consumer problem or operational resolution path."
+        },
+        {
+          "complaint_id": 2756350,
+          "issue": "Problem with customer service",
+          "excerpt": "4 months ago I set up an account with Experian with the goal of paying for a single month for service both myself and my wife. The agreement was to pay XXXX for each account until I cancelled it by phone. After the first month expired I contacted the customer service number numerous times and have failed miserably. I have wasted no less than 10 hours on the phone trying to get to representative to no avail. In the mean time Experian has charged me the XXXX x 2 each month for the past 4 months. I would love to speak to a customer service rep, in order to cancel this fraudulent service and recoup my hard earned monies with the exception of the 1st month for which I have agreed.",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        }
+      ]
+    },
+    {
+      "anchor_id": 23943787,
+      "product": "Debt or credit management",
+      "issue": "Unauthorized withdrawals or charges",
+      "anchor_excerpt": "To Whom It May Concern, I am writing to formally dispute several items that appear on my Experian, Equifax and TransUnion credit report. Pursuant to my rights under the Fair Credit Reporting Act ( FCRA ), 15 U.S.C. 1681i, I am requesting that you conduct a reasonable investigation into the accuracy and completeness of the following accounts. I am requesting that each item be verified directly with the furnisher. If any information can not be fully verified, I respectfully request that it be deleted from my credit file. The accounts I am disputing are : XXXX XXXX XXXX XXXX XXXX XXXX XXXX Reported Balance : {$1800.00} Status : Potentially Negative Collection Accounts I.C. System, Inc. Original Creditor : XXXXXXXX XXXX Reported Balance : {$420.00} XXXX XXXX XXXX XXXX XXXX : XXXX XXXX Reported",
+      "expected_policy_headings": [
+        "Credit reporting disputes"
+      ],
+      "retrieved_policy_headings": [
+        "Credit reporting disputes",
+        "Collection and legal-action threats",
+        "Triage",
+        "Payment and transfer disputes",
+        "Identity theft and account takeover"
+      ],
+      "judged_candidates": [
+        {
+          "complaint_id": 24003192,
+          "issue": "Confusing or misleading advertising or marketing",
+          "excerpt": "I am writing to formally dispute the XXXX XXXX account currently appearing on my credit report. I request that this account be investigated immediately and removed if it can not be verified as accurate and fully compliant with all applicable federal laws. I believe this account has been reported in violation of my rights under the XXXX XXXX XXXX XXXX XXXX XXXX XXXX 15 U.S.C. 1681 et seq., and any other applicable consumer protection laws. I am requesting a complete investigation into the accuracy, completeness, and legal reporting of this account. Additionally, I am aware that XXXX XXXX has been involved in legal actions regarding its business practices. While I understand that ongoing litigation alone does not determine the validity of my account, I request that any reporting related to m",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        },
+        {
+          "complaint_id": 24162335,
+          "issue": "Confusing or misleading advertising or marketing",
+          "excerpt": "I am writing to respectfully request your assistance regarding negative information being reported on my credit reports. I believe there are items that are inaccurate, incomplete, outdated, or can not be properly verified, and I am asking for a thorough investigation into these accounts. I have been working hard to improve my financial situation and rebuild my credit. Unfortunately, the continued reporting of questionable negative items has made that process much more difficult. Under the Fair Credit Reporting Act ( FCRA ), I understand that information reported on my credit file must be accurate, complete, and verifiable. I respectfully request that the Consumer Financial Protection Bureau review my complaint and assist in ensuring that the credit reporting agencies and any furnishers of ",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        },
+        {
+          "complaint_id": 24147243,
+          "issue": "Confusing or missing disclosures",
+          "excerpt": "Experian , XXXX XXXX XXXX violated my rights as a consumer under 15 USC 1681C-2 and I need these inquires blocked and deleted from my credit report within 4 days of receiving this ftc report under fcra law 605b. Remove ; XXXX XXXX account XXXX date ; XXXX XXXX XXXX, Remove inquiries ; XXXXXXXX XXXX date ; XXXX XXXX XXXXXXXX XXXX XXXX XXXX date ; XXXX XXXX XXXX, XXXX date ; XXXX XXXX XXXX, XXXX date ; XXXX XXXX XXXX, XXXX date ; XXXX XXXX XXXX, XXXX XXXX date ; XXXX XXXX XXXX, Remove addresses ; XXXX XXXX XXXX XXXX XXXX, ga XXXX XXXX XXXX XXXX XXXX XXXXXXXX XXXX, fl XXXX, XXXX XXXXXXXX XXXX XXXX, fl XXXX XXXX XXXX XXXX ; account XXXX",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        },
+        {
+          "complaint_id": 23927225,
+          "issue": "Confusing or missing disclosures",
+          "excerpt": "Experian , XXXX, and XXXX have all violated my rights as a consumer under the FCRA 15 USC 605B. I need these items blocked and removed off my report as soon as possible. I am submitting this complaint and documents on my behalf.",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        },
+        {
+          "complaint_id": 23928388,
+          "issue": "Confusing or missing disclosures",
+          "excerpt": "Experian , XXXX, and XXXX have all violated my rights as a consumer under the FCRA 15 USC 605B. I need these items blocked and removed off my report as soon as possible. I am submitting this complaint and documents on my behalf.",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        }
+      ]
+    },
+    {
+      "anchor_id": 2301449,
+      "product": "Payday loan",
+      "issue": "Can't contact lender",
+      "anchor_excerpt": "I have been receiving harassing phone call reguarding filing a law suite against me for a PAYDAY LOAN. EVERY YEAR AROUND THIS TIME I START TO GET PHONE CALL THAT EVENTUALLY STOP. THIS YEAR THE PHONE CALL HAVE STARTED AGAIN AND HAS ESCULATED TO CALLING MY JOB WHICH I ASKED THEM TO NOT CALL MY JOB AND REMOVE MY NUMBER FROM THEIR REGISTER. I received a phone call at home from Compliant management solutions ref # XXXX at XXXX they caught me off guard and I gave them my debit card number to pay {$50.00} and they want to set up payment for XXXX/mo for 6 months. I went to the bank XXXX/XXXX/XXXX and cancelled that bank card because I realized that they were trying to scam me and I never took out a payday loan but once in XXXX for {$300.00} that I paid {$550.00} on XXXX XXXX XXXX to the attention ",
+      "expected_policy_headings": [
+        "Collection and legal-action threats",
+        "Escalation"
+      ],
+      "retrieved_policy_headings": [
+        "Collection and legal-action threats",
+        "Foreclosure and housing risk",
+        "Escalation",
+        "Credit reporting disputes",
+        "Payment and transfer disputes"
+      ],
+      "judged_candidates": [
+        {
+          "complaint_id": 2316376,
+          "issue": "Can't contact lender",
+          "excerpt": "I was contacted by a collection agency on a pay day loan. A man named XXXX said I owed on a pay day loan and he was a mediator hired to resolve the debt before charges were filed against me for check fraud. I asked for verification to be sent to me he said all he could do was email me his information. He would email and I needed to call back by XXXX the next day. I explained I needed more information. I received an email with no information on the company I owed the debt to only that it was from XX/XX/2010. I researched the number on line and found numerous complaint so I did not call back. The next day my husband started receiving phone calls threatening criminal charges against me for check fruad. He told XXXX he knew nothing about the debt and he would give me the message. I then receiv",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        },
+        {
+          "complaint_id": 1532128,
+          "issue": "Payment to acct not credited",
+          "excerpt": "My name is XXXX XXXX XXXX. This issue with a Loan Till Payday account was previously reported to you for collection practices, etc. I had a pay day loan in 2013. At the time, I banked with XXXX XXXX, who advised me that pay day loans are not good, and in the end XXXX closed my bank account, it was involuntary. In the interim, I made payments to the agency. XXXX and XXXX were the primary contacts. On the last payment, due to the fact that I told him I was coming in to pay cash, and they withdrew the funds, electronically, my account was affected. XXXX advised me that the payment made was the last payment and the other ( which was primarily interest remaining ) would be charged off. XXXX later called me and advised that XXXX was not authorized to make that decision and demanded the payment. ",
+          "relevance_grade": 1,
+          "reason": "Same product or workflow context, but only partially relevant to the core problem."
+        },
+        {
+          "complaint_id": 1500322,
+          "issue": "Can't contact lender",
+          "excerpt": "Received a phone call from XXXX stating that I was going to be charged for a civil and a criminal lawsuite from XXXX and Check Into Cash payday loan. I told them I have never had a payday loan from that company and they continued to harass me and I asked for the information date etc and that I would go to my attorney with this and they hung up. \nthe Company is XXXX and the phone number was from Ohio. I went online to check into company and can not locate company I want to file a claim against them. If they can show me proof that I took out a loan with that company I am willing to make a settlement but not until.",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        },
+        {
+          "complaint_id": 1812755,
+          "issue": "Can't contact lender",
+          "excerpt": "Obtained a XXXX from XXXX XXXX that I defaulted on due to medical illness. On XXXX/XXXX/16 I received a call from an unknown Company stating \" they would be coming to my home or place of employment to serve a Court Summons. '' They also stated they were retained by the creditor for collection process. The number referenced for callback is the same number this Male ( he gave no name ) called from. I called the number and no Company info was ever given. A male answered only stating \" This is XXXX ''. I stated reason for my call and after some research XXXX says \" you owe {$410.00} ''. I protested and stated I was aware I owed {$300.00} and I would only pay this amount. XXXX assured me I owed {$410.00} and stated \" Do you have proof that 's all you owe? \". I informed him I had spoken with XXX",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        },
+        {
+          "complaint_id": 2438543,
+          "issue": "Received a loan I didn't apply for",
+          "excerpt": "This debt is not mine ( Midwest Recovery Systems ) and my identity has been stolen by this company operating under the name of  XXXX   XXXX   XXXX   XXXX   XXXX  at least twice now. The first time I paid them because their phone calls were abusive and threatening ; this was in   XXXX  . In the past years I have had numerous abusive, vulgar and threatening phone calls from this same company. I  have filed 3 Police Reports regarding the phone calls and my most recent stolen identity with this company. I have  also contacted the Attorney General,  XXXX   XXXX  regarding the numerous times this company has threatened me and EXTORTED money from me. In researching this company I found out that Midwest Recovery Systems works with  XXXX   XXXX   XXXX  and  XXXX   XXXX   XXXX  is outlawed in many s",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        }
+      ]
+    },
+    {
+      "anchor_id": 2824844,
+      "product": "Payday loan, title loan, or personal loan",
+      "issue": "Was approved for a loan, but didn't receive the money",
+      "anchor_excerpt": "Beginning in XX/XX/XXXX, I started receiving letters from Big Picture Loans that I had borrowed {$1000.00} from them in XX/XX/XXXX and that now I owe them {$1900.00} ( Account # XXXX ). At first, I thought the letter was sent in error and ignored it. However, after receiving more letters they believe I owe them this money. I have never heard of this company and never borrowed any money from them and believe that either 1 ) there has been some type of identity theft or 2 ) that Big Picture is engaging in fraud. In reviewing my credit reports there are no hard credit inquiries from Big Picture Loans associated with my name. However, XXXX reported an unsolicited soft credit inquiry on  XX/XX/XXXX by Big Picture. It is for this reason, that I do not trust working with Big Picture with respect ",
+      "expected_policy_headings": [
+        "Identity theft and account takeover",
+        "Credit reporting disputes"
+      ],
+      "retrieved_policy_headings": [
+        "Credit reporting disputes",
+        "Identity theft and account takeover",
+        "Collection and legal-action threats",
+        "Escalation",
+        "Payment and transfer disputes"
+      ],
+      "judged_candidates": [
+        {
+          "complaint_id": 2866298,
+          "issue": "Problem when making payments",
+          "excerpt": "My final payment was due on this loan on XX/XX/XXXX. Big Picture Loans presented a debit to my bank for less than the amount of the final payment. Then they began calling, emailing and harassing me onXX/XX/XXXX telling me my loan is late and I must call to talk with them. I called and got absolutely nowhere. Their agents barely speak English and just say they can not help you.",
+          "relevance_grade": 0,
+          "reason": "Different underlying consumer problem or operational resolution path."
+        },
+        {
+          "complaint_id": 2806274,
+          "issue": "Was approved for a loan, but didn't receive the money",
+          "excerpt": "I received preapproval offers in the mail from bigpictureloans.com. I was approved for just {$600.00} even though I wanted more, however for the {$600.00} the apr was going to be 677.83 % for 6months. so I would have paid over {$4500.00} over the duration. I thought it was not real so I called them up and they confirmed that apr. I don't think anybody should be allowed to rip off the poor like that, it should be illegal. they need to go out of business.",
+          "relevance_grade": 0,
+          "reason": "Different underlying consumer problem or operational resolution path."
+        },
+        {
+          "complaint_id": 2822879,
+          "issue": "Loan payment wasn't credited to your account",
+          "excerpt": "On XX/XX/XXXX I signed up with big picture loan for a pay day loan for the amount of {$600.00}. I have been making payments of {$140.00} twice a month since XX/XX/XXXX until now. I made around 17-18 payments ; totalling over {$2500.00} ; as of today my balance remain at {$550.00}, only {$46.00} went towards my balance. And that's where my problem are with big picture loan, {$2500.00} all in fees?.",
+          "relevance_grade": 0,
+          "reason": "Different underlying consumer problem or operational resolution path."
+        },
+        {
+          "complaint_id": 2484609,
+          "issue": "Was approved for a loan, but didn't receive the money",
+          "excerpt": "I believe this company to be shandy and as scam. They have said that I 'm both approved and not approved at the same time. They have a lot of back noise going on when they 're on he phone and it sounds like they 're using machines to change their voices.",
+          "relevance_grade": 1,
+          "reason": "Same product or workflow context, but only partially relevant to the core problem."
+        },
+        {
+          "complaint_id": 2713179,
+          "issue": "Received a loan you didn't apply for",
+          "excerpt": "On XX/XX/XXXX, I checked my email and noticed there was an email from XXXX XXXX that an account was past due and it was reported by a company called Cash Central XXXX. This account was fraudulently opened under my name and was on my XXXX XXXX credit report as past due. That same day, I submitted a dispute via XXXX XXXX and the following day I contacted Cash Central XXXX or also known as Community Choice Financial out of XXXX Ohio. I spoke to representative named XXXX or XXXX and she advised me that the account was opened on XX/XX/XXXX in the amount of {$2500.00} and that she will be sending a packet that needs to be filled out and notarized so that the Identity Theft Claim process could commence. I am currently in the process of filling out the packet they emailed. I also notify the XXXX X",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        }
+      ]
+    },
+    {
+      "anchor_id": 23767310,
+      "product": "Money transfer, virtual currency, or money service",
+      "issue": "Managing, opening, or closing your mobile wallet account",
+      "anchor_excerpt": "I am filing this complaint against PayPal for unfair and deceptive practices regarding account management and data privacy. For over XXXX months, I have actively attempted to close my PayPal account. PayPal has systematically used conflicting excuses, system barriers, and broken management promises to keep my account open against my express written and verbal consent. During this two-month period, I have spent hours on hold and have been escalated to multiple supervisors. The reasons provided by PayPal staff have been contradictory and demonstrably false : Representatives claimed the system could not close the account due to a \" software update '' an excuse that was repeated to me XXXX weeks later. Representatives claimed there were \" pending transactions '' on the account. However, on a s",
+      "expected_policy_headings": [
+        "Payment and transfer disputes",
+        "Consumer communication"
+      ],
+      "retrieved_policy_headings": [
+        "Payment and transfer disputes",
+        "Identity theft and account takeover",
+        "Collection and legal-action threats",
+        "Escalation",
+        "Credit reporting disputes"
+      ],
+      "judged_candidates": [
+        {
+          "complaint_id": 24114577,
+          "issue": "Managing, opening, or closing your mobile wallet account",
+          "excerpt": "PayPal , Inc. has placed a permanent administrative lock on my profile over an unverified negative balance of approximately {$38.00} from several years ago, and they are currently blocking me from opening a new account. Because this account was opened years ago, I no longer remember the previous phone number, password, or exact email address linked to the file, nor do I have the exact transaction dates. I have never purchased goods or credit lines directly from PayPal ; I utilize the platform strictly as a digital pass-through wallet for external merchant transactions, such as XXXX purchases XXXX all of which are paid off. PayPal has failed to provide me any itemized statement or accounting proof validating this balance, and has ignored my past phone and email inquiries. I am demanding tha",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        },
+        {
+          "complaint_id": 23881962,
+          "issue": "Unauthorized transactions or other transaction problem",
+          "excerpt": "I am filing this complaint because PayPal continues to close my case without resolving the issue or conducting a meaningful review. I made online purchases through XXXX and selected PayPal credit card as my preferred payment method. I did not choose my bank account because I did not have the funds available. If I had the funds in my bank account I wouldnt have even bothered to use PayPal in the first place. I have proof that my preferred payment method is the credit card. PayPal bypassed my selection and tried to withdraw from my bank account multiple times. My account went negative and I was charged an overdraft fee three times over. I also have proof of these overdraft fees. I have contacted customer support and have opened multiple cases. They continue to close the case without any reso",
+          "relevance_grade": 1,
+          "reason": "Same product or workflow context, but only partially relevant to the core problem."
+        },
+        {
+          "complaint_id": 23803248,
+          "issue": "Managing, opening, or closing your mobile wallet account",
+          "excerpt": "PayPal is structurally preventing me from closing my account. My PayPal XXXX line is closed, and my balance is XXXX, but the automated system throws an error blocking closure. Front-line support states there is a backend system glitch showing a 'ghost ' pending transaction that does not exist on my ledger. They are forcing me to keep my sensitive banking data linked to a platform I wish to exit. I demand the immediate manual termination of my account and the purging of my financial data.",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        },
+        {
+          "complaint_id": 23940971,
+          "issue": "Trouble accessing funds in your mobile or digital wallet",
+          "excerpt": "On XX/XX/year> I sent a funds transfer request through my personal PayPal account. The request was sent to a family member for {$50.00}. I never got the funds. PayPal placed a hold on the account for review because the family I requested money from accidentally sent it under XXXX, service instead of personal use. I contacted XXXX advised of the mistake. They stated they needed 3-5days to review my account to make sure I wasn't a seller. My PayPal account is a year old with only 2 transactions on it. It's clear I'm not a seller. I suspected this was fraudulent behavior. I filed a complaint with BBB on XX/XX/year> after midnight. The morning of XX/XX/year> @ XXXX I received a message from PayPal that they would be closing my account. The funds would be placed on hold for 180 days. They had n",
+          "relevance_grade": 2,
+          "reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+        },
+        {
+          "complaint_id": 23881449,
+          "issue": "Unauthorized transactions or other transaction problem",
+          "excerpt": "I am filing a complaint against PayPal : On XX/XX/XXXX, I notified PayPal of an unauthorized charge on my account that had been made through the XXXX website. Someone had purchased the portable A/C unit ( that was already in my cart ), along with a {$500.00} XXXX e-gift card, which totaled {$690.00}. I filed a dispute with PayPal regarding this purchase and am still awaiting a response. In the course of the conversation disputing this charge, PayPal was advised that my account had been breached. On the evening of XX/XX/XXXX, at XXXX pm, there was another fraudulent charge made to XXXX XXXX, for XXXX e-gift cards of {$500.00} totaling {$100000.00}. PayPal sent a security text asking if I was attempting to make this purchase ( 1 for yes, 2 for no ). Due to the fact that I was asleep, I did n",
+          "relevance_grade": 1,
+          "reason": "Same product or workflow context, but only partially relevant to the core problem."
+        }
+      ]
+    },
+    {
+      "anchor_id": 23813022,
+      "product": "Student loan",
+      "issue": "Struggling to repay your loan",
+      "anchor_excerpt": "I was in XXXX plan and my monthly payment was about {$200.00} a month. I log in today to see what my other options are and the payment they are expecting is upwards of {$1000.00} - {$1500.00} per month. I find that unconscionable. Please help!",
+      "expected_policy_headings": [
+        "Escalation",
+        "Recommended actions"
+      ],
+      "retrieved_policy_headings": [
+        "Escalation",
+        "Collection and legal-action threats",
+        "Triage",
+        "Foreclosure and housing risk",
+        "Payment and transfer disputes"
+      ],
+      "judged_candidates": [
+        {
+          "complaint_id": 24191410,
+          "issue": "Struggling to repay your loan",
+          "excerpt": "I was making my payments for the past two years that they said would count towards forgiveness and than suddenly this month I received an email to check my progress. They now are claiming the payments I made the past two years do not count. They want me to now change my re payment plan. I was very close to having the loans forgiven and had been using the payment plan I had because they did count towards forgiveness.",
+          "relevance_grade": 2,
+          "reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+        },
+        {
+          "complaint_id": 24117177,
+          "issue": "Struggling to repay your loan",
+          "excerpt": "Every 6 months, I have to call in to see if I qualify for an interest only plan. In XXXX, I missed calling in due to being hospitalized and they reported my account XXXX days past due which caused my credit score to plummet. That has affected me financially by not being able to obtain financial assistance from other creditors. Even with the interest only payment, I still owe {$12000.00} with the following paid : Total Amount Paid {$11000.00} Principal Paid {$4100.00} Interest Paid {$7200.00} Fees Paid {$260.00} I am struggling with paying this and feel like my school deceived me when I accepted this loan which was in XX/XX/year> for an original amount of {$4900.00}.",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        },
+        {
+          "complaint_id": 23984490,
+          "issue": "Struggling to repay your loan",
+          "excerpt": "I am filing an official complaint against MOHELA for severe processing errors, incorrect billing, and systemic failure to provide customer support. On XX/XX/XXXX, I formally applied for an Income-Driven Repayment ( IDR ) plan and received a calculated estimate of {$63.00} per month. Instead of processing this application accurately, MOHELA summarily denied the rate and placed my account on a Standard XXXX repayment plan of {$620.00} per month.Furthermore, MOHELA has created an absolute barrier to resolution. Their phone hold times consistently exceed XXXX to XXXX hours, making it impossible to reach an agent to correct this calculation error before my payment is due. Because they have miscalculated my legal IDR submission and are unreachable by phone, I am demanding XXXX immediate resoluti",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        },
+        {
+          "complaint_id": 23941504,
+          "issue": "Struggling to repay your loan",
+          "excerpt": "I was attending XXXX XXXX. I was sudden I paid all my fees. They suspended my classes and out the door went. I just left with Debt through my job required a bachelors I ended up taking a lower paying job so therefore, I wasnt making enough to repay my loans and they didnt give me option of that pay plan so I had to put them in deferment where it drowned a bunch of interest",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        },
+        {
+          "complaint_id": 23766932,
+          "issue": "Struggling to repay your loan",
+          "excerpt": "MOHELA has issued an incorrect Income-Based Repayment ( IBR ) schedule charging me {$350.00} starting XX/XX/year>. My application on XXXX proved eligibility for a {$50.00} payment based on an IRS-verified income of {$60000.00} and a family size of XXXX. MOHELAs system glitched and processed me as a family size of XXXX. When I called on XX/XX/XXXX to correct this math error, representatives refused to apply an Administrative Processing Forbearance over the phone, telling me I have to wait until my payment defaults on XX/XX/XXXX. I am demanding an immediate administrative pause and recalculation.",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        }
+      ]
+    },
+    {
+      "anchor_id": 2330820,
+      "product": "Prepaid card",
+      "issue": "Advertising, marketing or disclosures",
+      "anchor_excerpt": "I was sent an offer for a prepaid card in the mail that included a printed card with a pre-activated account. I did not ask or authorize for this account to be created. This type of advertisement is dangerous as the card could easily be activated without my consent. I tried to contact the company, but am unable to reach a representative at any of their numbers.",
+      "expected_policy_headings": [
+        "Identity theft and account takeover",
+        "Consumer communication"
+      ],
+      "retrieved_policy_headings": [
+        "Identity theft and account takeover",
+        "Payment and transfer disputes",
+        "Credit reporting disputes",
+        "Collection and legal-action threats",
+        "Escalation"
+      ],
+      "judged_candidates": [
+        {
+          "complaint_id": 1487448,
+          "issue": "Advertising, marketing or disclosures",
+          "excerpt": "On XXXX XXXX, 2015, I received a prepaid XXXX Debit card from a company named NetSpend. I have notified Iowa 's Attorney General 's Office and NetSpend that I did not sign up for a this type of card. NetSpend sent an email back to me stating that they would remove my personal information and to cut up the card. I recently started looking at online surveys but have not received any funds or rewards. I am not sure if NetSpend received my information from a survey affiliate or my personal information was sold to a XXXX party.",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        },
+        {
+          "complaint_id": 24371109,
+          "issue": "Trouble using the card",
+          "excerpt": "I bought a prepaid NetSpend card at a gas station noted {$50.00} to this prepaid NetSpend card I then went online activated the prepaid NetSpend card that I paid for at the gas station not one that you have to wait 24 hours for the money to appear one then instantaneously has the funds loaded directly to the car now with this being said they would not let me access the card they would not let me use the card I still have not got my money from this card due to the fact that they said I had an account both a digital and a physical account that I have no clue about that has been flagged for suspicious activity that is fine if that is the case that is on them they should be telling me and rectifying that situation with me as well as activating the card that I had just purchased at a gas statio",
+          "relevance_grade": 2,
+          "reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+        },
+        {
+          "complaint_id": 24118158,
+          "issue": "Problem with a purchase or transfer",
+          "excerpt": "I stated that I did not have access to my mobile device and wallet when these fraudently charged occurred. Yet, they told me they found no error how is that possible when I didnt have my phone so I was not aware of the charges happening.",
+          "relevance_grade": 0,
+          "reason": "Different underlying consumer problem or operational resolution path."
+        },
+        {
+          "complaint_id": 2225379,
+          "issue": "Advertising, marketing or disclosures",
+          "excerpt": "I recently received a Brinks Money Debit MasterCard ( dba Skylight Financial Inc in XXXX, TX ) which I most certainly did not request. I check my credit score/inquiries regularly, and I 'm confident this is n't real or a result of a scam. I think it 's just a very well-divised, thorough marketing scheme. But it 's really quite alarming. \n\nThe card had my correct name, a card number, master card logo, an expiration date and CVC 3-digit number on back. The letter attached had an account number, a routing number, was sent to my home address. I received a terms of agreement pamphlet, and skylight/us bank checks. \n\nNow I 'm having to go through the trouble of making sure that a. ) this has n't been identity theft ; b. ) none of this gets activated ; c. ) all the materials are thoroughly destroy",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        },
+        {
+          "complaint_id": 23775875,
+          "issue": "Unexpected or other fees",
+          "excerpt": "On or around XX/XX/XXXX XXXX XX/XX/year>, I purchased a PLAYCARD prepaid debit card with a {$500.00} cash deposit. As I tried to enroll and activate an account for online access I was unable to successfully do so and the website provided a number to call for assistance. When I called, I spoke with a customer service agent and provided all my information but we were unable to activate the online access account. So then he advised me that I would be receiving a refund check within a few days in the mail. When I received the check, the payee name was \" XXXX XXXX ''. I wasn't able to cash the check because of that reason. When I called to try and fix this problem they asked for pictures of the front/back of check, front/back of prepaid card, receipt of the purchase, State issued Identification",
+          "relevance_grade": 1,
+          "reason": "Same product or workflow context, but only partially relevant to the core problem."
+        }
+      ]
+    },
+    {
+      "anchor_id": 2751266,
+      "product": "Money transfer, virtual currency, or money service",
+      "issue": "Confusing or missing disclosures",
+      "anchor_excerpt": "XXXX XXXX, XXXX Fifth Third Bank and Banker XXXX XXXX at the XXXX Bank, XXXX, IL Previously known as Legacy No. XXXX and cfpb XXXX. XXXX, XXXX XXXX XXXX ; XXXX XXXX ; XXXX XXXX with the Office of the President, XXXX XXXX Operations Center, XXXX XXXX XXXX, MD XXXX, XXXX, OH XXXX - not honest services.",
+      "expected_policy_headings": [
+        "Consumer communication",
+        "Triage"
+      ],
+      "retrieved_policy_headings": [
+        "Payment and transfer disputes",
+        "Triage",
+        "Identity theft and account takeover",
+        "Credit reporting disputes",
+        "Escalation"
+      ],
+      "judged_candidates": [
+        {
+          "complaint_id": 23885961,
+          "issue": "Confusing or missing disclosures",
+          "excerpt": "There has been a debt connected to me from years ago that I am not positive what its even from I have not got any explanation as to what its from. But there are XXXX collection notices from credit control, and XXXX XXXX.",
+          "relevance_grade": 2,
+          "reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+        },
+        {
+          "complaint_id": 24389019,
+          "issue": "Fraud or scam",
+          "excerpt": "Updated Information / Final Follow-up CFPB Cases XXXX and XXXX On XX/XX/year>, I received a final closure letter from Truist ( attached ). They state they have concluded the investigation for XXXX XXXX. XXXX and only recovered/credited {$11000.00} on XX/XX/year>. This leaves {$38000.00} of the original {$49000.00} unauthorized transfer still unrecovered. Key facts remain : Truists system denied the first {$45000.00} attempt but approved the {$49000.00} one. Fraud representatives provided conflicting information and a promised reversal that never happened. I reported the fraud promptly upon discovery. Even for a business account, Truist failed to exercise reasonable security after flagging the first attempt. files attached XX/XX/year> XXXX XXXX letter XX/XX/year> denial letter Bank statemen",
+          "relevance_grade": 0,
+          "reason": "Different underlying consumer problem or operational resolution path."
+        },
+        {
+          "complaint_id": 2798913,
+          "issue": "Problem with customer service",
+          "excerpt": "on XX/XX/XXXX I got an offer in the mail by my crated card company. A blank cheek and no interest for 18 months on XX/XX/XXXX I cashed {$3000.00} thin in XX/XX/XXXX I cashed out a another {$2500.00} Now I cant pay and I fill I was taken advantage of for.",
+          "relevance_grade": 1,
+          "reason": "Same product or workflow context, but only partially relevant to the core problem."
+        },
+        {
+          "complaint_id": 2645272,
+          "issue": "Confusing or misleading advertising or marketing",
+          "excerpt": "I was not aware that I owed this company this much..Its been years & Ive been thru a divorce so Im trying to get all my past due bills took care of ... And this company XXXX XXXX XXXX would not work with me so they turned it over to collection agency called Plaza Services & the opening date says XXXX-XXXX-16 so Im lost with that date cause I have not took any money from any company but one in years..The amount its stating I owe is XXXX",
+          "relevance_grade": 2,
+          "reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+        },
+        {
+          "complaint_id": 23802732,
+          "issue": "Confusing or misleading advertising or marketing",
+          "excerpt": "Im trying to withdraw my funds my account from my account they wont let me get my funds. But still taking transactions on the end of the account and Im here with my identity and they still wont let me get my funds out.",
+          "relevance_grade": 1,
+          "reason": "Same product or workflow context, but only partially relevant to the core problem."
+        }
+      ]
+    },
+    {
+      "anchor_id": 2664663,
+      "product": "Payday loan, title loan, or personal loan",
+      "issue": "Incorrect information on your report",
+      "anchor_excerpt": "I paid off the collection in full. The company never deleted the collection record from my account as agreed.",
+      "expected_policy_headings": [
+        "Credit reporting disputes"
+      ],
+      "retrieved_policy_headings": [
+        "Collection and legal-action threats",
+        "Credit reporting disputes",
+        "Triage",
+        "Foreclosure and housing risk",
+        "Escalation"
+      ],
+      "judged_candidates": [
+        {
+          "complaint_id": 2800353,
+          "issue": "Loan payment wasn't credited to your account",
+          "excerpt": "I received my credit report showing Ad Astra is collecting on behalf of XXXX XXXX XXXX XXXX for an loan I never received or applied for on XX/XX/2014. I have been disputing with this company for months & the credit bureaus that this is not my loan. Ad Astra sent me a letter, but this was no contract that I signed. This is misleading & inaccurate on my credit reports, Federal Law requires that mechanisms is provided to ensure that each item on my credit is accurate. I also have placed Fraud Alerts on my credit showing I was a victim of identity theft in 2014",
+          "relevance_grade": 1,
+          "reason": "Same product or workflow context, but only partially relevant to the core problem."
+        },
+        {
+          "complaint_id": 2847649,
+          "issue": "Incorrect information on your report",
+          "excerpt": "Account showing up on my credit report and I have no kn0wledge of account or any business dealings with this company. \r\n\r\nThey say loan taken out XX/XX/2017 for {$5000.00} and was to be paid from XXXX XXXX checking account XXXX routing number XXXX. Nether exist.",
+          "relevance_grade": 2,
+          "reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+        },
+        {
+          "complaint_id": 2786561,
+          "issue": "Problem with a credit reporting company's investigation into an existing problem",
+          "excerpt": "Time finance is still reporting this account as its still open.. however the account is charge off and the reporting it with a open balance ... I have reach out to them and explaining to them that this account needs to be remove especially if they have already charged it off",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        },
+        {
+          "complaint_id": 2839296,
+          "issue": "Problem with the payoff process at the end of the loan",
+          "excerpt": "I was contacted by an contractor representing XXXX XXXX XXXX 2yrs that the loan was not paid I made arrangement to make the payment and I did. And then 2yrs later someone else contacted me about not paying the same debt so i paid again and every 2yr someone keep trying to collect on the same debt. After the second time however I kept my payoff documentation I tried contacting the company about it but they said they don't have it on file.",
+          "relevance_grade": 2,
+          "reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+        },
+        {
+          "complaint_id": 2494848,
+          "issue": "Loan payment wasn't credited to your account",
+          "excerpt": "All loans have been paid & closed",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        }
+      ]
+    },
+    {
+      "anchor_id": 1327058,
+      "product": "Consumer Loan",
+      "issue": "Applied for loan/did not receive money",
+      "anchor_excerpt": "I was told I was preapproved for a Car loan/refinance on one of the Bank of America branches and was encouraged to apply. Prior to beginning the application I asked if it the inquiry would affect my credit score. I was told that because it was just a inquiry to confirm my identity it would not affect my score. I also asked if I would be able to refinance even though I had taken out the loan with my mom ( who is a cosigner ) and the car was registered under her name and the title was also under just her name. I was told that as long as my name was on the car loan I would be able to refinance. After getting approved and spending over 15 hours on the phone my current BOA loan costumer service obtaining all the information they had requested, I was told by a different representative prior to f",
+      "expected_policy_headings": [
+        "Credit reporting disputes",
+        "Consumer communication"
+      ],
+      "retrieved_policy_headings": [
+        "Credit reporting disputes",
+        "Consumer communication",
+        "Foreclosure and housing risk",
+        "Triage",
+        "Purpose and scope"
+      ],
+      "judged_candidates": [
+        {
+          "complaint_id": 2239236,
+          "issue": "Applied for loan/did not receive money",
+          "excerpt": "Bank of America suspended my wife and I use of my home equity line of credit effective XXXX XXXX, XXXX. I received this notice through the mail on XXXX XXXX. BOA said this suspension was based upon the decreased equity available in my home. I called up BOA and said they have never been to my home and this was based upon a formula. I asked for the formula and was declined this information. I live in XXXX XXXX Maryland where the home values have increased and not decreased since the home equity loan I took out in XXXX XXXX, XXXX. Since then I have made substantial improvements on my home. Since opening the home equity loan both my wife and my credit scores have also increased, although this was not in contention. I also paid a significant portion of my load down in the pst few months. It is ",
+          "relevance_grade": 1,
+          "reason": "Same product or workflow context, but only partially relevant to the core problem."
+        },
+        {
+          "complaint_id": 2326425,
+          "issue": "Shopping for a loan or lease",
+          "excerpt": "I I received several phone calls which were hangs up on there end then I was able to speak to someone whom I told her that I had mailed my payment and he said that that was fine the next day I received a phone call from a woman from regional acceptance Who said if I did not cancel the check that I put in the mail and pay over the phone that she would submit my car for repossession she told me that collection calls would not stop after I asked her to please stop calling that I had already spoke to someone she said if she would stop XXXX that my car would be repossessed and there would be nothing that I can do about it she made a lot of threats that she would take me to court when I asked to speak to the manager she put me on mute and after five minutes she hung up on me before she hung up s",
+          "relevance_grade": 0,
+          "reason": "Different underlying consumer problem or operational resolution path."
+        },
+        {
+          "complaint_id": 1308124,
+          "issue": "Applied for loan/did not receive money",
+          "excerpt": "I had not intent of applying for this kind of loan but was solicited to do so with deceptive practicesI was told the loan would be easy to get and I would have no trouble qualifyingSoon after I was forced to go through a process that called into question my credit worthiness, my property records, and so on. The process turned from \" no trouble qualifying '' to a miasma of official documents and the likeI was sent a letter stating that the loan was approvedI was told the loan would not be approved on XXXX XXXX I received another letter asking for documentation so the loan would get approvedSn email from me : In the end I do not understand why the paperwork relative to the divorce and the deed for my home were adequate for a line of equity from Homestreet Bank and a {$400000.00} refinance fr",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        },
+        {
+          "complaint_id": 1518743,
+          "issue": "Applied for loan/did not receive money",
+          "excerpt": "I visited a local loan provider to apply for a secured loan using the title to my vehicle. I was approved but wanted to think on it for a bit. After a week, I went back to them & told them I was ready to get the loan. The employee said yes sir, we 've had you paper work ready & approved sitting there for the last week. While I was in the process of finishing up the paperwork, I was asked to get a copy of my recent check stub & bring proof of insurance. Went to my home & called them back to make sure I was bringing back the correct information that was needed & while on the phone, a different worker that I had not been dealing with got on the phone & told me that she had remembered a loan my father had with them at XXXX time where payments were n't made on time & because of that, they would",
+          "relevance_grade": 2,
+          "reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+        },
+        {
+          "complaint_id": 1472459,
+          "issue": "Managing the loan or lease",
+          "excerpt": "An old mortgage is listed on personal credit file inaccurately. Several times this item was disputed and nothing has been addressed with the creditor and credit agencies. I am requesting your firms help to resolve this matter. A couple things, XXXX and XXXX list 120 days past due which is inaccurate as this account was paid and XXXX also list a payment of {$8100.00} as the payment amount which is inaccurate also. I do not agree with the XXXX and feel this company does n't even have records to support the inaccurate data listed. Please help assist me",
+          "relevance_grade": 1,
+          "reason": "Same product or workflow context, but only partially relevant to the core problem."
+        }
+      ]
+    },
+    {
+      "anchor_id": 2186028,
+      "product": "Credit reporting",
+      "issue": "Improper use of my credit report",
+      "anchor_excerpt": "I have been working diligently to repair my own credit. My credit score was XXXX XXXX weeks ago, all of a sudden my score drops almost XXXX points for no reason at all. I have paid my credit cards in a timely fashion. I have brought my utilization to the right percentage, and my score is continually dropping everyday for no reason at all. My wife and I share the shame credit cards, and her scores are going up. All three credit bureaus are reporting my score inaccurately. My utilization is 27 % which is good, it dropped my score XXXX point because of this good utilization. This is unethical, in what is going on with the XXXX credit bureaus. They inaccurately reporting my credit score and this is not fair. My score should n't have dropped almost XXXX points in a couple of weeks if I 'm makin",
+      "expected_policy_headings": [
+        "Credit reporting disputes",
+        "Identity theft and account takeover"
+      ],
+      "retrieved_policy_headings": [
+        "Credit reporting disputes",
+        "Triage",
+        "Identity theft and account takeover",
+        "Consumer communication",
+        "Escalation"
+      ],
+      "judged_candidates": [
+        {
+          "complaint_id": 1972826,
+          "issue": "Credit reporting company's investigation",
+          "excerpt": "I recently made a complaint to cfbt and was unable to login to see the response from the credit agency. However, Since then, the agency has taken steps to even further damage my credit score. I have done everything in my power to correct my past mistakes and continue to build a respectable history. I feel as though this agency, Transunion and its employees or reps are incorrectly reporting and I would go as far to say taking retaliatory actions on my report as they have once again lowered my score by XXXX points. My score now is even lower than it was when I initially began to attempt any corrections last year. I have retained a malpractice attorney and we are in process of a civil suit. I 'm not certain as to what this site does to attempt to help and protect the consumer because nothing ",
+          "relevance_grade": 2,
+          "reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+        },
+        {
+          "complaint_id": 2084484,
+          "issue": "Improper use of my credit report",
+          "excerpt": "Transunion was hacked and my credit report file, a hacker set up an account using my SS # and was sent credit reports by Transunion with all my information. the hacker then opened various accounts and also opened several cell phone accounts with XXXX and we got the notice and welcoming packet from XXXX sent to me at my home address, this started us investigating and found the fraudulent account set up on Transunion ... ... ..they never contacted my wife to say that the account was set up.",
+          "relevance_grade": 2,
+          "reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+        },
+        {
+          "complaint_id": 2356798,
+          "issue": "Incorrect information on credit report",
+          "excerpt": "For the past few months, I have attempted to get a credit card through XXXX. I have been told that there is legal action against me on my credit file. When I check each of my reports, there is no such information listed.",
+          "relevance_grade": 2,
+          "reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+        },
+        {
+          "complaint_id": 2404392,
+          "issue": "Credit reporting company's investigation",
+          "excerpt": "After noticing fraudulent accounts and inquires on my credit reports, I filed an id theft report with the FTC after which I proceeded to call the companies individually and in some cases received help through this very site which I am EXTREMELY GRATEFUL for.Then, I called TRANSUNION and informed them i was a victim of identity theft and provided them with the FTC identity report number and also asked them to remove the fraudulent items immediately since they are ruining my credit.I also called and faxed supporting documents after which they informed me that they will remove all of the fraudulent items within 24hrs.That was almost a week ago!! These credit bureaus need to be regulated more closely in my opinion because all they seem to do is make things harder for the victims and easier for",
+          "relevance_grade": 2,
+          "reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+        },
+        {
+          "complaint_id": 1922531,
+          "issue": "Incorrect information on credit report",
+          "excerpt": "After numerous attempts to rectify this issue with both the company and credit report agencies, the final result is my credit report now has absolutely false information. This has just jeopardized my application to an apartment that I was attempting to move into by the end of the month. How can I be reported as 55 ninety day late payments, on an account that was open for approximately 6 months? As a Financial Advisor at a not for profit, I understand a phrase or XXXX being different but factual figures of what is \" owed '' should be consistent. Further, how can someone be \" late '' on an account that is open for 6 months, ( which equals roughly 180 days ) 55 times at a rate of 90 days each time? Did that get you confused too? That would mean I had a contract with them for roughly XXXX days",
+          "relevance_grade": 2,
+          "reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+        }
+      ]
+    },
+    {
+      "anchor_id": 1574948,
+      "product": "Credit card",
+      "issue": "Unsolicited issuance of credit card",
+      "anchor_excerpt": "On XXXX/XXXX/2015 a credit card application for Kay jewelers was falsely submitted in my name XXXX XXXX. I found out about this from XXXX which is a Identity theft protection service on XXXX/XXXX/2015. I did not submit any application to Kay jewelers for a credit card but yet it was done by them. I spoke to a manager in the credit card issuing department and I was told that there was no recent applications on me to apply for a credit card. I then called XXXX and was told by them their was definitely a hard inquiry of my credit from sterling/ kay jewelers on XXXX/XXXX/2015. I would like someone to see why this happened and resolve this problem as well as having them take this false credit check of my credit report. I spoke with them about removing it as well and they proceeded to tell me th",
+      "expected_policy_headings": [
+        "Identity theft and account takeover",
+        "Credit reporting disputes"
+      ],
+      "retrieved_policy_headings": [
+        "Credit reporting disputes",
+        "Identity theft and account takeover",
+        "Consumer communication",
+        "Triage",
+        "Collection and legal-action threats"
+      ],
+      "judged_candidates": [
+        {
+          "complaint_id": 1668826,
+          "issue": "Delinquent account",
+          "excerpt": "I had an account with Kay Jewelers and it was discharged through chapter XXXX bankruptcy in XXXX XXXX. On my XXXX dispute it continues to show a late payment for every month starting XXXX XXXX - XXXX XXXX. This is completely inaccurate considering I was in active bankruptcy from XXXX XXXX - XXXX XXXX. I have disputed these late payments with XXXX and the creditor both with no resolution so I am now submitting a complaint with your office.",
+          "relevance_grade": 0,
+          "reason": "Different underlying consumer problem or operational resolution path."
+        },
+        {
+          "complaint_id": 24422743,
+          "issue": "Getting a credit card",
+          "excerpt": "Subject : Request to Remove Unauthorized XXXX XXXX XXXX XXXX XXXX XXXX Inquiries To Whom It May Concern, I am filing this complaint regarding XXXX XXXX inquiries reported by XXXX XXXX ( XXXX ) on my TransUnion credit report that I dispute as unauthorized. Disputed Inquiries XXXX XXXX XXXXXX/XX/year>XXXX XXXX XXXXXXXX XX/XX/year> I do not believe XXXX XXXX had a XXXX XXXX under the XXXX XXXX XXXX XXXX XXXX XXXX ) to obtain my consumer credit report for these inquiries. Specifically : * I did not authorize these hard inquiries. * I did not complete an online credit application for these inquiries. * I did not present a government-issued photo ID. * I did not complete identity verification or security authentication questions. * My XXXX XXXX account does not contain any completed credit appli",
+          "relevance_grade": 2,
+          "reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+        },
+        {
+          "complaint_id": 23829322,
+          "issue": "Getting a credit card",
+          "excerpt": "I am submitting this complaint because multiple companies obtained my consumer credit report without my knowledge or authorization. I did not authorize these entities to pull my credit, nor did I provide consent for them to access my consumer report. As a result, unauthorized hard inquiries were placed on my credit file, which may have negatively impacted my credit score. The companies involved include XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX I have disputed these inquiries with the credit reporting agencies and requested that they verify that each compan",
+          "relevance_grade": 2,
+          "reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+        },
+        {
+          "complaint_id": 23831585,
+          "issue": "Problem with a purchase shown on your statement",
+          "excerpt": "I am submitting this complaint to report identity theft and suspected financial fraud involving my personal and business information. Approximately four yeapors ago, fraudulent activity occurred involving XXXX XXXX XXXX, and XXXX Bank has confirmed that such activity took place. Approximately XXXX years ago, my XXXXXXXX XXXX XXXX business credit card was stolen. The courts also contacted me about an individual with the last name XXXX who was fraudulently claiming to work for my company. I believe he may have been responsible for stealing my company cards. I also believe my information may have been compromised in the XXXX XXXX data breach last year. I respectfully request that the CFPB investigate all unauthorized accounts, transactions, and credit activity related to my name and businesse",
+          "relevance_grade": 2,
+          "reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+        },
+        {
+          "complaint_id": 23828405,
+          "issue": "Getting a credit card",
+          "excerpt": "I am submitting this complaint because multiple companies obtained my consumer credit report without my knowledge or authorization. I did not authorize these entities to pull my credit, nor did I provide consent for them to access my consumer report. As a result, unauthorized hard inquiries were placed on my credit file, which may have negatively impacted my credit score. The companies involved include : XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXXXXXX I have disputed these inquiries with the credit reporting agencies and requested that they verify that each compa",
+          "relevance_grade": 2,
+          "reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+        }
+      ]
+    },
+    {
+      "anchor_id": 2800353,
+      "product": "Payday loan, title loan, or personal loan",
+      "issue": "Loan payment wasn't credited to your account",
+      "anchor_excerpt": "I received my credit report showing Ad Astra is collecting on behalf of XXXX XXXX XXXX XXXX for an loan I never received or applied for on XX/XX/2014. I have been disputing with this company for months & the credit bureaus that this is not my loan. Ad Astra sent me a letter, but this was no contract that I signed. This is misleading & inaccurate on my credit reports, Federal Law requires that mechanisms is provided to ensure that each item on my credit is accurate. I also have placed Fraud Alerts on my credit showing I was a victim of identity theft in 2014",
+      "expected_policy_headings": [
+        "Identity theft and account takeover",
+        "Credit reporting disputes"
+      ],
+      "retrieved_policy_headings": [
+        "Credit reporting disputes",
+        "Collection and legal-action threats",
+        "Identity theft and account takeover",
+        "Payment and transfer disputes",
+        "Triage"
+      ],
+      "judged_candidates": [
+        {
+          "complaint_id": 2664663,
+          "issue": "Incorrect information on your report",
+          "excerpt": "I paid off the collection in full. The company never deleted the collection record from my account as agreed.",
+          "relevance_grade": 1,
+          "reason": "Same product or workflow context, but only partially relevant to the core problem."
+        },
+        {
+          "complaint_id": 2487584,
+          "issue": "Credit monitoring or identity theft protection services",
+          "excerpt": "The amount of the loan was over  XXXX . According to my credit report, the payments were inconsistent over the last year and then the payments stopped. I called the company to file the report of theft and the information they have on their file is accurate.     However, they were claiming that i file a report against the BBB and did other actions. They told me they were going to send me some documents to fill out and send to them to claim the fraud and they never did.",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        },
+        {
+          "complaint_id": 2550940,
+          "issue": "Problem with a credit reporting company's investigation into an existing problem",
+          "excerpt": "I had a personal loan with this company. When I applied for the loan, I opted to purchase the XXXX insurance. In XXXX, I was out on medical leave and made a claim with the XXXX insurance. I submitted the required paperwork from my doctor so that the XXXX insurance company could make the monthly payments until I was discharged from my physician and returned to work. Every few months, I was required to submit an updated physician 's statement in order to keep the claim open and so that the payments would be made to the loan company, which I did. In XX/XX/XXXX, apparently the XXXX  insurance company submitted the monthly payment to the loan company late. The loan company has reported to the credit bureaus a 30-day late payment. When this appeared on my credit reports, I called the loan compan",
+          "relevance_grade": 1,
+          "reason": "Same product or workflow context, but only partially relevant to the core problem."
+        },
+        {
+          "complaint_id": 2847649,
+          "issue": "Incorrect information on your report",
+          "excerpt": "Account showing up on my credit report and I have no kn0wledge of account or any business dealings with this company. \r\n\r\nThey say loan taken out XX/XX/2017 for {$5000.00} and was to be paid from XXXX XXXX checking account XXXX routing number XXXX. Nether exist.",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        },
+        {
+          "complaint_id": 2677202,
+          "issue": "Received a loan you didn't apply for",
+          "excerpt": "Hello I called the company My XXXX XXXX on Friday XXXX XXXX because another company saying I owe that company money. I have never heard of that company and I have never apply for a loan. So when I call the company they did not have anything on me. The other company that is called XXXX XXXX is harassing me about a payment that I have never borrow from. I am getting threatening calls from XXXX XXXX, stating they will take legal action against me. So can someone help me please.",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        }
+      ]
+    },
+    {
+      "anchor_id": 2487584,
+      "product": "Payday loan, title loan, or personal loan",
+      "issue": "Credit monitoring or identity theft protection services",
+      "anchor_excerpt": "The amount of the loan was over  XXXX . According to my credit report, the payments were inconsistent over the last year and then the payments stopped. I called the company to file the report of theft and the information they have on their file is accurate.     However, they were claiming that i file a report against the BBB and did other actions. They told me they were going to send me some documents to fill out and send to them to claim the fraud and they never did.",
+      "expected_policy_headings": [
+        "Identity theft and account takeover",
+        "Credit reporting disputes"
+      ],
+      "retrieved_policy_headings": [
+        "Identity theft and account takeover",
+        "Credit reporting disputes",
+        "Collection and legal-action threats",
+        "Escalation",
+        "Triage"
+      ],
+      "judged_candidates": [
+        {
+          "complaint_id": 2757181,
+          "issue": "Incorrect information on your report",
+          "excerpt": "I was approved for an installment loan in the amount of {$3000.00} back inXX/XX/XXXX ; after losing my Job in XX/XX/XXXX and unable to continue my monthly amounts, I stopped making payments. \r\nIn XX/XX/XXXX, after doing temporary work for the next 2 years at a lower salary, I renegotiated a lower amount of {$120.00}, but was unable to continue due to unemployment thru XX/XX/XXXX. \r\nIn XX/XX/XXXX, after finding a full time permanent position, I contacted AVANT, AGAIN and renegotiated another payment arrangement of {$140.00} for 8 months as a settlement amount of {$1000.00} to finally settle and pay this loan. I was making my monthly payments as scheduled until back in XX/XX/XXXX, I received a notice from AVANT stating the agreement was null and void, I has missed making one payment iby the ",
+          "relevance_grade": 0,
+          "reason": "Different underlying consumer problem or operational resolution path."
+        },
+        {
+          "complaint_id": 2709010,
+          "issue": "Problem with additional add-on products or services",
+          "excerpt": "On XXXX XXXX, XXXX we decided to look into refinancing our current loan with Avant. We contacted the company via their website and phone and initiated the process to refinance. During the process a hard inquiry was performed on our credit. The terms were then supplied to us via the website. The process continues after you accept the loan amount and terms/rates. We accepted the refinance of the XXXX minus a roughly 200 $ administration fee. We were to receive roughly 2600 $ at a 35 % rate. We accepted and started using their website to finalize the information they require. Bank statements, pay stubs, personal information, etc. One of the processes is to \" Link your bank account '' which allows the to pull the statements, etc directly. However due to security issues our bank would not allow",
+          "relevance_grade": 0,
+          "reason": "Different underlying consumer problem or operational resolution path."
+        },
+        {
+          "complaint_id": 2800353,
+          "issue": "Loan payment wasn't credited to your account",
+          "excerpt": "I received my credit report showing Ad Astra is collecting on behalf of XXXX XXXX XXXX XXXX for an loan I never received or applied for on XX/XX/2014. I have been disputing with this company for months & the credit bureaus that this is not my loan. Ad Astra sent me a letter, but this was no contract that I signed. This is misleading & inaccurate on my credit reports, Federal Law requires that mechanisms is provided to ensure that each item on my credit is accurate. I also have placed Fraud Alerts on my credit showing I was a victim of identity theft in 2014",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        },
+        {
+          "complaint_id": 2883854,
+          "issue": "Credit monitoring or identity theft protection services",
+          "excerpt": "I was a member of XXXX and I am still I was a customer of theirs I haven't paid them yet or lately due to health reasons but they never once reported me to the credit bureaus as promised to help raise my credit line and limit you never disclose that they told me that they would and it's never been done and then they kept hitting me with these every once every few months so I would like to either have them completely removed from my account and have my money returned to me that for false advertisement and I do see that 8th class action lawsuit was recently won back in 2016 for this very reason but I wasn't aware of it at that time either and I was using their service in 2016",
+          "relevance_grade": 1,
+          "reason": "Same product or workflow context, but only partially relevant to the core problem."
+        },
+        {
+          "complaint_id": 2713179,
+          "issue": "Received a loan you didn't apply for",
+          "excerpt": "On XX/XX/XXXX, I checked my email and noticed there was an email from XXXX XXXX that an account was past due and it was reported by a company called Cash Central XXXX. This account was fraudulently opened under my name and was on my XXXX XXXX credit report as past due. That same day, I submitted a dispute via XXXX XXXX and the following day I contacted Cash Central XXXX or also known as Community Choice Financial out of XXXX Ohio. I spoke to representative named XXXX or XXXX and she advised me that the account was opened on XX/XX/XXXX in the amount of {$2500.00} and that she will be sending a packet that needs to be filled out and notarized so that the Identity Theft Claim process could commence. I am currently in the process of filling out the packet they emailed. I also notify the XXXX X",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        }
+      ]
+    },
+    {
+      "anchor_id": 23882036,
+      "product": "Vehicle loan or lease",
+      "issue": "Incorrect information on your report",
+      "anchor_excerpt": "There are XXXX late payments reported on my credit report. I believe these late payments should be removed because they were reported inaccurately ; this account has since been paid in full and closed. I have otherwise maintained a positive payment history with this creditor. I am requesting that the creditor investigate and remove the late payment notation from my credit reports with XXXX XXXX XXXX XXXX",
+      "expected_policy_headings": [
+        "Credit reporting disputes"
+      ],
+      "retrieved_policy_headings": [
+        "Credit reporting disputes",
+        "Triage",
+        "Consumer communication",
+        "Collection and legal-action threats",
+        "Foreclosure and housing risk"
+      ],
+      "judged_candidates": [
+        {
+          "complaint_id": 24265618,
+          "issue": "Incorrect information on your report",
+          "excerpt": "I traded in my vehicle and the dealership ( XXXX XXXX XXXX ) completed a full payoff of my Hyundai account. However, due to a dealer buyout delay during the transition, Hyundai XXXX XXXX incorrectly reported a XXXX late payment on my credit report. I had no custody of the vehicle or control over when the dealership processed the payoff check. The account is now closed and fully satisfied on XX/XX/XXXX. Reporting this as a late payment is inaccurate and unfair, as the delay was entirely administrative on the dealer 's end. I request that Hyundai XXXX XXXX submit an electronic correction to XXXX, XXXX, and XXXX to remove the XXXX late mark and report the account as clean/paid on-time.",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        },
+        {
+          "complaint_id": 24113191,
+          "issue": "Managing the loan or lease",
+          "excerpt": "I am filing this complaint because Digital Federal Credit Union is reporting inaccurate late payments on my credit report. The payments were not late because they were made by my insurance company in accordance with my coverage. Despite this, the account is being reported as delinquent, which is inaccurate and has negatively affected my credit. Additionally, my account is current, and my next payment is not due until XX/XX/year>. I have disputed this inaccurate reporting with the credit bureaus and am requesting that Digital Federal Credit Union investigate, correct the inaccurate payment history, and update all consumer reporting agencies to accurately reflect the account. If they can not verify the accuracy of the reported late payments, I request that they be removed in accordance with ",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        },
+        {
+          "complaint_id": 23975194,
+          "issue": "Incorrect information on your report",
+          "excerpt": "I am filing a complaint regarding the inaccurate reporting of a XXXX late payment on my Truist auto loan account. My payment was made on XX/XX/year>. Despite this, Truist reported my account as XXXX days past due to the credit bureaus. I disputed the information with XXXX and supplied supporting information. XXXX completed its investigation and stated that the account was updated, but the inaccurate late payment remains on my credit report. I believe the information being furnished is inaccurate and is causing harm to my credit profile. Under the Fair Credit Reporting Act, information furnished to consumer reporting agencies must be complete and accurate. I am requesting that the CFPB require Truist to conduct a thorough investigation, correct any inaccurate reporting with XXXX XXXX XXXX X",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        },
+        {
+          "complaint_id": 24228388,
+          "issue": "Incorrect information on your report",
+          "excerpt": "I am submitting this complaint because TransUnion is reporting inaccurate derogatory information regarding my XXXX XXXX XXXX account. My account is currently open and in good standing ; however, TransUnion continues reporting a 30-day late payment that I dispute as inaccurate. This inaccurate reporting is negatively affecting my creditworthiness and does not accurately reflect my payment history. Pursuant to 15 U.S.C. 1681e ( b ), TransUnion is required to maintain reasonable procedures to assure the maximum possible accuracy of the information reported in consumer credit files. I am formally disputing the accuracy of this reported late payment and requesting a reasonable investigation as required by 15 U.S.C. 1681i. I specifically request that TransUnion provide competent documentary evid",
+          "relevance_grade": 2,
+          "reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+        },
+        {
+          "complaint_id": 23971500,
+          "issue": "Incorrect information on your report",
+          "excerpt": "The last week of XXXX, I saw on my XXXX XXXX XXXX XXXX account that I had a balance of {$3000.00}. That was past due so I contacted my bank and on XX/XX/XXXX they mailed a check to pay off the vehicle I kept calling back in on XX/XX/XXXX, which was a Wednesday at XXXX oclock. XXXX told me that they lost the check and to overnight another check. I had my bank on the phone. I gave them permission to talk to XXXX. XXXX provided the overnight address so that Friday I received an email confirmation from XXXX that the check was received by XXXX. I call back the next week. They say that they can not find the check then I call back the next week and they say that they can not find the check so finally I get them on the phone XXXX weeks later and I have to email proof that the check cleared my bank",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        }
+      ]
+    },
+    {
+      "anchor_id": 2426276,
+      "product": "Other financial service",
+      "issue": "Disclosures",
+      "anchor_excerpt": "I find that this company, Riverwalk Debt Solution, has been fraudulently misrepresenting themselves. They are convincing people with significant loan debt that they can provide services that are not possible. They require the signing of a contract under the pretense of providing a service, and then you soon find out they are incapable or making good on their promises. They have lied to me and are now harassing me for payment for a service they have not and can not provide. I have refused to pay for a service that has not been rendered, and now they are threatening to report me to crediting agencies. They have also attempted to charge my credit card when they were not authorized to do so which I repeatedly stated to them over their official email addresses and ignored. I am filing this comp",
+      "expected_policy_headings": [
+        "Consumer communication",
+        "Escalation"
+      ],
+      "retrieved_policy_headings": [
+        "Credit reporting disputes",
+        "Collection and legal-action threats",
+        "Triage",
+        "Escalation",
+        "Consumer communication"
+      ],
+      "judged_candidates": [
+        {
+          "complaint_id": 2406634,
+          "issue": "Advertising and marketing",
+          "excerpt": "After reading all of the positive reviews from other clients that have used this service, I hired this company in  XXXX  to assist me in improving my credit and credit scores. Each month this company would send out dispute letters to all  XXXX  credit bureaus to dispute information on my credit. After 6 months of using this company and paying {$150.00} a month, I have not seen any significant changes in my credit or scores. When I first began with them I was advised by the credit  counselor  to pay off some of the collections on my report. I paid them off and did exactly what was advised. I followed up with the advisor on occasion and was told that some of the bureaus are difficult to work with as far as getting deletions removed. I also spoke with the owner of the company and was told tha",
+          "relevance_grade": 2,
+          "reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+        },
+        {
+          "complaint_id": 2332601,
+          "issue": "Disclosures",
+          "excerpt": "In XXXX, I made the required number of payments to rehabilitate my defaulted student loans. I was told by a representative at the time, who was from either Pioneer Recovery , Inc., or XXXX XXXX XXXX, that XXXX XXXX XXXX ) consecutive payments would have to be made to a company called XXXX. After which, my loans would be in good standing ; the collection fees would go away and I could defer the loan if need be. Pursuant to what I was told, I set up the payments for automatic debit from the checking account. After the payments were made, I received a letter from XXXX XXXX XXXX XXXX, saying congratulations on the rehabilitation. I was then told by one of the servicers that I would have to immediately start making {$400.00} payment per mo. At the time, I could not afford to make {$400.00} paym",
+          "relevance_grade": 1,
+          "reason": "Same product or workflow context, but only partially relevant to the core problem."
+        },
+        {
+          "complaint_id": 1956043,
+          "issue": "Customer service/Customer relations",
+          "excerpt": "Previous [ Case number : XXXX ] XXXX XXXX lied and said I had the wrong company and I am getting all parties XXXX involved this woman lied to a federal agency and I want my money back. I am going to be in touch with President Obama 's office and the Consumer Protection Bureau to also follow up on my case. \nXXXX XXXX of Simple Credit Solutions, told me over the telephone that she could delete XXXX accounts for me for {$800.00} and she did not fulfill her obligation. Also on my previous complaint she lied to the Consumer Financial Protection Bureau and told your office she was not the creditor who they provided services for and she has also forged all documents and information about what she did for me on my credit report and no items as she promised go deleted. I am asking that the Consumer",
+          "relevance_grade": 1,
+          "reason": "Same product or workflow context, but only partially relevant to the core problem."
+        },
+        {
+          "complaint_id": 1390071,
+          "issue": "Fraud or scam",
+          "excerpt": "I visited XXXX # XXXX on XXXX/XXXX/15 I wrote a check lost my check a day later froze my bank account with XXXX and a few days after things had cleared I closed the bank account XXXX took my money I had earned using their reward program so I inquired why my {$29.00} had dissappeared I w as told it was for a check returned to contact a certain person I called left several messages no one responded so I was forced to file a XXXX complaint now working with someone in corporate that is taking care of the issue not even a couple of weeks later my checks are being returned from my new account I get a notice from TRS Recovery that Telecheck had blocked me from using my checks if I ever wanted to use a check again to pay {$48.00} that was for a {$23.00} check with a {$25.00} returned unprocessed c",
+          "relevance_grade": 0,
+          "reason": "Different underlying consumer problem or operational resolution path."
+        },
+        {
+          "complaint_id": 2434922,
+          "issue": "Fraud or scam",
+          "excerpt": "I enrolled in National Budget Planners of South Florida debt consolidation program ( aka : XXXX ) a couple of years ago and paid {$300.00} to get started in this program. I paid {$59.00} dollars per month for approximately 2 years, thinking that their service was helping me consolidate my loans into XXXX payment of {$59.00} dollars per month. But I found out later that they were taking my money and not doing anything to help me consolidate my loans. This got my loans into a deliquency status. Also, I am a vulnerable adult with XXXX and XXXX. I feel like they took advantage of me and that my loans went into deliquency because of this. Also, my recent credit report shows that I lived at their company address in XXXX, XXXX, which is incorrect, as I live in XXXX, XXXX and never lived in XXXX, ",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        }
+      ]
+    },
+    {
+      "anchor_id": 24237970,
+      "product": "Credit card",
+      "issue": "Problem with a purchase shown on your statement",
+      "anchor_excerpt": "This is the last email I had sent to Paypal as it is threw them I got involved with credit card from Synchrony bank. {$3600.00} is the total amount of over a XXXX fraudulent transactions. This letter is a good summary of the events. I am writing to the Paypal fraud department because of fraud practices and lack of resolution by Synchrony Bank. It began on XX/XX/XXXX and XXXX of XXXX when someone used Paypal Extras Credit card ending XXXX a Walmart in XXXX XXXX Texas. There were XXXX transactions for a total of {$600.00}. I was surprised that the bank didn't notice these XXXX transactions. Once I saw the statement I notified the bank about these XXXX fraudulent charges. I only use this card for internet purchases and the card had never left my house. The represantative assured me that the c",
+      "expected_policy_headings": [
+        "Payment and transfer disputes",
+        "Identity theft and account takeover"
+      ],
+      "retrieved_policy_headings": [
+        "Payment and transfer disputes",
+        "Identity theft and account takeover",
+        "Credit reporting disputes",
+        "Collection and legal-action threats",
+        "Escalation"
+      ],
+      "judged_candidates": [
+        {
+          "complaint_id": 24229613,
+          "issue": "Problem with a purchase shown on your statement",
+          "excerpt": "My computer was hacked on XX/XX/XXXX and a number of unauthorized transactions appeared on my bank account and several credit cards, including PayPal credit. I discovered this on XX/XX/XXXX and on that date, changed all my passwords, contacted accounts to close them and obtain new credit cards/debit cards All disputes have been resolved except the PayPal credit account. I have contacted the company XXXX times to date, including XX/XX/XXXX, XX/XX/XXXX, XX/XX/XXXX and XX/XX/XXXX ( Unfortunately, I did not note the other dates, as I was told the disputes had been resolved. ) I provided information about all of the unauthorized transactions in each call, the customer service agent told me that the disputes were noted and would be resolved. Since then, I have been told that PayPal policy allows",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        },
+        {
+          "complaint_id": 24361747,
+          "issue": "Getting a credit card",
+          "excerpt": "The original body of the complaint is as follows : \" I just flew back to the US from XXXX on the XXXX of XXXX, after a year long stay there. A few days later, I received a random letter from XXXX. I opened it and presumed it was just a credit card offer. so I tossed it out. I probably should have kept it for evidence ' sake. Fast forward a few weeks, I go to put a payment on my PayPal credit account, and see that my original credit account is gone, and that there's a mastercard account, ending in XXXX XXXX XXXX XXXX I'm freaking out, wondering how, or why there's been an unauthorized change made to my account. I contact them, and am stonewalled. No responses from them. I filed a fraud report, because that seems the only thing one can do in paypal 's webUI. Nothing has come from it yet, unf",
+          "relevance_grade": 0,
+          "reason": "Different underlying consumer problem or operational resolution path."
+        },
+        {
+          "complaint_id": 24390096,
+          "issue": "Problem with a purchase shown on your statement",
+          "excerpt": "I am filing an official billing fraud and funds-hijacking complaint against Synchrony Bank regarding XXXX XXXX XXXX XXXX. The order consisted of a XXXX XXXX Laptop priced at {$690.00} XXXX corporate records explicitly admit the item was misrouted by the third-party seller to an incorrect address in XXXX and returned to the merchant. Despite a XXXX Police Report and a competing receipt proving I had to buy a replacement computer directly from XXXX XXXX, Synchrony continues to issue fraudulent bills for a total balance of {$390.00} ( after my {$190.00} in legitimate XXXX gift certificates were applied ). Furthermore, Synchrony Bank has illegally diverted a {$93.00} overpayment from my XXXX XXXX XXXX XXXX, along with an unauthorized {$7.00} Prime membership fee, to pay down this phantom balan",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        },
+        {
+          "complaint_id": 23989038,
+          "issue": "Problem with a purchase shown on your statement",
+          "excerpt": "I disputed charges on my account and informed the company that they were fraudulent. I did not make these charges, but the merchant has now sent information stating that they are valid. I did not have the opportunity to note or send my documents to indicate that this was considered fraud. I did not make these charges, nor did the credit card company. Synchrony Bank has rebuilt my account and has only informed me that the charges are valid, so they are only using XXXX side and are unable to open the charges or respond to any calls. They investigate the charges and hang up on me, leaving me with no other options but to call back, which results in the same pattern of hanging up. I have tried contacting them multiple times and consistently receive the same response : they are investigating why",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        },
+        {
+          "complaint_id": 24142522,
+          "issue": "Problem with a purchase shown on your statement",
+          "excerpt": "Unauthorized purchases were made on my Synchrony Lowe 's credit card in XX/XX/XXXX without my knowledge or consent. XXXX transaction occurred in Alabama and another in XXXX, Alaska, even though I have lived in XXXX, Florida since XXXX and was not in either location at the time of the purchases. I immediately disputed the fraudulent charges and closed the account. Because the individual who used my account had changed the mailing address, I had to close the account a second time to prevent further unauthorized activity. Despite reporting the fraud in XX/XX/XXXX, Synchrony did not send me a fraud affidavit until XX/XX/XXXX, several months after my initial complaint. I promptly completed and returned the requested documentation. After that, I received no updates regarding the investigation or",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        }
+      ]
+    },
+    {
+      "anchor_id": 3128247,
+      "product": "Checking or savings account",
+      "issue": "Incorrect information on your report",
+      "anchor_excerpt": "Ok so I've been having lots of issues with citizens bank, I switched from one bank to them, since then I had to have new debit card after card issued because of fraud charges on my account, after a bunch of this happening I called them yet again 3 separate times on this one occasion in which I told them to block all purchases on my account and lock the account so nothing more could be done on my account, and was told they would investigate it all, in return no investigation was ever done by them, and they left the account actively going, they allowed charges after charges to try to be made on the account so they could rack up over draft fees and returned payment fees late fees and monthly service fees on my account, they kept sending me and still do send me threatening letters in the mail ",
+      "expected_policy_headings": [
+        "Identity theft and account takeover",
+        "Credit reporting disputes",
+        "Payment and transfer disputes"
+      ],
+      "retrieved_policy_headings": [
+        "Credit reporting disputes",
+        "Identity theft and account takeover",
+        "Triage",
+        "Payment and transfer disputes",
+        "Collection and legal-action threats"
+      ],
+      "judged_candidates": [
+        {
+          "complaint_id": 24001146,
+          "issue": "Problem with a lender or other company charging your account",
+          "excerpt": "I closed and opened a new checking account and have fell to XXXX fraudulent activity at Citizens Bank. On XX/XX/XXXX my * new * checking account was subject to fraud AGAIN for {$6100.00}. There is clearly rampant internal fraud at Citizens Bank who has yet to reimburse me for these funds. I continue to hear everything is \" escalated '' and \" we are working on it '' yet there is still no resolution after filing the initial fraud compliant on XX/XX/XXXX. As a customer for over XXXX years, this experience and response is horrible.",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        },
+        {
+          "complaint_id": 4210787,
+          "issue": "Incorrect information on your report",
+          "excerpt": "someone using my Address and name to get credit in there name when I try to open up a bank account with citizens bank they closed my account out for fraud that I never done! after I cashed my unemployment checks.",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        },
+        {
+          "complaint_id": 3796235,
+          "issue": "Incorrect information on your report",
+          "excerpt": "The savings account that I had with Citizens was an overdraft account and linked to my checking account at Citizens. Well because I had some issues making payments it went to a collection agency. the balance I owed was around {$500.00} and the collection agency offered me a XXXX time payment of {$220.00} which would then make the account considered settled and closed. \nSo on XX/XX/XXXX I made a payment of {$220.00} to XXXX XXXX XXXX. I went ahead and attached the letter showing the account was settled and paid in full and closed. On my XXXX  credit report it shows under account status that it was paid and closed. Stating account was paid less than full balance and was updated on XX/XX/XXXX. \nFor some reason XXXX  is showing that I owe {$690.00} and the status is Collection/Charge-Off, whic",
+          "relevance_grade": 2,
+          "reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+        },
+        {
+          "complaint_id": 3241479,
+          "issue": "Closing an account",
+          "excerpt": "I am a customer of Citizens bank. \r\n\r\nOn XX/XX/XXXX we saw the first fraudulent charges come out of our bank account for {$570.00} in XXXX XXXX, XXXX, and {$580.00} in XXXX, XXXX. We were not alerted, my husband discovered them on our account himself. He called Citizens Bank that day and filed fraud claims as well as to \" capture '' our cards. I went into the bank the next morning on XX/XX/XXXX to ensure the cards were cancelled ( at this time we both had physical possession of our debit cards ). The banks recommendation at that time was to order new debit cards, which we did. \r\nOn XX/XX/XXXX, my husband discovered new claim in the amount of {$2400.00} at XXXX XXXX in XXXX NY, dated XX/XX/XXXX. My husband went to the bank that day and at the recommendation of their staff, we closed our ori",
+          "relevance_grade": 3,
+          "reason": "Same core consumer problem and operational resolution path."
+        },
+        {
+          "complaint_id": 3152812,
+          "issue": "Incorrect information on your report",
+          "excerpt": "My complaint is regarding City Bank. Citi Bank is reporting inaccurate and false information to the credit Bureaus. Citi Bank is reporting XX/XX/2018 delinquent to the credit bureaus. I contacted the Bank and spoke to a representative he went over the payment history with me I told him about the {$270.00} was debited from my bank account for the month of XX/XX/XXXX. The representative from Citi bank told me to send in my bank statement and a copy of my credit report and Citi bank will update this delinquency on my account. After sending the Bank what ever they wanted and proving them I made my payment on time they they didn't want anything to do with that information anymore. They didn't change their reporting even after the fact I've sent my Bank ststement.",
+          "relevance_grade": 1,
+          "reason": "Same product or workflow context, but only partially relevant to the core problem."
+        }
+      ]
+    }
+  ]
+}

@@ -49,13 +49,24 @@ pack from `backend`:
 .venv\Scripts\python -m app.services.benchmark_export --anchors 30 --output ..\docs\retrieval-candidates.json
 ```
 
-For every candidate, fill in `relevance_grade` using `0` for irrelevant, `1` for somewhat related,
-`2` for relevant, and `3` for highly relevant. Add one or more acceptable policy section names to
-`expected_policy_headings` and briefly explain each judgment. Human review is required before the
-file is described as manually judged. Run the completed set with:
+The exporter first searches within the anchor's CFPB product and backfills from the full corpus
+when a product has fewer than five alternatives. This preserves five candidates per anchor even
+when CFPB product names changed over time.
+
+Keep generated candidates separate from labels so a refreshed corpus cannot silently invalidate
+the benchmark. Fill `retrieval-labels.json` with a zero-through-three relevance grade for every
+candidate and one or more acceptable policy headings per anchor, then compile the two files:
 
 ```powershell
-.venv\Scripts\python -m app.services.benchmark --judgments ..\docs\retrieval-candidates.json --output ..\docs\expanded-retrieval-benchmark.json
+.venv\Scripts\python -m app.services.benchmark_compile
+```
+
+The compiler rejects missing, duplicated, or stale candidate IDs. The included label overlay is
+explicitly marked as provisional and model-assisted. It must receive human review before it is
+described as human-judged ground truth. Run the compiled set with:
+
+```powershell
+.venv\Scripts\python -m app.services.benchmark --judgments ..\docs\retrieval-judgments-expanded.json --output ..\docs\expanded-retrieval-benchmark.json
 ```
 
 `nDCG@5` rewards highly relevant results appearing earlier in the top five. A score of `1.0` is the
@@ -63,6 +74,16 @@ best possible ordering for the five judged candidates. The benchmark publishes n
 five results for every anchor have a grade, preventing a partially labeled set from looking better
 than it is. The first expanded milestone is 30 anchors and 150 judgments; the stronger portfolio
 target is 100 anchors and 500 judgments with a held-out final test split.
+
+On the production-aligned snapshot containing 11,967 complaint embeddings, the expanded set
+covered all **30 anchors and 150 retrieved candidates**. It produced **86.0% precision@5**
+(129/150 candidates graded at least partially relevant) and **0.818 nDCG@5**, with **100% label
+coverage**. Policy retrieval achieved **60.0% top-1 accuracy**, **86.7% hit@3**, and **71.7%
+MRR@3**. The expanded set intentionally omits the old single-known-pair metric because complete
+graded top-five judgments are more informative. Its current labels are provisional and
+model-assisted, so these numbers validate the evaluation pipeline and provide a review baseline;
+they are not yet human-audited RAG quality claims. The complete report is in
+[`expanded-retrieval-benchmark.json`](expanded-retrieval-benchmark.json).
 
 Reproduce the paid live-agent check by explicitly opting in and choosing a small run:
 
@@ -82,6 +103,6 @@ accuracy**, and **100% dual-collection citation coverage**, at an estimated tota
 The sample is deliberately tiny and is a smoke benchmark, not a broad model-accuracy claim. The
 complete output is in [`live-agent-benchmark.json`](live-agent-benchmark.json).
 
-Next evaluation improvement: complete the 30-anchor graded set, then expand it to a held-out
-100-anchor set across products and issues. Recommendation quality still requires human labels
-beyond retrieval relevance.
+Next evaluation improvement: human-review the 30-anchor provisional labels, then expand to a
+held-out 100-anchor set across products and issues. Recommendation quality still requires human
+labels beyond retrieval relevance.

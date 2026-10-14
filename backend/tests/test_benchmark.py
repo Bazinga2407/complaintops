@@ -1,11 +1,61 @@
+from unittest.mock import Mock
+
 import pytest
 
+from app.db.models import Complaint
 from app.services.benchmark import (
+    evaluate_retrieval,
     normalized_dcg_at_k,
+    parse_judgments,
     score_live,
     score_retrieval,
     team_labels_match,
 )
+
+
+def test_evaluation_uses_exact_top_five_query_for_graded_metrics(monkeypatch) -> None:
+    db = Mock()
+    anchor = Mock(embedding=[0.1, 0.2], embedding_model="test-embedding")
+    complaint = Complaint(id=1, product="Rare product")
+    known_relevant = Mock()
+    db.get.side_effect = [anchor, complaint, known_relevant]
+    scalar_result = Mock()
+    scalar_result.all.return_value = []
+    db.scalars.return_value = scalar_result
+    requested_limits: list[int] = []
+
+    def retrieve_candidates(*_args, limit: int, **_kwargs):
+        requested_limits.append(limit)
+        candidate_ids = [2, 3, 4, 5, 6] if limit == 5 else list(range(2, 12))
+        return [(Complaint(id=candidate_id), 0.1) for candidate_id in candidate_ids]
+
+    monkeypatch.setattr(
+        "app.services.benchmark.retrieve_complaint_candidates",
+        retrieve_candidates,
+    )
+    report = evaluate_retrieval(
+        db,
+        [
+            {
+                "anchor_id": 1,
+                "known_relevant_id": 3,
+                "judged_candidates": [
+                    {"complaint_id": candidate_id, "relevance_grade": 3}
+                    for candidate_id in range(2, 7)
+                ],
+            }
+        ],
+    )
+
+    assert requested_limits == [5, 10]
+    assert report["judgment_coverage_at_5"] == 1
+    assert report["known_relevant_mrr_at_10"] == 0.5
+
+
+def test_parse_judgments_accepts_audited_wrapper() -> None:
+    assert parse_judgments(
+        {"metadata": {"status": "reviewed"}, "judgments": [{"anchor_id": 1}]}
+    ) == [{"anchor_id": 1}]
 
 
 def test_retrieval_scores_are_named_as_incomplete_judgments() -> None:

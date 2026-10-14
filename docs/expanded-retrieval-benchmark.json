@@ -1,0 +1,1514 @@
+{
+  "retrieval": {
+    "sample_size": 30,
+    "judged_precision_at_5": 0.86,
+    "judgment_coverage_at_5": 1.0,
+    "graded_ndcg_at_5": 0.8183777424572053,
+    "graded_judgment_coverage_at_5": 1.0,
+    "known_relevant_hit_at_10": null,
+    "known_relevant_mrr_at_10": null,
+    "policy_top_1_accuracy": 0.6,
+    "policy_hit_at_3": 0.8666666666666667,
+    "policy_mrr_at_3": 0.7166666666666667,
+    "limitations": "30 anchors and 150 judged top-five candidates from this CFPB snapshot. The sample is small and not representative of every product or complaint type. The anchor uses an existing complaint embedding, not a fresh agent-generated query. The known-pair score is retained only as a regression signal; its relevance labels are incomplete because one preselected complaint is not a complete relevance set.",
+    "examples": [
+      {
+        "anchor_id": 24164046,
+        "known_relevant_rank": null,
+        "known_relevant_evaluated": false,
+        "retrieved_top_5": [
+          {
+            "complaint_id": 24120298,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          },
+          {
+            "complaint_id": 23804875,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          },
+          {
+            "complaint_id": 23881960,
+            "relevant": null,
+            "relevance_grade": 2,
+            "judgment_reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+          },
+          {
+            "complaint_id": 23758974,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          },
+          {
+            "complaint_id": 23952673,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          }
+        ],
+        "policy_ranking_evaluated": true,
+        "expected_policy_headings": [
+          "Triage",
+          "Issue classification",
+          "Consumer communication"
+        ],
+        "top_policy_heading": "Triage",
+        "top_3_policy_headings": [
+          "Triage",
+          "Credit reporting disputes",
+          "Identity theft and account takeover"
+        ],
+        "expected_policy_rank": 1,
+        "policy_top_1_correct": true
+      },
+      {
+        "anchor_id": 3376003,
+        "known_relevant_rank": null,
+        "known_relevant_evaluated": false,
+        "retrieved_top_5": [
+          {
+            "complaint_id": 3526764,
+            "relevant": null,
+            "relevance_grade": 0,
+            "judgment_reason": "Different underlying consumer problem or operational resolution path."
+          },
+          {
+            "complaint_id": 23780702,
+            "relevant": null,
+            "relevance_grade": 1,
+            "judgment_reason": "Same product or workflow context, but only partially relevant to the core problem."
+          },
+          {
+            "complaint_id": 3004756,
+            "relevant": null,
+            "relevance_grade": 0,
+            "judgment_reason": "Different underlying consumer problem or operational resolution path."
+          },
+          {
+            "complaint_id": 23744345,
+            "relevant": null,
+            "relevance_grade": 0,
+            "judgment_reason": "Different underlying consumer problem or operational resolution path."
+          },
+          {
+            "complaint_id": 3678728,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          }
+        ],
+        "policy_ranking_evaluated": true,
+        "expected_policy_headings": [
+          "Credit reporting disputes"
+        ],
+        "top_policy_heading": "Credit reporting disputes",
+        "top_3_policy_headings": [
+          "Credit reporting disputes",
+          "Consumer communication",
+          "Collection and legal-action threats"
+        ],
+        "expected_policy_rank": 1,
+        "policy_top_1_correct": true
+      },
+      {
+        "anchor_id": 2438543,
+        "known_relevant_rank": null,
+        "known_relevant_evaluated": false,
+        "retrieved_top_5": [
+          {
+            "complaint_id": 2220210,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          },
+          {
+            "complaint_id": 1587611,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          },
+          {
+            "complaint_id": 2301449,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          },
+          {
+            "complaint_id": 2197620,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          },
+          {
+            "complaint_id": 2316376,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          }
+        ],
+        "policy_ranking_evaluated": true,
+        "expected_policy_headings": [
+          "Identity theft and account takeover",
+          "Collection and legal-action threats"
+        ],
+        "top_policy_heading": "Collection and legal-action threats",
+        "top_3_policy_headings": [
+          "Collection and legal-action threats",
+          "Credit reporting disputes",
+          "Identity theft and account takeover"
+        ],
+        "expected_policy_rank": 1,
+        "policy_top_1_correct": true
+      },
+      {
+        "anchor_id": 1521946,
+        "known_relevant_rank": null,
+        "known_relevant_evaluated": false,
+        "retrieved_top_5": [
+          {
+            "complaint_id": 1873124,
+            "relevant": null,
+            "relevance_grade": 2,
+            "judgment_reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+          },
+          {
+            "complaint_id": 1378654,
+            "relevant": null,
+            "relevance_grade": 1,
+            "judgment_reason": "Same product or workflow context, but only partially relevant to the core problem."
+          },
+          {
+            "complaint_id": 1964664,
+            "relevant": null,
+            "relevance_grade": 1,
+            "judgment_reason": "Same product or workflow context, but only partially relevant to the core problem."
+          },
+          {
+            "complaint_id": 1520770,
+            "relevant": null,
+            "relevance_grade": 2,
+            "judgment_reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+          },
+          {
+            "complaint_id": 2445134,
+            "relevant": null,
+            "relevance_grade": 2,
+            "judgment_reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+          }
+        ],
+        "policy_ranking_evaluated": true,
+        "expected_policy_headings": [
+          "Payment and transfer disputes",
+          "Evidence checklist"
+        ],
+        "top_policy_heading": "Collection and legal-action threats",
+        "top_3_policy_headings": [
+          "Collection and legal-action threats",
+          "Credit reporting disputes",
+          "Triage"
+        ],
+        "expected_policy_rank": null,
+        "policy_top_1_correct": false
+      },
+      {
+        "anchor_id": 24157536,
+        "known_relevant_rank": null,
+        "known_relevant_evaluated": false,
+        "retrieved_top_5": [
+          {
+            "complaint_id": 23806162,
+            "relevant": null,
+            "relevance_grade": 2,
+            "judgment_reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+          },
+          {
+            "complaint_id": 23912111,
+            "relevant": null,
+            "relevance_grade": 2,
+            "judgment_reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+          },
+          {
+            "complaint_id": 24014558,
+            "relevant": null,
+            "relevance_grade": 0,
+            "judgment_reason": "Different underlying consumer problem or operational resolution path."
+          },
+          {
+            "complaint_id": 24022075,
+            "relevant": null,
+            "relevance_grade": 2,
+            "judgment_reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+          },
+          {
+            "complaint_id": 24163288,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          }
+        ],
+        "policy_ranking_evaluated": true,
+        "expected_policy_headings": [
+          "Escalation",
+          "Evidence checklist"
+        ],
+        "top_policy_heading": "Collection and legal-action threats",
+        "top_3_policy_headings": [
+          "Collection and legal-action threats",
+          "Foreclosure and housing risk",
+          "Escalation"
+        ],
+        "expected_policy_rank": 3,
+        "policy_top_1_correct": false
+      },
+      {
+        "anchor_id": 24169924,
+        "known_relevant_rank": null,
+        "known_relevant_evaluated": false,
+        "retrieved_top_5": [
+          {
+            "complaint_id": 23771684,
+            "relevant": null,
+            "relevance_grade": 1,
+            "judgment_reason": "Same product or workflow context, but only partially relevant to the core problem."
+          },
+          {
+            "complaint_id": 24204230,
+            "relevant": null,
+            "relevance_grade": 1,
+            "judgment_reason": "Same product or workflow context, but only partially relevant to the core problem."
+          },
+          {
+            "complaint_id": 23999246,
+            "relevant": null,
+            "relevance_grade": 2,
+            "judgment_reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+          },
+          {
+            "complaint_id": 23801094,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          },
+          {
+            "complaint_id": 23954484,
+            "relevant": null,
+            "relevance_grade": 0,
+            "judgment_reason": "Different underlying consumer problem or operational resolution path."
+          }
+        ],
+        "policy_ranking_evaluated": true,
+        "expected_policy_headings": [
+          "Identity theft and account takeover",
+          "Escalation"
+        ],
+        "top_policy_heading": "Credit reporting disputes",
+        "top_3_policy_headings": [
+          "Credit reporting disputes",
+          "Identity theft and account takeover",
+          "Escalation"
+        ],
+        "expected_policy_rank": 2,
+        "policy_top_1_correct": false
+      },
+      {
+        "anchor_id": 23958778,
+        "known_relevant_rank": null,
+        "known_relevant_evaluated": false,
+        "retrieved_top_5": [
+          {
+            "complaint_id": 23944227,
+            "relevant": null,
+            "relevance_grade": 1,
+            "judgment_reason": "Same product or workflow context, but only partially relevant to the core problem."
+          },
+          {
+            "complaint_id": 24710794,
+            "relevant": null,
+            "relevance_grade": 0,
+            "judgment_reason": "Different underlying consumer problem or operational resolution path."
+          },
+          {
+            "complaint_id": 24435648,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          },
+          {
+            "complaint_id": 23807920,
+            "relevant": null,
+            "relevance_grade": 1,
+            "judgment_reason": "Same product or workflow context, but only partially relevant to the core problem."
+          },
+          {
+            "complaint_id": 23989278,
+            "relevant": null,
+            "relevance_grade": 1,
+            "judgment_reason": "Same product or workflow context, but only partially relevant to the core problem."
+          }
+        ],
+        "policy_ranking_evaluated": true,
+        "expected_policy_headings": [
+          "Identity theft and account takeover",
+          "Credit reporting disputes"
+        ],
+        "top_policy_heading": "Triage",
+        "top_3_policy_headings": [
+          "Triage",
+          "Credit reporting disputes",
+          "Privacy and redaction"
+        ],
+        "expected_policy_rank": 2,
+        "policy_top_1_correct": false
+      },
+      {
+        "anchor_id": 24130634,
+        "known_relevant_rank": null,
+        "known_relevant_evaluated": false,
+        "retrieved_top_5": [
+          {
+            "complaint_id": 24175840,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          },
+          {
+            "complaint_id": 24166971,
+            "relevant": null,
+            "relevance_grade": 2,
+            "judgment_reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+          },
+          {
+            "complaint_id": 23981735,
+            "relevant": null,
+            "relevance_grade": 2,
+            "judgment_reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+          },
+          {
+            "complaint_id": 24174905,
+            "relevant": null,
+            "relevance_grade": 2,
+            "judgment_reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+          },
+          {
+            "complaint_id": 23791563,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          }
+        ],
+        "policy_ranking_evaluated": true,
+        "expected_policy_headings": [
+          "Payment and transfer disputes",
+          "Consumer communication"
+        ],
+        "top_policy_heading": "Credit reporting disputes",
+        "top_3_policy_headings": [
+          "Credit reporting disputes",
+          "Triage",
+          "Payment and transfer disputes"
+        ],
+        "expected_policy_rank": 3,
+        "policy_top_1_correct": false
+      },
+      {
+        "anchor_id": 1567144,
+        "known_relevant_rank": null,
+        "known_relevant_evaluated": false,
+        "retrieved_top_5": [
+          {
+            "complaint_id": 2115309,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          },
+          {
+            "complaint_id": 24392825,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          },
+          {
+            "complaint_id": 23900395,
+            "relevant": null,
+            "relevance_grade": 1,
+            "judgment_reason": "Same product or workflow context, but only partially relevant to the core problem."
+          },
+          {
+            "complaint_id": 24226818,
+            "relevant": null,
+            "relevance_grade": 0,
+            "judgment_reason": "Different underlying consumer problem or operational resolution path."
+          },
+          {
+            "complaint_id": 2360969,
+            "relevant": null,
+            "relevance_grade": 1,
+            "judgment_reason": "Same product or workflow context, but only partially relevant to the core problem."
+          }
+        ],
+        "policy_ranking_evaluated": true,
+        "expected_policy_headings": [
+          "Escalation",
+          "Recommended actions"
+        ],
+        "top_policy_heading": "Foreclosure and housing risk",
+        "top_3_policy_headings": [
+          "Foreclosure and housing risk",
+          "Escalation",
+          "Collection and legal-action threats"
+        ],
+        "expected_policy_rank": 2,
+        "policy_top_1_correct": false
+      },
+      {
+        "anchor_id": 23780683,
+        "known_relevant_rank": null,
+        "known_relevant_evaluated": false,
+        "retrieved_top_5": [
+          {
+            "complaint_id": 2557184,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          },
+          {
+            "complaint_id": 24161439,
+            "relevant": null,
+            "relevance_grade": 2,
+            "judgment_reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+          },
+          {
+            "complaint_id": 23924730,
+            "relevant": null,
+            "relevance_grade": 2,
+            "judgment_reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+          },
+          {
+            "complaint_id": 23949467,
+            "relevant": null,
+            "relevance_grade": 2,
+            "judgment_reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+          },
+          {
+            "complaint_id": 24166004,
+            "relevant": null,
+            "relevance_grade": 0,
+            "judgment_reason": "Different underlying consumer problem or operational resolution path."
+          }
+        ],
+        "policy_ranking_evaluated": true,
+        "expected_policy_headings": [
+          "Credit reporting disputes"
+        ],
+        "top_policy_heading": "Credit reporting disputes",
+        "top_3_policy_headings": [
+          "Credit reporting disputes",
+          "Triage",
+          "Collection and legal-action threats"
+        ],
+        "expected_policy_rank": 1,
+        "policy_top_1_correct": true
+      },
+      {
+        "anchor_id": 1658227,
+        "known_relevant_rank": null,
+        "known_relevant_evaluated": false,
+        "retrieved_top_5": [
+          {
+            "complaint_id": 24176938,
+            "relevant": null,
+            "relevance_grade": 1,
+            "judgment_reason": "Same product or workflow context, but only partially relevant to the core problem."
+          },
+          {
+            "complaint_id": 2278633,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          },
+          {
+            "complaint_id": 1655610,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          },
+          {
+            "complaint_id": 1924643,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          },
+          {
+            "complaint_id": 24729432,
+            "relevant": null,
+            "relevance_grade": 2,
+            "judgment_reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+          }
+        ],
+        "policy_ranking_evaluated": true,
+        "expected_policy_headings": [
+          "Evidence checklist",
+          "Consumer communication"
+        ],
+        "top_policy_heading": "Foreclosure and housing risk",
+        "top_3_policy_headings": [
+          "Foreclosure and housing risk",
+          "Escalation",
+          "Credit reporting disputes"
+        ],
+        "expected_policy_rank": null,
+        "policy_top_1_correct": false
+      },
+      {
+        "anchor_id": 1835981,
+        "known_relevant_rank": null,
+        "known_relevant_evaluated": false,
+        "retrieved_top_5": [
+          {
+            "complaint_id": 24365350,
+            "relevant": null,
+            "relevance_grade": 1,
+            "judgment_reason": "Same product or workflow context, but only partially relevant to the core problem."
+          },
+          {
+            "complaint_id": 23897042,
+            "relevant": null,
+            "relevance_grade": 1,
+            "judgment_reason": "Same product or workflow context, but only partially relevant to the core problem."
+          },
+          {
+            "complaint_id": 24737413,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          },
+          {
+            "complaint_id": 23802567,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          },
+          {
+            "complaint_id": 23816155,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          }
+        ],
+        "policy_ranking_evaluated": true,
+        "expected_policy_headings": [
+          "Standard review",
+          "Identity theft and account takeover"
+        ],
+        "top_policy_heading": "Credit reporting disputes",
+        "top_3_policy_headings": [
+          "Credit reporting disputes",
+          "Collection and legal-action threats",
+          "Identity theft and account takeover"
+        ],
+        "expected_policy_rank": 3,
+        "policy_top_1_correct": false
+      },
+      {
+        "anchor_id": 2582629,
+        "known_relevant_rank": null,
+        "known_relevant_evaluated": false,
+        "retrieved_top_5": [
+          {
+            "complaint_id": 2840590,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          },
+          {
+            "complaint_id": 2566164,
+            "relevant": null,
+            "relevance_grade": 0,
+            "judgment_reason": "Different underlying consumer problem or operational resolution path."
+          },
+          {
+            "complaint_id": 2888939,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          },
+          {
+            "complaint_id": 2665614,
+            "relevant": null,
+            "relevance_grade": 0,
+            "judgment_reason": "Different underlying consumer problem or operational resolution path."
+          },
+          {
+            "complaint_id": 2756350,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          }
+        ],
+        "policy_ranking_evaluated": true,
+        "expected_policy_headings": [
+          "Payment and transfer disputes",
+          "Evidence checklist"
+        ],
+        "top_policy_heading": "Credit reporting disputes",
+        "top_3_policy_headings": [
+          "Credit reporting disputes",
+          "Collection and legal-action threats",
+          "Triage"
+        ],
+        "expected_policy_rank": null,
+        "policy_top_1_correct": false
+      },
+      {
+        "anchor_id": 23943787,
+        "known_relevant_rank": null,
+        "known_relevant_evaluated": false,
+        "retrieved_top_5": [
+          {
+            "complaint_id": 24003192,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          },
+          {
+            "complaint_id": 24162335,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          },
+          {
+            "complaint_id": 24147243,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          },
+          {
+            "complaint_id": 23927225,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          },
+          {
+            "complaint_id": 23928388,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          }
+        ],
+        "policy_ranking_evaluated": true,
+        "expected_policy_headings": [
+          "Credit reporting disputes"
+        ],
+        "top_policy_heading": "Credit reporting disputes",
+        "top_3_policy_headings": [
+          "Credit reporting disputes",
+          "Collection and legal-action threats",
+          "Triage"
+        ],
+        "expected_policy_rank": 1,
+        "policy_top_1_correct": true
+      },
+      {
+        "anchor_id": 2301449,
+        "known_relevant_rank": null,
+        "known_relevant_evaluated": false,
+        "retrieved_top_5": [
+          {
+            "complaint_id": 2316376,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          },
+          {
+            "complaint_id": 1532128,
+            "relevant": null,
+            "relevance_grade": 1,
+            "judgment_reason": "Same product or workflow context, but only partially relevant to the core problem."
+          },
+          {
+            "complaint_id": 1500322,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          },
+          {
+            "complaint_id": 1812755,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          },
+          {
+            "complaint_id": 2438543,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          }
+        ],
+        "policy_ranking_evaluated": true,
+        "expected_policy_headings": [
+          "Collection and legal-action threats",
+          "Escalation"
+        ],
+        "top_policy_heading": "Collection and legal-action threats",
+        "top_3_policy_headings": [
+          "Collection and legal-action threats",
+          "Foreclosure and housing risk",
+          "Escalation"
+        ],
+        "expected_policy_rank": 1,
+        "policy_top_1_correct": true
+      },
+      {
+        "anchor_id": 2824844,
+        "known_relevant_rank": null,
+        "known_relevant_evaluated": false,
+        "retrieved_top_5": [
+          {
+            "complaint_id": 2866298,
+            "relevant": null,
+            "relevance_grade": 0,
+            "judgment_reason": "Different underlying consumer problem or operational resolution path."
+          },
+          {
+            "complaint_id": 2806274,
+            "relevant": null,
+            "relevance_grade": 0,
+            "judgment_reason": "Different underlying consumer problem or operational resolution path."
+          },
+          {
+            "complaint_id": 2822879,
+            "relevant": null,
+            "relevance_grade": 0,
+            "judgment_reason": "Different underlying consumer problem or operational resolution path."
+          },
+          {
+            "complaint_id": 2484609,
+            "relevant": null,
+            "relevance_grade": 1,
+            "judgment_reason": "Same product or workflow context, but only partially relevant to the core problem."
+          },
+          {
+            "complaint_id": 2713179,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          }
+        ],
+        "policy_ranking_evaluated": true,
+        "expected_policy_headings": [
+          "Identity theft and account takeover",
+          "Credit reporting disputes"
+        ],
+        "top_policy_heading": "Credit reporting disputes",
+        "top_3_policy_headings": [
+          "Credit reporting disputes",
+          "Identity theft and account takeover",
+          "Collection and legal-action threats"
+        ],
+        "expected_policy_rank": 1,
+        "policy_top_1_correct": true
+      },
+      {
+        "anchor_id": 23767310,
+        "known_relevant_rank": null,
+        "known_relevant_evaluated": false,
+        "retrieved_top_5": [
+          {
+            "complaint_id": 24114577,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          },
+          {
+            "complaint_id": 23881962,
+            "relevant": null,
+            "relevance_grade": 1,
+            "judgment_reason": "Same product or workflow context, but only partially relevant to the core problem."
+          },
+          {
+            "complaint_id": 23803248,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          },
+          {
+            "complaint_id": 23940971,
+            "relevant": null,
+            "relevance_grade": 2,
+            "judgment_reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+          },
+          {
+            "complaint_id": 23881449,
+            "relevant": null,
+            "relevance_grade": 1,
+            "judgment_reason": "Same product or workflow context, but only partially relevant to the core problem."
+          }
+        ],
+        "policy_ranking_evaluated": true,
+        "expected_policy_headings": [
+          "Payment and transfer disputes",
+          "Consumer communication"
+        ],
+        "top_policy_heading": "Payment and transfer disputes",
+        "top_3_policy_headings": [
+          "Payment and transfer disputes",
+          "Identity theft and account takeover",
+          "Collection and legal-action threats"
+        ],
+        "expected_policy_rank": 1,
+        "policy_top_1_correct": true
+      },
+      {
+        "anchor_id": 23813022,
+        "known_relevant_rank": null,
+        "known_relevant_evaluated": false,
+        "retrieved_top_5": [
+          {
+            "complaint_id": 24191410,
+            "relevant": null,
+            "relevance_grade": 2,
+            "judgment_reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+          },
+          {
+            "complaint_id": 24117177,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          },
+          {
+            "complaint_id": 23984490,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          },
+          {
+            "complaint_id": 23941504,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          },
+          {
+            "complaint_id": 23766932,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          }
+        ],
+        "policy_ranking_evaluated": true,
+        "expected_policy_headings": [
+          "Escalation",
+          "Recommended actions"
+        ],
+        "top_policy_heading": "Escalation",
+        "top_3_policy_headings": [
+          "Escalation",
+          "Collection and legal-action threats",
+          "Triage"
+        ],
+        "expected_policy_rank": 1,
+        "policy_top_1_correct": true
+      },
+      {
+        "anchor_id": 2330820,
+        "known_relevant_rank": null,
+        "known_relevant_evaluated": false,
+        "retrieved_top_5": [
+          {
+            "complaint_id": 1487448,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          },
+          {
+            "complaint_id": 24371109,
+            "relevant": null,
+            "relevance_grade": 2,
+            "judgment_reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+          },
+          {
+            "complaint_id": 24118158,
+            "relevant": null,
+            "relevance_grade": 0,
+            "judgment_reason": "Different underlying consumer problem or operational resolution path."
+          },
+          {
+            "complaint_id": 2225379,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          },
+          {
+            "complaint_id": 23775875,
+            "relevant": null,
+            "relevance_grade": 1,
+            "judgment_reason": "Same product or workflow context, but only partially relevant to the core problem."
+          }
+        ],
+        "policy_ranking_evaluated": true,
+        "expected_policy_headings": [
+          "Identity theft and account takeover",
+          "Consumer communication"
+        ],
+        "top_policy_heading": "Identity theft and account takeover",
+        "top_3_policy_headings": [
+          "Identity theft and account takeover",
+          "Payment and transfer disputes",
+          "Credit reporting disputes"
+        ],
+        "expected_policy_rank": 1,
+        "policy_top_1_correct": true
+      },
+      {
+        "anchor_id": 2751266,
+        "known_relevant_rank": null,
+        "known_relevant_evaluated": false,
+        "retrieved_top_5": [
+          {
+            "complaint_id": 23885961,
+            "relevant": null,
+            "relevance_grade": 2,
+            "judgment_reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+          },
+          {
+            "complaint_id": 24389019,
+            "relevant": null,
+            "relevance_grade": 0,
+            "judgment_reason": "Different underlying consumer problem or operational resolution path."
+          },
+          {
+            "complaint_id": 2798913,
+            "relevant": null,
+            "relevance_grade": 1,
+            "judgment_reason": "Same product or workflow context, but only partially relevant to the core problem."
+          },
+          {
+            "complaint_id": 2645272,
+            "relevant": null,
+            "relevance_grade": 2,
+            "judgment_reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+          },
+          {
+            "complaint_id": 23802732,
+            "relevant": null,
+            "relevance_grade": 1,
+            "judgment_reason": "Same product or workflow context, but only partially relevant to the core problem."
+          }
+        ],
+        "policy_ranking_evaluated": true,
+        "expected_policy_headings": [
+          "Consumer communication",
+          "Triage"
+        ],
+        "top_policy_heading": "Payment and transfer disputes",
+        "top_3_policy_headings": [
+          "Payment and transfer disputes",
+          "Triage",
+          "Identity theft and account takeover"
+        ],
+        "expected_policy_rank": 2,
+        "policy_top_1_correct": false
+      },
+      {
+        "anchor_id": 2664663,
+        "known_relevant_rank": null,
+        "known_relevant_evaluated": false,
+        "retrieved_top_5": [
+          {
+            "complaint_id": 2800353,
+            "relevant": null,
+            "relevance_grade": 1,
+            "judgment_reason": "Same product or workflow context, but only partially relevant to the core problem."
+          },
+          {
+            "complaint_id": 2847649,
+            "relevant": null,
+            "relevance_grade": 2,
+            "judgment_reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+          },
+          {
+            "complaint_id": 2786561,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          },
+          {
+            "complaint_id": 2839296,
+            "relevant": null,
+            "relevance_grade": 2,
+            "judgment_reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+          },
+          {
+            "complaint_id": 2494848,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          }
+        ],
+        "policy_ranking_evaluated": true,
+        "expected_policy_headings": [
+          "Credit reporting disputes"
+        ],
+        "top_policy_heading": "Collection and legal-action threats",
+        "top_3_policy_headings": [
+          "Collection and legal-action threats",
+          "Credit reporting disputes",
+          "Triage"
+        ],
+        "expected_policy_rank": 2,
+        "policy_top_1_correct": false
+      },
+      {
+        "anchor_id": 1327058,
+        "known_relevant_rank": null,
+        "known_relevant_evaluated": false,
+        "retrieved_top_5": [
+          {
+            "complaint_id": 2239236,
+            "relevant": null,
+            "relevance_grade": 1,
+            "judgment_reason": "Same product or workflow context, but only partially relevant to the core problem."
+          },
+          {
+            "complaint_id": 2326425,
+            "relevant": null,
+            "relevance_grade": 0,
+            "judgment_reason": "Different underlying consumer problem or operational resolution path."
+          },
+          {
+            "complaint_id": 1308124,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          },
+          {
+            "complaint_id": 1518743,
+            "relevant": null,
+            "relevance_grade": 2,
+            "judgment_reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+          },
+          {
+            "complaint_id": 1472459,
+            "relevant": null,
+            "relevance_grade": 1,
+            "judgment_reason": "Same product or workflow context, but only partially relevant to the core problem."
+          }
+        ],
+        "policy_ranking_evaluated": true,
+        "expected_policy_headings": [
+          "Credit reporting disputes",
+          "Consumer communication"
+        ],
+        "top_policy_heading": "Credit reporting disputes",
+        "top_3_policy_headings": [
+          "Credit reporting disputes",
+          "Consumer communication",
+          "Foreclosure and housing risk"
+        ],
+        "expected_policy_rank": 1,
+        "policy_top_1_correct": true
+      },
+      {
+        "anchor_id": 2186028,
+        "known_relevant_rank": null,
+        "known_relevant_evaluated": false,
+        "retrieved_top_5": [
+          {
+            "complaint_id": 1972826,
+            "relevant": null,
+            "relevance_grade": 2,
+            "judgment_reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+          },
+          {
+            "complaint_id": 2084484,
+            "relevant": null,
+            "relevance_grade": 2,
+            "judgment_reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+          },
+          {
+            "complaint_id": 2356798,
+            "relevant": null,
+            "relevance_grade": 2,
+            "judgment_reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+          },
+          {
+            "complaint_id": 2404392,
+            "relevant": null,
+            "relevance_grade": 2,
+            "judgment_reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+          },
+          {
+            "complaint_id": 1922531,
+            "relevant": null,
+            "relevance_grade": 2,
+            "judgment_reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+          }
+        ],
+        "policy_ranking_evaluated": true,
+        "expected_policy_headings": [
+          "Credit reporting disputes",
+          "Identity theft and account takeover"
+        ],
+        "top_policy_heading": "Credit reporting disputes",
+        "top_3_policy_headings": [
+          "Credit reporting disputes",
+          "Triage",
+          "Identity theft and account takeover"
+        ],
+        "expected_policy_rank": 1,
+        "policy_top_1_correct": true
+      },
+      {
+        "anchor_id": 1574948,
+        "known_relevant_rank": null,
+        "known_relevant_evaluated": false,
+        "retrieved_top_5": [
+          {
+            "complaint_id": 1668826,
+            "relevant": null,
+            "relevance_grade": 0,
+            "judgment_reason": "Different underlying consumer problem or operational resolution path."
+          },
+          {
+            "complaint_id": 24422743,
+            "relevant": null,
+            "relevance_grade": 2,
+            "judgment_reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+          },
+          {
+            "complaint_id": 23829322,
+            "relevant": null,
+            "relevance_grade": 2,
+            "judgment_reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+          },
+          {
+            "complaint_id": 23831585,
+            "relevant": null,
+            "relevance_grade": 2,
+            "judgment_reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+          },
+          {
+            "complaint_id": 23828405,
+            "relevant": null,
+            "relevance_grade": 2,
+            "judgment_reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+          }
+        ],
+        "policy_ranking_evaluated": true,
+        "expected_policy_headings": [
+          "Identity theft and account takeover",
+          "Credit reporting disputes"
+        ],
+        "top_policy_heading": "Credit reporting disputes",
+        "top_3_policy_headings": [
+          "Credit reporting disputes",
+          "Identity theft and account takeover",
+          "Consumer communication"
+        ],
+        "expected_policy_rank": 1,
+        "policy_top_1_correct": true
+      },
+      {
+        "anchor_id": 2800353,
+        "known_relevant_rank": null,
+        "known_relevant_evaluated": false,
+        "retrieved_top_5": [
+          {
+            "complaint_id": 2664663,
+            "relevant": null,
+            "relevance_grade": 1,
+            "judgment_reason": "Same product or workflow context, but only partially relevant to the core problem."
+          },
+          {
+            "complaint_id": 2487584,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          },
+          {
+            "complaint_id": 2550940,
+            "relevant": null,
+            "relevance_grade": 1,
+            "judgment_reason": "Same product or workflow context, but only partially relevant to the core problem."
+          },
+          {
+            "complaint_id": 2847649,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          },
+          {
+            "complaint_id": 2677202,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          }
+        ],
+        "policy_ranking_evaluated": true,
+        "expected_policy_headings": [
+          "Identity theft and account takeover",
+          "Credit reporting disputes"
+        ],
+        "top_policy_heading": "Credit reporting disputes",
+        "top_3_policy_headings": [
+          "Credit reporting disputes",
+          "Collection and legal-action threats",
+          "Identity theft and account takeover"
+        ],
+        "expected_policy_rank": 1,
+        "policy_top_1_correct": true
+      },
+      {
+        "anchor_id": 2487584,
+        "known_relevant_rank": null,
+        "known_relevant_evaluated": false,
+        "retrieved_top_5": [
+          {
+            "complaint_id": 2757181,
+            "relevant": null,
+            "relevance_grade": 0,
+            "judgment_reason": "Different underlying consumer problem or operational resolution path."
+          },
+          {
+            "complaint_id": 2709010,
+            "relevant": null,
+            "relevance_grade": 0,
+            "judgment_reason": "Different underlying consumer problem or operational resolution path."
+          },
+          {
+            "complaint_id": 2800353,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          },
+          {
+            "complaint_id": 2883854,
+            "relevant": null,
+            "relevance_grade": 1,
+            "judgment_reason": "Same product or workflow context, but only partially relevant to the core problem."
+          },
+          {
+            "complaint_id": 2713179,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          }
+        ],
+        "policy_ranking_evaluated": true,
+        "expected_policy_headings": [
+          "Identity theft and account takeover",
+          "Credit reporting disputes"
+        ],
+        "top_policy_heading": "Identity theft and account takeover",
+        "top_3_policy_headings": [
+          "Identity theft and account takeover",
+          "Credit reporting disputes",
+          "Collection and legal-action threats"
+        ],
+        "expected_policy_rank": 1,
+        "policy_top_1_correct": true
+      },
+      {
+        "anchor_id": 23882036,
+        "known_relevant_rank": null,
+        "known_relevant_evaluated": false,
+        "retrieved_top_5": [
+          {
+            "complaint_id": 24265618,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          },
+          {
+            "complaint_id": 24113191,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          },
+          {
+            "complaint_id": 23975194,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          },
+          {
+            "complaint_id": 24228388,
+            "relevant": null,
+            "relevance_grade": 2,
+            "judgment_reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+          },
+          {
+            "complaint_id": 23971500,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          }
+        ],
+        "policy_ranking_evaluated": true,
+        "expected_policy_headings": [
+          "Credit reporting disputes"
+        ],
+        "top_policy_heading": "Credit reporting disputes",
+        "top_3_policy_headings": [
+          "Credit reporting disputes",
+          "Triage",
+          "Consumer communication"
+        ],
+        "expected_policy_rank": 1,
+        "policy_top_1_correct": true
+      },
+      {
+        "anchor_id": 2426276,
+        "known_relevant_rank": null,
+        "known_relevant_evaluated": false,
+        "retrieved_top_5": [
+          {
+            "complaint_id": 2406634,
+            "relevant": null,
+            "relevance_grade": 2,
+            "judgment_reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+          },
+          {
+            "complaint_id": 2332601,
+            "relevant": null,
+            "relevance_grade": 1,
+            "judgment_reason": "Same product or workflow context, but only partially relevant to the core problem."
+          },
+          {
+            "complaint_id": 1956043,
+            "relevant": null,
+            "relevance_grade": 1,
+            "judgment_reason": "Same product or workflow context, but only partially relevant to the core problem."
+          },
+          {
+            "complaint_id": 1390071,
+            "relevant": null,
+            "relevance_grade": 0,
+            "judgment_reason": "Different underlying consumer problem or operational resolution path."
+          },
+          {
+            "complaint_id": 2434922,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          }
+        ],
+        "policy_ranking_evaluated": true,
+        "expected_policy_headings": [
+          "Consumer communication",
+          "Escalation"
+        ],
+        "top_policy_heading": "Credit reporting disputes",
+        "top_3_policy_headings": [
+          "Credit reporting disputes",
+          "Collection and legal-action threats",
+          "Triage"
+        ],
+        "expected_policy_rank": null,
+        "policy_top_1_correct": false
+      },
+      {
+        "anchor_id": 24237970,
+        "known_relevant_rank": null,
+        "known_relevant_evaluated": false,
+        "retrieved_top_5": [
+          {
+            "complaint_id": 24229613,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          },
+          {
+            "complaint_id": 24361747,
+            "relevant": null,
+            "relevance_grade": 0,
+            "judgment_reason": "Different underlying consumer problem or operational resolution path."
+          },
+          {
+            "complaint_id": 24390096,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          },
+          {
+            "complaint_id": 23989038,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          },
+          {
+            "complaint_id": 24142522,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          }
+        ],
+        "policy_ranking_evaluated": true,
+        "expected_policy_headings": [
+          "Payment and transfer disputes",
+          "Identity theft and account takeover"
+        ],
+        "top_policy_heading": "Payment and transfer disputes",
+        "top_3_policy_headings": [
+          "Payment and transfer disputes",
+          "Identity theft and account takeover",
+          "Credit reporting disputes"
+        ],
+        "expected_policy_rank": 1,
+        "policy_top_1_correct": true
+      },
+      {
+        "anchor_id": 3128247,
+        "known_relevant_rank": null,
+        "known_relevant_evaluated": false,
+        "retrieved_top_5": [
+          {
+            "complaint_id": 24001146,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          },
+          {
+            "complaint_id": 4210787,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          },
+          {
+            "complaint_id": 3796235,
+            "relevant": null,
+            "relevance_grade": 2,
+            "judgment_reason": "Closely related problem with material shared facts, but a different subtype or outcome."
+          },
+          {
+            "complaint_id": 3241479,
+            "relevant": null,
+            "relevance_grade": 3,
+            "judgment_reason": "Same core consumer problem and operational resolution path."
+          },
+          {
+            "complaint_id": 3152812,
+            "relevant": null,
+            "relevance_grade": 1,
+            "judgment_reason": "Same product or workflow context, but only partially relevant to the core problem."
+          }
+        ],
+        "policy_ranking_evaluated": true,
+        "expected_policy_headings": [
+          "Identity theft and account takeover",
+          "Credit reporting disputes",
+          "Payment and transfer disputes"
+        ],
+        "top_policy_heading": "Credit reporting disputes",
+        "top_3_policy_headings": [
+          "Credit reporting disputes",
+          "Identity theft and account takeover",
+          "Triage"
+        ],
+        "expected_policy_rank": 1,
+        "policy_top_1_correct": true
+      }
+    ]
+  }
+}

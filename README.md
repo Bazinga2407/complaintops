@@ -161,9 +161,8 @@ recommendations and evidence—not automated legal conclusions.
 3. Complaint and versioned 25-chunk policy embedding pipelines — complete
 4. Live tool-using agent with citations and deterministic guardrails — complete
 5. Edit workflow and review history UI — complete
-6. Observed metrics, eight-case mock routing baseline, 30-result regression check, graded nDCG,
-   and benchmark-candidate export — complete; the larger human-reviewed set follows the hosted
-   corpus expansion
+6. Observed metrics, eight-case mock routing baseline, 30-anchor/150-candidate graded benchmark,
+   and nDCG reporting — complete; human auditing and a held-out 100-anchor expansion remain
 7. Login, API protections, and Render + Neon deployment — complete
 8. Authenticated create → redact → analyze → approve → persistence smoke workflow — complete
 
@@ -191,8 +190,9 @@ The default local development mode still uses a demo operator identity. A privat
 preview can use the local password mode. Production uses invite-only OpenID Connect: the
 identity provider handles sign-in and ComplaintOps enforces operator, reviewer, and admin roles.
 See [deployment instructions](docs/deployment.md).
-The [labeled retrieval check](docs/evaluation.md) reports 86.7% judged complaint precision@5 and
-100% policy hit@3 on a small diagnostic sample. It also preserves the weak single-known-pair score
-to show why incomplete labels can misrepresent retrieval quality. The two-case live-agent smoke
-benchmark achieved 100% normalized team and priority accuracy with 100% dual-collection citation
-coverage at an estimated cost of $0.00214; the sample is too small for a broad accuracy claim.
+The [expanded retrieval check](docs/evaluation.md) covers 30 anchors and 150 candidates. Its
+provisional model-assisted labels produce 86.0% complaint precision@5, 0.818 nDCG@5, and 86.7%
+policy hit@3 with complete label coverage. Human review is still required before presenting these
+as ground-truth RAG quality measurements. The two-case live-agent smoke benchmark achieved 100%
+normalized team and priority accuracy with 100% dual-collection citation coverage at an estimated
+cost of $0.00214; that sample is also too small for a broad accuracy claim.

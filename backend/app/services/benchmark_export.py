@@ -12,6 +12,7 @@ from sqlalchemy.orm import Session
 
 from app.db.models import Complaint, ComplaintEmbedding, PolicyChunk, PolicyDocument
 from app.db.session import SessionLocal
+from app.services.retrieval_candidates import retrieve_complaint_candidates
 
 
 @dataclass(frozen=True)
@@ -88,19 +89,13 @@ def export_candidates(
         anchor_embedding = db.get(ComplaintEmbedding, anchor.complaint_id)
         if anchor_embedding is None:
             continue
-        complaint_distance = ComplaintEmbedding.embedding.cosine_distance(
-            anchor_embedding.embedding
-        )
-        matches = db.execute(
-            select(Complaint, complaint_distance.label("distance"))
-            .join(ComplaintEmbedding, ComplaintEmbedding.complaint_id == Complaint.id)
-            .where(
-                Complaint.product == anchor.product,
-                Complaint.id != anchor.complaint_id,
-                ComplaintEmbedding.embedding_model == anchor_embedding.embedding_model,
-            )
-            .order_by(complaint_distance)
-            .limit(top_k)
+        matches = retrieve_complaint_candidates(
+            db,
+            anchor_id=anchor.complaint_id,
+            product=anchor.product,
+            anchor_embedding=anchor_embedding.embedding,
+            embedding_model=anchor_embedding.embedding_model,
+            limit=top_k,
         )
         policy_distance = PolicyChunk.embedding.cosine_distance(anchor_embedding.embedding)
         policy_headings = list(

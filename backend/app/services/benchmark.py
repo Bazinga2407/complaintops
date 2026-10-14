@@ -15,13 +15,24 @@ from app.agent.openai_agent import analyze_with_openai
 from app.core.config import get_settings
 from app.db.models import Case, Complaint, ComplaintEmbedding, PolicyChunk, PolicyDocument
 from app.db.session import SessionLocal
+from app.services.retrieval_candidates import retrieve_complaint_candidates
 
 
 def load_judgments(source: Path | None = None) -> list[dict]:
     if source is None:
         packaged = files("app.evaluations").joinpath("retrieval_judgments.json")
-        return json.loads(packaged.read_text(encoding="utf-8"))
-    return json.loads(source.read_text(encoding="utf-8"))
+        payload = json.loads(packaged.read_text(encoding="utf-8"))
+    else:
+        payload = json.loads(source.read_text(encoding="utf-8"))
+    return parse_judgments(payload)
+
+
+def parse_judgments(payload: object) -> list[dict]:
+    if isinstance(payload, dict):
+        payload = payload.get("judgments")
+    if not isinstance(payload, list):
+        raise TypeError("Judgment file must contain a list or a judgments list")
+    return payload
 
 
 def load_live_cases() -> list[dict]:
@@ -148,23 +159,32 @@ def evaluate_retrieval(db: Session, judgments: list[dict] | None = None) -> dict
             known_relevant_id is not None and relevant is None
         ):
             raise RuntimeError("A judged CFPB complaint is missing an embedding")
-        distance = ComplaintEmbedding.embedding.cosine_distance(anchor.embedding)
-        matches = db.scalars(
-            select(Complaint.id)
-            .join(ComplaintEmbedding, ComplaintEmbedding.complaint_id == Complaint.id)
-            .where(
-                Complaint.product == complaint.product,
-                Complaint.id != complaint.id,
-                ComplaintEmbedding.embedding_model == anchor.embedding_model,
+        retrieved_top_5_ids = [
+            candidate.id
+            for candidate, _ in retrieve_complaint_candidates(
+                db,
+                anchor_id=complaint.id,
+                product=complaint.product,
+                anchor_embedding=anchor.embedding,
+                embedding_model=anchor.embedding_model,
+                limit=5,
             )
-            .order_by(distance)
-            .limit(10)
-        ).all()
-        known_relevant_rank = (
-            matches.index(known_relevant_id) + 1
-            if known_relevant_id is not None and known_relevant_id in matches
-            else None
-        )
+        ]
+        known_relevant_rank = None
+        if known_relevant_id is not None:
+            regression_ids = [
+                candidate.id
+                for candidate, _ in retrieve_complaint_candidates(
+                    db,
+                    anchor_id=complaint.id,
+                    product=complaint.product,
+                    anchor_embedding=anchor.embedding,
+                    embedding_model=anchor.embedding_model,
+                    limit=10,
+                )
+            ]
+            if known_relevant_id in regression_ids:
+                known_relevant_rank = regression_ids.index(known_relevant_id) + 1
         judged_by_id = {
             item["complaint_id"]: item for item in judgment.get("judged_candidates", [])
         }
@@ -175,7 +195,7 @@ def evaluate_retrieval(db: Session, judgments: list[dict] | None = None) -> dict
                 "relevance_grade": judged_by_id.get(complaint_id, {}).get("relevance_grade"),
                 "judgment_reason": judged_by_id.get(complaint_id, {}).get("reason"),
             }
-            for complaint_id in matches[:5]
+            for complaint_id in retrieved_top_5_ids
         ]
         policy_distance = PolicyChunk.embedding.cosine_distance(anchor.embedding)
         policy_headings = list(
@@ -322,8 +342,11 @@ def main() -> None:
             report["live_agent"] = evaluate_live(db, args.max_cases, args.max_cost_usd)
     serialized = json.dumps(report, indent=2)
     if args.output:
+        args.output.parent.mkdir(parents=True, exist_ok=True)
         args.output.write_text(serialized + "\n", encoding="utf-8")
-    print(serialized)
+        print(f"Wrote benchmark report to {args.output}")
+    else:
+        print(serialized)
 
 
 if __name__ == "__main__":

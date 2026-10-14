@@ -1,0 +1,164 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-10-13",
+  "review_status": "provisional_model_assisted_requires_human_review",
+  "source_corpus": "Official CFPB public narratives in the production 2026-10-13 snapshot",
+  "rubric": {
+    "0": "Different underlying consumer problem or operational resolution path",
+    "1": "Same product or workflow context, but only partially relevant",
+    "2": "Closely related problem with shared facts but a different subtype or outcome",
+    "3": "Same core consumer problem and operational resolution path"
+  },
+  "anchors": [
+    {
+      "anchor_id": 24164046,
+      "expected_policy_headings": ["Triage", "Issue classification", "Consumer communication"],
+      "candidate_grades": {"24120298": 3, "23804875": 3, "23881960": 2, "23758974": 3, "23952673": 3}
+    },
+    {
+      "anchor_id": 3376003,
+      "expected_policy_headings": ["Credit reporting disputes"],
+      "candidate_grades": {"3526764": 0, "23780702": 1, "3004756": 0, "23744345": 0, "3678728": 3}
+    },
+    {
+      "anchor_id": 2438543,
+      "expected_policy_headings": ["Identity theft and account takeover", "Collection and legal-action threats"],
+      "candidate_grades": {"2220210": 3, "1587611": 3, "2301449": 3, "2197620": 3, "2316376": 3}
+    },
+    {
+      "anchor_id": 1521946,
+      "expected_policy_headings": ["Payment and transfer disputes", "Evidence checklist"],
+      "candidate_grades": {"1873124": 2, "1378654": 1, "1964664": 1, "1520770": 2, "2445134": 2}
+    },
+    {
+      "anchor_id": 24157536,
+      "expected_policy_headings": ["Escalation", "Evidence checklist"],
+      "candidate_grades": {"23806162": 2, "23912111": 2, "24014558": 0, "24022075": 2, "24163288": 3}
+    },
+    {
+      "anchor_id": 24169924,
+      "expected_policy_headings": ["Identity theft and account takeover", "Escalation"],
+      "candidate_grades": {"23771684": 1, "24204230": 1, "23999246": 2, "23801094": 3, "23954484": 0}
+    },
+    {
+      "anchor_id": 23958778,
+      "expected_policy_headings": ["Identity theft and account takeover", "Credit reporting disputes"],
+      "candidate_grades": {"23944227": 1, "24710794": 0, "24435648": 3, "23807920": 1, "23989278": 1}
+    },
+    {
+      "anchor_id": 24130634,
+      "expected_policy_headings": ["Payment and transfer disputes", "Consumer communication"],
+      "candidate_grades": {"24175840": 3, "24166971": 2, "23981735": 2, "24174905": 2, "23791563": 3}
+    },
+    {
+      "anchor_id": 1567144,
+      "expected_policy_headings": ["Escalation", "Recommended actions"],
+      "candidate_grades": {"2115309": 3, "24392825": 3, "23900395": 1, "24226818": 0, "2360969": 1}
+    },
+    {
+      "anchor_id": 23780683,
+      "expected_policy_headings": ["Credit reporting disputes"],
+      "candidate_grades": {"2557184": 3, "24161439": 2, "23924730": 2, "23949467": 2, "24166004": 0}
+    },
+    {
+      "anchor_id": 1658227,
+      "expected_policy_headings": ["Evidence checklist", "Consumer communication"],
+      "candidate_grades": {"24176938": 1, "2278633": 3, "1655610": 3, "1924643": 3, "24729432": 2}
+    },
+    {
+      "anchor_id": 1835981,
+      "expected_policy_headings": ["Standard review", "Identity theft and account takeover"],
+      "candidate_grades": {"24365350": 1, "23897042": 1, "24737413": 3, "23802567": 3, "23816155": 3}
+    },
+    {
+      "anchor_id": 2582629,
+      "expected_policy_headings": ["Payment and transfer disputes", "Evidence checklist"],
+      "candidate_grades": {"2840590": 3, "2566164": 0, "2888939": 3, "2665614": 0, "2756350": 3}
+    },
+    {
+      "anchor_id": 23943787,
+      "expected_policy_headings": ["Credit reporting disputes"],
+      "candidate_grades": {"24003192": 3, "24162335": 3, "24147243": 3, "23927225": 3, "23928388": 3}
+    },
+    {
+      "anchor_id": 2301449,
+      "expected_policy_headings": ["Collection and legal-action threats", "Escalation"],
+      "candidate_grades": {"2316376": 3, "1532128": 1, "1500322": 3, "1812755": 3, "2438543": 3}
+    },
+    {
+      "anchor_id": 2824844,
+      "expected_policy_headings": ["Identity theft and account takeover", "Credit reporting disputes"],
+      "candidate_grades": {"2866298": 0, "2806274": 0, "2822879": 0, "2484609": 1, "2713179": 3}
+    },
+    {
+      "anchor_id": 23767310,
+      "expected_policy_headings": ["Payment and transfer disputes", "Consumer communication"],
+      "candidate_grades": {"24114577": 3, "23881962": 1, "23803248": 3, "23940971": 2, "23881449": 1}
+    },
+    {
+      "anchor_id": 23813022,
+      "expected_policy_headings": ["Escalation", "Recommended actions"],
+      "candidate_grades": {"24191410": 2, "24117177": 3, "23984490": 3, "23941504": 3, "23766932": 3}
+    },
+    {
+      "anchor_id": 2330820,
+      "expected_policy_headings": ["Identity theft and account takeover", "Consumer communication"],
+      "candidate_grades": {"1487448": 3, "24371109": 2, "24118158": 0, "2225379": 3, "23775875": 1}
+    },
+    {
+      "anchor_id": 2751266,
+      "expected_policy_headings": ["Consumer communication", "Triage"],
+      "candidate_grades": {"23885961": 2, "24389019": 0, "2798913": 1, "2645272": 2, "23802732": 1}
+    },
+    {
+      "anchor_id": 2664663,
+      "expected_policy_headings": ["Credit reporting disputes"],
+      "candidate_grades": {"2800353": 1, "2847649": 2, "2786561": 3, "2839296": 2, "2494848": 3}
+    },
+    {
+      "anchor_id": 1327058,
+      "expected_policy_headings": ["Credit reporting disputes", "Consumer communication"],
+      "candidate_grades": {"2239236": 1, "2326425": 0, "1308124": 3, "1518743": 2, "1472459": 1}
+    },
+    {
+      "anchor_id": 2186028,
+      "expected_policy_headings": ["Credit reporting disputes", "Identity theft and account takeover"],
+      "candidate_grades": {"1972826": 2, "2084484": 2, "2356798": 2, "2404392": 2, "1922531": 2}
+    },
+    {
+      "anchor_id": 1574948,
+      "expected_policy_headings": ["Identity theft and account takeover", "Credit reporting disputes"],
+      "candidate_grades": {"1668826": 0, "24422743": 2, "23829322": 2, "23831585": 2, "23828405": 2}
+    },
+    {
+      "anchor_id": 2800353,
+      "expected_policy_headings": ["Identity theft and account takeover", "Credit reporting disputes"],
+      "candidate_grades": {"2664663": 1, "2487584": 3, "2550940": 1, "2847649": 3, "2677202": 3}
+    },
+    {
+      "anchor_id": 2487584,
+      "expected_policy_headings": ["Identity theft and account takeover", "Credit reporting disputes"],
+      "candidate_grades": {"2757181": 0, "2709010": 0, "2800353": 3, "2883854": 1, "2713179": 3}
+    },
+    {
+      "anchor_id": 23882036,
+      "expected_policy_headings": ["Credit reporting disputes"],
+      "candidate_grades": {"24265618": 3, "24113191": 3, "23975194": 3, "24228388": 2, "23971500": 3}
+    },
+    {
+      "anchor_id": 2426276,
+      "expected_policy_headings": ["Consumer communication", "Escalation"],
+      "candidate_grades": {"2406634": 2, "2332601": 1, "1956043": 1, "1390071": 0, "2434922": 3}
+    },
+    {
+      "anchor_id": 24237970,
+      "expected_policy_headings": ["Payment and transfer disputes", "Identity theft and account takeover"],
+      "candidate_grades": {"24229613": 3, "24361747": 0, "24390096": 3, "23989038": 3, "24142522": 3}
+    },
+    {
+      "anchor_id": 3128247,
+      "expected_policy_headings": ["Identity theft and account takeover", "Credit reporting disputes", "Payment and transfer disputes"],
+      "candidate_grades": {"24001146": 3, "4210787": 3, "3796235": 2, "3241479": 3, "3152812": 1}
+    }
+  ]
+}
