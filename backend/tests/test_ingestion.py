@@ -1,10 +1,14 @@
 from datetime import date
+from unittest.mock import Mock
+
+from sqlalchemy.dialects import postgresql
 
 from app.services.ingestion import (
     changed_narrative_ids,
     normalize_complaint,
     parse_date,
     parse_yes_no,
+    upsert_complaints,
 )
 
 
@@ -50,5 +54,21 @@ def test_changed_narratives_invalidate_only_stale_embeddings() -> None:
         {"id": 1, "narrative": "same"},
         {"id": 2, "narrative": "updated"},
         {"id": 3, "narrative": "new"},
+        {"id": 4, "narrative": None},
     ]
-    assert changed_narrative_ids(rows, {1: "same", 2: "old"}) == [2]
+    assert changed_narrative_ids(rows, {1: "same", 2: "old", 4: "archived narrative"}) == [2]
+
+
+def test_metadata_upsert_preserves_an_existing_archive_narrative() -> None:
+    db = Mock()
+    existing = Mock()
+    existing.all.return_value = [(4, "archived narrative")]
+    db.execute.side_effect = [existing, Mock()]
+
+    processed = upsert_complaints(db, [{"id": 4, "narrative": None}])
+
+    upsert = db.execute.call_args_list[1].args[0]
+    sql = str(upsert.compile(dialect=postgresql.dialect())).lower()
+    assert "narrative = coalesce(excluded.narrative, complaints.narrative)" in sql
+    assert processed == 1
+    db.commit.assert_called_once()

@@ -30,6 +30,8 @@ The current foundation includes:
 - a versioned 25-chunk demonstration operating policy and automated tests
 - deterministic balanced archive sampling across product, issue, year, and narrative length
 - a benchmark-candidate exporter for building larger human-reviewed evaluation sets
+- an idempotent, removable five-case synthetic queue for portfolio demonstrations
+- a weekly GitHub Actions workflow for safe production metadata and embedding refreshes
 
 The AI integration remains optional. Set `AGENT_PROVIDER=mock` for zero-cost local work or `AGENT_PROVIDER=openai` for the live tool-using agent. Both providers return the same validated recommendation contract.
 
@@ -156,8 +158,8 @@ recommendations and evidence—not automated legal conclusions.
 ## Roadmap
 
 1. Foundation, dual-source case intake, and CFPB ingestion — complete
-2. Database runtime and a balanced 10,000-narrative CFPB backfill — pipeline complete; hosted
-   expansion is an explicit operator-run data job
+2. Database runtime, a balanced 10,000-narrative CFPB backfill, and weekly structured-metadata
+   refresh workflow — complete; newer narrative archives remain an explicit operator-run data job
 3. Complaint and versioned 25-chunk policy embedding pipelines — complete
 4. Live tool-using agent with citations and deterministic guardrails — complete
 5. Edit workflow and review history UI — complete
@@ -165,6 +167,7 @@ recommendations and evidence—not automated legal conclusions.
    and nDCG reporting — complete; human auditing and a held-out 100-anchor expansion remain
 7. Login, API protections, and Render + Neon deployment — complete
 8. Authenticated create → redact → analyze → approve → persistence smoke workflow — complete
+9. Idempotent synthetic production-demo queue with pending, approved, and rejected cases — complete
 
 ## Review states and evaluation
 

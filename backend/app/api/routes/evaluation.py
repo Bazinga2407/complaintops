@@ -5,7 +5,7 @@ from sqlalchemy import select
 from sqlalchemy.orm import Session
 
 from app.core.security import require_operator
-from app.db.models import AnalysisRun, ReviewAction
+from app.db.models import AnalysisRun, Case, ReviewAction
 from app.db.session import get_db
 from app.schemas.case import BaselineEvaluation, EvaluationSummary, RetrievalEvaluation
 from app.services.baseline import evaluate_mock_routing
@@ -20,8 +20,19 @@ DbSession = Annotated[Session, Depends(get_db)]
 
 @router.get("/summary", response_model=EvaluationSummary)
 def evaluation_summary(db: DbSession) -> EvaluationSummary:
-    runs = list(db.scalars(select(AnalysisRun)).all())
-    reviews = list(db.scalars(select(ReviewAction)).all())
+    runs = list(
+        db.scalars(
+            select(AnalysisRun).join(Case).where(Case.source != "demo")
+        ).all()
+    )
+    reviews = list(
+        db.scalars(
+            select(ReviewAction)
+            .join(AnalysisRun)
+            .join(Case)
+            .where(Case.source != "demo")
+        ).all()
+    )
     return summarize_analyses(runs, reviews)
 
 

@@ -23,8 +23,9 @@ def main() -> None:
     date_from = date_to - timedelta(days=args.days)
     if not args.execute:
         print(
-            f"Dry run: would import public narratives from {date_from} before {date_to} "
-            f"and embed missing rows with a ${args.max_cost_usd:.2f} estimated cost cap. "
+            f"Dry run: would refresh structured CFPB metadata from {date_from} before {date_to}, "
+            f"preserve archived narratives, and embed any missing narrative or policy rows with "
+            f"a ${args.max_cost_usd:.2f} estimated cost cap. "
             "Add --execute to run."
         )
         return
@@ -46,7 +47,7 @@ def main() -> None:
             client,
             date_from=date_from,
             date_to=date_to,
-            narratives_only=True,
+            narratives_only=False,
         )
         embedded = run_embedding_pipeline(
             db,

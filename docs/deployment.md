@@ -124,16 +124,46 @@ deterministic and broadens product, issue, year, and narrative-length coverage. 
 OpenAI charges and the importer may fetch many records; run these deliberately and inspect the
 resulting counts.
 
-For ongoing structured-metadata updates, create an optional Render Cron Job from the same Git
-repository and Dockerfile. Cron jobs are paid Render resources, so the Blueprint intentionally
-does not create one. The current refresh command can continue upserting live API records, but it
-will not expand the narrative RAG corpus unless the CFPB publishes a newer narrative archive.
+### Synthetic demonstration queue
 
-Run the live importer manually when you want current structured complaint metadata. Archive and
-live importers both upsert by CFPB ID, so overlap does not duplicate records. When the CFPB posts
-a newer official narrative archive, point `archive_ingestion --archive-url` at that ZIP and rerun
-the embedding pipeline. The scheduler itself is not included in local Compose; it belongs to the
-selected host.
+The production database is intentionally empty after deployment. Populate it with five synthetic
+cases—three pending, one approved, and one rejected—by loading the production `DATABASE_URL` in a
+local backend terminal and running:
+
+```powershell
+.venv\Scripts\python -m app.services.demo_seed --execute
+```
+
+The command uses deterministic IDs, so rerunning it skips existing demo records. It makes no
+OpenAI call and clearly marks every company as a demo organization. Use `--execute --replace` to
+restore the original demonstration set, or remove only these deterministic records with:
+
+```powershell
+.venv\Scripts\python -m app.services.demo_seed --remove
+```
+
+Demo analyses remain visible in the queue but are excluded from the observed operational-metrics
+summary, preventing portfolio fixtures from being reported as real workflow activity.
+
+### Scheduled metadata refresh
+
+The repository includes `.github/workflows/data-refresh.yml`. It runs every Monday at 10:17 UTC
+with a 14-day overlap and can also be started manually from the GitHub Actions page. Add these two
+repository secrets under **Settings → Secrets and variables → Actions** before enabling it:
+
+- `NEON_DATABASE_URL`: the production Neon pooled connection string with `sslmode=require`;
+- `OPENAI_API_KEY`: the API key used only for missing narrative or policy embeddings.
+
+After adding both secrets, open **Actions → Production data refresh → Run workflow** once and
+verify that the job succeeds. Each run has an estimated embedding ceiling of `$0.10`; normally it
+costs nothing when no vectors are missing. GitHub Actions secrets are independent from Render
+environment variables, so the values must be added in both services.
+
+The refresh upserts current structured CFPB metadata while preserving any archived narrative when
+the live feed supplies no narrative. It cannot expand the narrative RAG corpus unless the CFPB
+publishes a newer archive. When that happens, point `archive_ingestion --archive-url` at the new
+official ZIP and rerun the embedding pipeline deliberately. Archive and live importers both upsert
+by CFPB ID, so overlap does not create duplicate complaints.
 
 ## Limits of this release
 

@@ -3,7 +3,7 @@ from dataclasses import dataclass
 from datetime import UTC, date, datetime, timedelta
 from typing import Any
 
-from sqlalchemy import delete, select
+from sqlalchemy import delete, func, select
 from sqlalchemy.dialects.postgresql import insert
 from sqlalchemy.orm import Session
 
@@ -82,8 +82,15 @@ def upsert_complaints(db: Session, rows: list[dict[str, Any]]) -> int:
     update_columns = {
         column.name: getattr(statement.excluded, column.name)
         for column in Complaint.__table__.columns
-        if column.name not in {"id", "ingested_at"}
+        if column.name not in {"id", "ingested_at", "narrative"}
     }
+    # The post-August-2026 live feed contains useful structured metadata but no
+    # longer publishes narratives. Never let a metadata refresh erase narrative
+    # text previously imported from the official CFPB archive.
+    update_columns["narrative"] = func.coalesce(
+        statement.excluded.narrative,
+        Complaint.narrative,
+    )
     db.execute(statement.on_conflict_do_update(index_elements=[Complaint.id], set_=update_columns))
     if changed_ids:
         db.execute(
@@ -98,7 +105,9 @@ def changed_narrative_ids(rows: list[dict[str, Any]], existing: dict[int, str | 
     return [
         row["id"]
         for row in rows
-        if row["id"] in existing and row["narrative"] != existing[row["id"]]
+        if row["id"] in existing
+        and row["narrative"] is not None
+        and row["narrative"] != existing[row["id"]]
     ]
 
 

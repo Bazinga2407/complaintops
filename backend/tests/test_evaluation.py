@@ -1,6 +1,8 @@
 from datetime import UTC, datetime, timedelta
+from unittest.mock import Mock
 from uuid import uuid4
 
+from app.api.routes.evaluation import evaluation_summary
 from app.db.models import AnalysisRun, ReviewAction
 from app.services.evaluation import summarize_analyses
 
@@ -45,3 +47,18 @@ def test_evaluation_summary_uses_latest_review_and_both_citation_sources() -> No
     assert result.dual_collection_citation_rate == 1.0
     assert result.average_latency_seconds == 4.0
     assert result.total_estimated_cost_usd == 0.02
+
+
+def test_observed_summary_excludes_synthetic_demo_cases() -> None:
+    db = Mock()
+    empty = Mock()
+    empty.all.return_value = []
+    db.scalars.return_value = empty
+
+    result = evaluation_summary(db)
+
+    statements = [str(call.args[0]) for call in db.scalars.call_args_list]
+    assert result.completed_analyses == 0
+    assert len(statements) == 2
+    assert all("JOIN cases" in statement for statement in statements)
+    assert all("cases.source !=" in statement for statement in statements)
